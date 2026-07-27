@@ -1,0 +1,1226 @@
+{
+  "sourceFiles": [
+    "output/aicpa_dry_run_batch1.utf8.txt",
+    "input/aicpa_engage_leads_batch1.json"
+  ],
+  "apiCallsMade": {
+    "enrich": 0,
+    "notionExport": 0,
+    "dedupe": 0
+  },
+  "totalInputLeads": 101,
+  "parsedEnrichmentRows": 101,
+  "threshold": 70,
+  "willWritePhoneEmailWebsiteCount": 75,
+  "phoneWrites": 73,
+  "emailWrites": 27,
+  "websiteWrites": 62,
+  "suspiciousMismatchCount": 4,
+  "suspiciousMatches": [
+    {
+      "leadId": "aicpa-005",
+      "contactName": "Evan Benevento",
+      "firmName": "Evan I. Benevento, CPA",
+      "candidateDisplayName": "Evan J. Benevento, CPA",
+      "candidateWebsite": "https://evanjcpa.com/",
+      "confidenceScore": 100,
+      "sourceType": "google_places",
+      "leadTokens": [
+        "evan",
+        "benevento"
+      ],
+      "candidateTokens": [
+        "evan",
+        "benevento"
+      ],
+      "overlap": [
+        "evan",
+        "benevento"
+      ],
+      "reason": "middle initial mismatch requires manual confirmation"
+    },
+    {
+      "leadId": "aicpa-006",
+      "contactName": "Jason Bisdorf",
+      "firmName": "Biz Financial, LLC",
+      "candidateDisplayName": "Business Financial Solutions, Inc",
+      "candidateWebsite": "https://www.yourbfs.com/",
+      "confidenceScore": 100,
+      "sourceType": "google_places",
+      "leadTokens": [
+        "biz"
+      ],
+      "candidateTokens": [
+        "business",
+        "solutions"
+      ],
+      "overlap": [],
+      "reason": "low firm-name token overlap with top enrichment candidate"
+    },
+    {
+      "leadId": "aicpa-060",
+      "contactName": "Paola Martinez",
+      "firmName": "CPA Tax Adviser",
+      "candidateDisplayName": "Tampa Bay, Florida CPA",
+      "candidateWebsite": "https://www.cpataxadviser.net",
+      "confidenceScore": 100,
+      "sourceType": "website_contact_page",
+      "leadTokens": [
+        "adviser"
+      ],
+      "candidateTokens": [
+        "tampa",
+        "bay",
+        "florida"
+      ],
+      "overlap": [],
+      "reason": "low firm-name token overlap with top enrichment candidate"
+    },
+    {
+      "leadId": "aicpa-077",
+      "contactName": "Michelle Pierson",
+      "firmName": "PIE CPA, PLLC",
+      "candidateDisplayName": "Pi PLLC",
+      "candidateWebsite": "https://annapicpa.taxdome.com/",
+      "confidenceScore": 100,
+      "sourceType": "google_places",
+      "leadTokens": [
+        "pie"
+      ],
+      "candidateTokens": [],
+      "overlap": [],
+      "reason": "low firm-name token overlap with top enrichment candidate"
+    }
+  ],
+  "manualLocationProtection": [
+    {
+      "leadId": "aicpa-002",
+      "contactName": "Adrienne Anderson",
+      "firmName": "Anderson Accounting & Consulting",
+      "city": "Pompano Beach",
+      "state": "FL",
+      "cityStateChangePlanned": false,
+      "phoneEmailWebsiteEligible": false,
+      "exclusionReason": "below threshold or no candidate"
+    },
+    {
+      "leadId": "aicpa-006",
+      "contactName": "Jason Bisdorf",
+      "firmName": "Biz Financial, LLC",
+      "city": "Phoenix",
+      "state": "AZ",
+      "cityStateChangePlanned": false,
+      "phoneEmailWebsiteEligible": false,
+      "exclusionReason": "suspicious",
+      "candidateDisplayName": "Business Financial Solutions, Inc",
+      "confidenceScore": 100,
+      "phone": "(714) 983-7265",
+      "website": "https://www.yourbfs.com/"
+    },
+    {
+      "leadId": "aicpa-077",
+      "contactName": "Michelle Pierson",
+      "firmName": "PIE CPA, PLLC",
+      "city": "Jacksonville",
+      "state": "FL",
+      "cityStateChangePlanned": false,
+      "phoneEmailWebsiteEligible": false,
+      "exclusionReason": "suspicious",
+      "candidateDisplayName": "Pi PLLC",
+      "confidenceScore": 100,
+      "phone": "(281) 846-5688",
+      "website": "https://annapicpa.taxdome.com/"
+    }
+  ],
+  "updatePlan": [
+    {
+      "leadId": "aicpa-001",
+      "contactName": "Adam Aiken",
+      "firmName": "Patient, Aiken & Associates, PC",
+      "candidateDisplayName": "Patient, Aiken & Associates PC",
+      "confidenceScore": 100,
+      "phone": "(508) 791-7982",
+      "website": "http://www.patientcpa.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-004",
+      "contactName": "Sam Bellman",
+      "firmName": "Titus CPAs",
+      "candidateDisplayName": "Titus CPAs (formerly Lischkoff & Pitts)",
+      "confidenceScore": 100,
+      "phone": "(205) 870-3158",
+      "website": "https://www.tituscpa.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-007",
+      "contactName": "Matthew Bispeck",
+      "firmName": "Haffner & Associates LLC",
+      "candidateDisplayName": "Haffner & Associates CPAs",
+      "confidenceScore": 100,
+      "phone": "(610) 966-5137",
+      "website": "https://haffnercpas.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-008",
+      "contactName": "Vincent Blume",
+      "firmName": "Blume, Vincent L PC",
+      "candidateDisplayName": "Vincent L Blume CPA",
+      "confidenceScore": 95,
+      "phone": "(773) 275-1166",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-009",
+      "contactName": "Zach Boyd",
+      "firmName": "Boyd CPA",
+      "candidateDisplayName": "Boyd CPA | Tax & Advisory For People Who Like To Be Treated Like People",
+      "confidenceScore": 100,
+      "email": "info@zboydcpa.com",
+      "website": "https://zboydcpa.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-010",
+      "contactName": "Suzanne Briel",
+      "firmName": "Bobst & Briel CPAs, Inc",
+      "candidateDisplayName": "Bobst Book & Briel CPAs Inc - Tax Preparation Service in Auburn CA ...",
+      "confidenceScore": 72,
+      "phone": "(530) 885-7171",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-011",
+      "contactName": "Lora Broberg",
+      "firmName": "Viking Solutions LLC",
+      "candidateDisplayName": "Viking Solutions LLC | North Metro Home Tech",
+      "confidenceScore": 100,
+      "phone": "(773) 597-8975",
+      "email": "craig.munson@gmail.com",
+      "website": "https://www.vikingsolutionsmn.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-012",
+      "contactName": "Karen Brosi",
+      "firmName": "Karen Brosi, EA, CFP, a LLC",
+      "candidateDisplayName": "BROSI KAREN EA CFP - 635 Bryant St, Palo Alto, California - Yelp",
+      "confidenceScore": 72,
+      "phone": "(650) 327-2765",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-014",
+      "contactName": "Kerri Buckley",
+      "firmName": "The Buckley Insurance Group",
+      "candidateDisplayName": "Medicare Plans, Supplements & Part D | Buckley Insurance NJ",
+      "confidenceScore": 100,
+      "phone": "(732) 746-3320",
+      "website": "https://www.thebuckleyinsurancegroup.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-015",
+      "contactName": "Doreen Carter",
+      "firmName": "Doreen Carter CPA, PLLC",
+      "candidateDisplayName": "Doreen Carter CPA PLLC Information - RocketReach",
+      "confidenceScore": 72,
+      "phone": "(919) 399-0829",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-016",
+      "contactName": "Manuel R Checo Paredes",
+      "firmName": "MCP Tax Service LLC",
+      "candidateDisplayName": "MCP Tax Service LLC",
+      "confidenceScore": 100,
+      "phone": "(971) 255-1239",
+      "website": "https://mcptaxservice.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-017",
+      "contactName": "Trish Cheek",
+      "firmName": "Trish Cheek CPA PLLC",
+      "candidateDisplayName": "Trish Cheek CPA PLLC - Tax Service - Brevard, North Carolina",
+      "confidenceScore": 100,
+      "phone": "(828) 862-3960",
+      "email": "trish@trishcheekcpa.com",
+      "website": "https://trishcheekcpa.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-019",
+      "contactName": "Kenneth Coplen",
+      "firmName": "Swink Coplen and Company, PC",
+      "candidateDisplayName": "Swink Coplen & Company, P.C.",
+      "confidenceScore": 100,
+      "phone": "(314) 842-2001",
+      "website": "http://www.swinkcpas.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-020",
+      "contactName": "Mat Cox",
+      "firmName": "Titus CPA",
+      "candidateDisplayName": "Titus – Certified Public Accountants",
+      "confidenceScore": 100,
+      "phone": "(205) 870-3158",
+      "email": "contact@tituscpa.com",
+      "website": "https://tituscpa.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-021",
+      "contactName": "Anthony Cucciniello",
+      "firmName": "Anthony Cucciniello CPA LLC",
+      "candidateDisplayName": "Anthony J. Cucciniello, CPA",
+      "confidenceScore": 100,
+      "phone": "(973) 214-7909",
+      "website": "http://ajc-cpa.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-022",
+      "contactName": "Marie Cutlip",
+      "firmName": "Better Financial Solutions",
+      "candidateDisplayName": "betterfinancialsolutions.com",
+      "confidenceScore": 100,
+      "phone": "(260) 630-0015",
+      "website": "https://betterfinancialsolutions.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false,
+      "overrideReason": "domain words match firm name; suspicious flag treated as false positive"
+    },
+    {
+      "leadId": "aicpa-025",
+      "contactName": "Mark Diehl",
+      "firmName": "Diehl CPA LLC",
+      "candidateDisplayName": "Diehl & Company, Inc.",
+      "confidenceScore": 100,
+      "phone": "(949) 250-1400",
+      "website": "https://www.griffithsdiehl.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-026",
+      "contactName": "Jen Diehl",
+      "firmName": "JRD Financials",
+      "candidateDisplayName": "JRD FINANCIALS | Streamline Your Business Finances",
+      "confidenceScore": 100,
+      "phone": "(745) 857-8635",
+      "email": "jen@jrdfinancials.com",
+      "website": "https://www.jrdfinancials.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-027",
+      "contactName": "Sean Duffy",
+      "firmName": "Sean F. Duffy CPA",
+      "candidateDisplayName": "Camarillo, CA Accounting Firm | Home Page | Sean F Duffy CPA",
+      "confidenceScore": 100,
+      "phone": "(805) 445-8383",
+      "email": "sean@happycpa.com",
+      "website": "https://www.seanduffy.cpa",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-028",
+      "contactName": "Tom Duncan",
+      "firmName": "Vision Capital Partners",
+      "candidateDisplayName": "Vision Capital Partners: Financial Planning & Portfolio Management",
+      "confidenceScore": 100,
+      "phone": "(734) 356-3250",
+      "email": "info@myvcp.com",
+      "website": "https://www.visioncapitalpartners.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-029",
+      "contactName": "Rachel Ellis",
+      "firmName": "Ellis CPA LLC",
+      "candidateDisplayName": "Ellis & Ellis CPAs, Inc.",
+      "confidenceScore": 100,
+      "phone": "(626) 577-4404",
+      "website": "http://www.ellisandelliscpas.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-030",
+      "contactName": "Bobbie Fontenot",
+      "firmName": "Bobbie L Fontenot, CPA",
+      "candidateDisplayName": "Bobbie L. Fontenot, CPA | Tax Preparer in Richmond, TX",
+      "confidenceScore": 72,
+      "phone": "(713) 898-2453",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-031",
+      "contactName": "Randall Franklin",
+      "firmName": "Franklin Wealth Management Inc",
+      "candidateDisplayName": "Financial Consulting Firm | Franklin Financial Group",
+      "confidenceScore": 80,
+      "phone": "(270) 875-4640",
+      "email": "randy@franklinwealthmanagement.com",
+      "website": "https://www.franklinwealthmanagement.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false,
+      "overrideReason": "domain words match firm name; suspicious flag treated as false positive"
+    },
+    {
+      "leadId": "aicpa-033",
+      "contactName": "Marc Friedman",
+      "firmName": "Friedman and Associates, P.A.",
+      "candidateDisplayName": "Friedman & Associates Pa",
+      "confidenceScore": 100,
+      "phone": "(410) 653-2456",
+      "website": "https://friedmancpa.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-035",
+      "contactName": "Amanda Garcia",
+      "firmName": "Amanda Garcia LLC",
+      "candidateDisplayName": "Home | Amanda Garcia, LLC",
+      "confidenceScore": 100,
+      "phone": "(413) 330-9614",
+      "email": "amanda@garciacpallc.com",
+      "website": "https://garciacpallc.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-036",
+      "contactName": "Dennis Gardiner",
+      "firmName": "Gardiner + Company CPAs",
+      "candidateDisplayName": "GARDINER + COMPANY CPAs",
+      "confidenceScore": 100,
+      "phone": "(515) 270-1446",
+      "website": "http://www.gardinercpa.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-037",
+      "contactName": "Angie Grissom",
+      "firmName": "The Rainmaker Companies",
+      "candidateDisplayName": "Rainmaker",
+      "confidenceScore": 100,
+      "phone": "(615) 208-3170",
+      "website": "https://therainmakercompanies.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-038",
+      "contactName": "Dave Hamilton",
+      "firmName": "Riverview Tax & Accounting Inc",
+      "candidateDisplayName": "Riverview Tax & Accounting",
+      "confidenceScore": 100,
+      "phone": "(813) 672-8297",
+      "website": "http://riverviewtaxcpa.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-039",
+      "contactName": "Chris Hervochon",
+      "firmName": "Better Numbers",
+      "candidateDisplayName": "Better Numbers: Accounting for growth minded entrepreneurs",
+      "confidenceScore": 100,
+      "phone": "(843) 608-0298",
+      "email": "info@betternumbers.cpa",
+      "website": "https://betternumbers.cpa",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-040",
+      "contactName": "Victor Hess",
+      "firmName": "Buttonwood Advisors, LLC",
+      "candidateDisplayName": "Contact Us - Buttonwood Financial Advisors",
+      "confidenceScore": 72,
+      "phone": "(410) 988-2391",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-042",
+      "contactName": "Ricky Huey",
+      "firmName": "HRH Accountancy Corporation",
+      "candidateDisplayName": "HRH Accountancy Corporation",
+      "confidenceScore": 100,
+      "phone": "(415) 788-3351",
+      "website": "http://www.hrhaccountants.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-043",
+      "contactName": "Jon Hussey",
+      "firmName": "Central Maine Tax & Accounting",
+      "candidateDisplayName": "Central Maine Accounting & Tax Services",
+      "confidenceScore": 100,
+      "phone": "(207) 724-7300",
+      "website": "http://centralmaineaccounting.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-044",
+      "contactName": "Clifford Isara",
+      "firmName": "Clifford Isara CPA LLC",
+      "candidateDisplayName": "Contact Us - Clifford Isara CPA",
+      "confidenceScore": 72,
+      "phone": "(808) 597-1337",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-046",
+      "contactName": "Quentin Johns",
+      "firmName": "The Peoples CFO",
+      "candidateDisplayName": "Peoples Choice Tax & Accounting",
+      "confidenceScore": 100,
+      "phone": "(949) 939-3861",
+      "website": "https://www.pctaxservice.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-047",
+      "contactName": "Punit Joshi",
+      "firmName": "A & P Accountancy Corporation",
+      "candidateDisplayName": "A & P Accountancy Corporation",
+      "confidenceScore": 100,
+      "phone": "(818) 347-9167",
+      "website": "http://www.apaccountants.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-049",
+      "contactName": "Tony Khait",
+      "firmName": "Eco-Tax Inc",
+      "candidateDisplayName": "Eco-Tax, Inc.",
+      "confidenceScore": 100,
+      "phone": "(347) 673-6360",
+      "website": "https://eco-tax.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-050",
+      "contactName": "Ruth King",
+      "firmName": "Financially Fit Business, LLC",
+      "candidateDisplayName": "Financially Fit Business | Smart Financial Tracking Software",
+      "confidenceScore": 100,
+      "phone": "(470) 784-0950",
+      "email": "support@financiallyfit.business",
+      "website": "https://financiallyfit.business",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-051",
+      "contactName": "Kimberly Kollmeyer",
+      "firmName": "Kollmeyer & Company, LLC",
+      "candidateDisplayName": "Kollmeyer & Co LLC, Certified Public Accountants",
+      "confidenceScore": 100,
+      "phone": "(417) 881-9393",
+      "website": "https://kcocpa.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-052",
+      "contactName": "Gregory Kollmeyer",
+      "firmName": "Kollmeyer & Company, LLC",
+      "candidateDisplayName": "Kollmeyer & Co LLC, Certified Public Accountants",
+      "confidenceScore": 100,
+      "phone": "(417) 881-9393",
+      "website": "https://kcocpa.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-053",
+      "contactName": "Pascal Kornfuehrer",
+      "firmName": "P5 Edge LLC",
+      "candidateDisplayName": "Contact - The O&P EDGE Magazine",
+      "confidenceScore": 90,
+      "phone": "(866) 613-0257",
+      "email": "info@opedge.com",
+      "website": "https://opedge.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-054",
+      "contactName": "David Kushner",
+      "firmName": "Kushner LaGraize, LLC",
+      "candidateDisplayName": "Kushner LaGraize LLC",
+      "confidenceScore": 100,
+      "phone": "(504) 838-9991",
+      "website": "https://kl.cpa/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-055",
+      "contactName": "John Lee",
+      "firmName": "John S. Lee, CPA",
+      "candidateDisplayName": "Certified Public Accountant in Liberal, KS | John Lee Accounting & Tax",
+      "confidenceScore": 85,
+      "phone": "(620) 655-4070",
+      "email": "john@johnleeaccounting.com",
+      "website": "https://johnleeaccounting.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-056",
+      "contactName": "Christian Leron",
+      "firmName": "Leron CPA",
+      "candidateDisplayName": "Leron CPA | Tax & Accounting Services in Reno, NV",
+      "confidenceScore": 100,
+      "phone": "(775) 240-4805",
+      "email": "emailchris@leroncpa.com",
+      "website": "https://leroncpa.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-057",
+      "contactName": "Sam Liang",
+      "firmName": "Tax Fitness LLC",
+      "candidateDisplayName": "Tax Fitness Solutions",
+      "confidenceScore": 85,
+      "phone": "(833) 331-6688",
+      "email": "support@taxfitness.com",
+      "website": "https://www.taxfitness.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-058",
+      "contactName": "Brenda K Lowe",
+      "firmName": "Brenda K Lowe CPA LLC",
+      "candidateDisplayName": "Brenda K. Lowe CPA LLC",
+      "confidenceScore": 100,
+      "phone": "(612) 419-9769",
+      "email": "brenda@brendalowecpa.com",
+      "website": "http://brendalowecpa.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-059",
+      "contactName": "Jason Lucio",
+      "firmName": "Jason Lucio, CPA",
+      "candidateDisplayName": "Jason Lucio Email & Phone Number | Certified Public Accountant",
+      "confidenceScore": 72,
+      "phone": "(512) 736-8995",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-061",
+      "contactName": "Nancy McClelland",
+      "firmName": "The Dancing Accountant",
+      "candidateDisplayName": "The Dancing Accountant | Accounting Services for Small Businesses",
+      "confidenceScore": 100,
+      "email": "nancy@thedancingaccountant.com",
+      "website": "https://www.thedancingaccountant.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-062",
+      "contactName": "Dennis McNamara",
+      "firmName": "wHealth Advisors",
+      "candidateDisplayName": "wHealth Advisors",
+      "confidenceScore": 100,
+      "phone": "(732) 852-5089",
+      "website": "http://whealthfa.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-065",
+      "contactName": "Quinn Miller",
+      "firmName": "Harmony CPA Consulting LLC",
+      "candidateDisplayName": "Home - HARMONY & COMPANY",
+      "confidenceScore": 72,
+      "phone": "(718) 206-1518",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-066",
+      "contactName": "Daniel Moore",
+      "firmName": "D.T. Moore & Company",
+      "candidateDisplayName": "D. T. Moore and Company, LLC",
+      "confidenceScore": 100,
+      "phone": "(330) 332-5336",
+      "website": "http://www.dtmooreandcompany.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-067",
+      "contactName": "David Morales",
+      "firmName": "Gowland, Morales & Smith, PLLC",
+      "candidateDisplayName": "Contact Us | Gowland, Morales, & Smith | CPAs",
+      "confidenceScore": 72,
+      "phone": "(361) 993-1000",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-069",
+      "contactName": "John Munley",
+      "firmName": "wHealth Advisors",
+      "candidateDisplayName": "Contact - wHealth Advisors - Financially Fit For Life",
+      "confidenceScore": 72,
+      "phone": "(732) 852-5089",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-071",
+      "contactName": "Adam Necelis",
+      "firmName": "Adam R Necelis CPA LLC",
+      "candidateDisplayName": "Adam R. Necelis CPA LLC of New Castle, Delaware - official website | WilmingtonDelawareDirect.us",
+      "confidenceScore": 100,
+      "phone": "(866) 445-9004",
+      "website": "https://adam-r-necelis-cpa-llc.wilmingtondelawaredirect.us",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-072",
+      "contactName": "David Nolan",
+      "firmName": "Nolan & Associates",
+      "candidateDisplayName": "Nolan & Associates, Inc.",
+      "confidenceScore": 95,
+      "phone": "(812) 849-4442",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-073",
+      "contactName": "Hope Nolan",
+      "firmName": "Nolan & Associates",
+      "candidateDisplayName": "Nolan & Associates",
+      "confidenceScore": 90,
+      "phone": "(689) 594-5877",
+      "email": "office@nolan.ie",
+      "website": "https://www.nolanassociates.ie",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-075",
+      "contactName": "Neha Pabla",
+      "firmName": "Pabla Tax CPA",
+      "confidenceScore": 100,
+      "phone": "(780) 466-7898",
+      "email": "taxcanada.org@gmail.com",
+      "website": "https://pablastax.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-076",
+      "contactName": "Pamela Parks",
+      "firmName": "Ulbricht Public Accounting LLC",
+      "candidateDisplayName": "Ulbricht Public Accounting LLC",
+      "confidenceScore": 100,
+      "phone": "(503) 738-7282",
+      "website": "http://www.ulbrichtllc.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-078",
+      "contactName": "Brannon Poe",
+      "firmName": "Poe Group Advisors",
+      "candidateDisplayName": "Accounting Practice Sales - Buy or Sell | Poe Group Advisors",
+      "confidenceScore": 100,
+      "phone": "(888) 246-0974",
+      "email": "info@poegroupadvisors.com",
+      "website": "https://poegroupadvisors.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-079",
+      "contactName": "Ajith Prabhu",
+      "firmName": "V Care Accounting Inc",
+      "candidateDisplayName": "V Care Accounting | Orlando, FL | 850-533-6765",
+      "confidenceScore": 100,
+      "phone": "(447) 202-6052",
+      "email": "ajith.vcare@gmail.com",
+      "website": "https://vcareaccounting.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-081",
+      "contactName": "Kathleen Rehl",
+      "firmName": "RFA",
+      "candidateDisplayName": "RFA Financial Center / Office of Ricardo F Alvarez EA",
+      "confidenceScore": 100,
+      "phone": "(619) 429-1849",
+      "website": "http://www.rfafinancialcenter.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-082",
+      "contactName": "Gwendolyn Reilly",
+      "firmName": "Gwendolyn M Reilly CPA PLLC",
+      "candidateDisplayName": "Gwendolyn M. Reilly, CPA, PLLC",
+      "confidenceScore": 100,
+      "phone": "(919) 428-9857",
+      "website": "https://gmreillycpa.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-083",
+      "contactName": "Robert Riley",
+      "firmName": "Isler Northwest LLC",
+      "candidateDisplayName": "Isler Northwest LLC",
+      "confidenceScore": 100,
+      "phone": "(503) 224-5321",
+      "website": "http://www.islernw.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-084",
+      "contactName": "Elizabeth Rodrigues",
+      "firmName": "Elizabeth CPA, Inc",
+      "candidateDisplayName": "Elizabeth A. Curtis, EA",
+      "confidenceScore": 100,
+      "phone": "(707) 978-5902",
+      "website": "http://www.curtis-ea.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-085",
+      "contactName": "Dominic Rosa",
+      "firmName": "KBCA, LLC",
+      "confidenceScore": 100,
+      "phone": "(775) 885-8847",
+      "email": "info@kbcallc.com",
+      "website": "https://kbcallc.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-087",
+      "contactName": "James Saulnier",
+      "firmName": "Jim Saulnier & Associates",
+      "candidateDisplayName": "Jim Saulnier and Associates",
+      "confidenceScore": 100,
+      "phone": "(970) 530-0556",
+      "website": "http://www.jimhelps.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-089",
+      "contactName": "Rahul Sharma",
+      "firmName": "RS Dental CPA",
+      "candidateDisplayName": "Dental CPA Accounting and Tax – Dental CPA Firm",
+      "confidenceScore": 100,
+      "phone": "(860) 578-4283",
+      "email": "info@rsdentalcpa.com",
+      "website": "https://rsdentalcpa.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-090",
+      "contactName": "Dawna Shelley",
+      "firmName": "Dawna Shelley CPA PC",
+      "candidateDisplayName": "Accounting | Dawna Shelley CPA | Salt Lake City",
+      "confidenceScore": 85,
+      "phone": "(782) 219-0632",
+      "email": "605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com",
+      "website": "https://www.dawnashelleycpa.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-091",
+      "contactName": "Richard Smith",
+      "firmName": "R.P. Smith, CPA PC",
+      "candidateDisplayName": "RP Smith CPA PC",
+      "confidenceScore": 100,
+      "phone": "(503) 831-1415",
+      "email": "rick@rpsmithcpa.com",
+      "website": "https://www.rpsmithcpa.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-092",
+      "contactName": "Enya Spicer",
+      "firmName": "Enya Business",
+      "confidenceScore": 90,
+      "phone": "(782) 694-4014",
+      "email": "enya@enyabusiness.com",
+      "website": "https://www.enyabusiness.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-093",
+      "contactName": "Jason Staats",
+      "firmName": "Jason on Firms",
+      "candidateDisplayName": "Jason On Firms",
+      "confidenceScore": 100,
+      "phone": "(782) 742-8988",
+      "website": "https://www.jasononfirms.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-094",
+      "contactName": "Jesse Stacy",
+      "firmName": "JCS Retirement Tax Advisors",
+      "candidateDisplayName": "JCS Retirement Tax Advisors | Optimize Your Retirement Now",
+      "confidenceScore": 100,
+      "phone": "(777) 576-6292",
+      "website": "https://www.jcsretirementtaxadvisors.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-096",
+      "contactName": "Susan Tenney",
+      "firmName": "Susan Tenney CPA",
+      "candidateDisplayName": "Susan Tenney CPA",
+      "confidenceScore": 100,
+      "phone": "(208) 734-4428",
+      "email": "83301stenneycpa@yahoo.com",
+      "website": "https://susantenneycpa.com",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-097",
+      "contactName": "Katie Thomas",
+      "firmName": "Leaders Online",
+      "candidateDisplayName": "Contact Us | Leaders Credit Union | West Tennessee",
+      "confidenceScore": 72,
+      "phone": "(731) 664-1784",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-100",
+      "contactName": "Christy Upton",
+      "firmName": "Christy Upton CPA, PS.",
+      "candidateDisplayName": "Christy Upton CPA, PS",
+      "confidenceScore": 100,
+      "phone": "(360) 350-0859",
+      "website": "http://uptontax.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    },
+    {
+      "leadId": "aicpa-101",
+      "contactName": "Isaac Van Etten",
+      "firmName": "Van Etten Tax & Business Services",
+      "candidateDisplayName": "Van Etten Tax & Business Services",
+      "confidenceScore": 100,
+      "phone": "(279) 225-1112",
+      "website": "https://vanettentax.com/",
+      "manualLocationProtected": false,
+      "cityStateChangeAllowed": true,
+      "cityStateChangePlanned": false
+    }
+  ],
+  "excludedBelowThresholdOrSuspicious": [
+    {
+      "leadId": "aicpa-002",
+      "contactName": "Adrienne Anderson",
+      "firmName": "Anderson Accounting & Consulting",
+      "reason": "below threshold or no candidate"
+    },
+    {
+      "leadId": "aicpa-003",
+      "contactName": "Alan A.",
+      "firmName": "Unknown",
+      "reason": "below threshold or no candidate"
+    },
+    {
+      "leadId": "aicpa-006",
+      "contactName": "Jason Bisdorf",
+      "firmName": "Biz Financial, LLC",
+      "reason": "suspicious",
+      "candidateDisplayName": "Business Financial Solutions, Inc",
+      "confidenceScore": 100,
+      "phone": "(714) 983-7265",
+      "website": "https://www.yourbfs.com/"
+    },
+    {
+      "leadId": "aicpa-013",
+      "contactName": "Brandon Brown",
+      "firmName": "Redwood Consulting Group LLC",
+      "reason": "below threshold or no candidate"
+    },
+    {
+      "leadId": "aicpa-018",
+      "contactName": "Mark C.",
+      "firmName": "Unknown",
+      "reason": "below threshold or no candidate"
+    },
+    {
+      "leadId": "aicpa-023",
+      "contactName": "Richard Davis",
+      "firmName": "Richard A Davis, CPA",
+      "reason": "below threshold or no candidate"
+    },
+    {
+      "leadId": "aicpa-024",
+      "contactName": "Terrance D.",
+      "firmName": "Unknown",
+      "reason": "below threshold or no candidate"
+    },
+    {
+      "leadId": "aicpa-032",
+      "contactName": "Robert Franzen",
+      "firmName": "Robert M Franzen, CPA",
+      "reason": "below threshold or no candidate"
+    },
+    {
+      "leadId": "aicpa-034",
+      "contactName": "David Fritch",
+      "firmName": "David P. Fritch CPA, PC",
+      "reason": "below threshold or no candidate"
+    },
+    {
+      "leadId": "aicpa-041",
+      "contactName": "Trevor H.",
+      "firmName": "Unknown",
+      "reason": "below threshold or no candidate"
+    },
+    {
+      "leadId": "aicpa-045",
+      "contactName": "Jeffrey J.",
+      "firmName": "Unknown",
+      "reason": "below threshold or no candidate"
+    },
+    {
+      "leadId": "aicpa-048",
+      "contactName": "Carol Keane",
+      "firmName": "Carol Keane & Associates, CPAs",
+      "reason": "below threshold or no candidate"
+    },
+    {
+      "leadId": "aicpa-060",
+      "contactName": "Paola Martinez",
+      "firmName": "CPA Tax Adviser",
+      "reason": "suspicious",
+      "candidateDisplayName": "Tampa Bay, Florida CPA",
+      "confidenceScore": 100,
+      "phone": "(727) 753-9433",
+      "email": "contactadmin@procpa.net",
+      "website": "https://www.cpataxadviser.net"
+    },
+    {
+      "leadId": "aicpa-063",
+      "contactName": "David Meyrowitz",
+      "firmName": "David Meyrowitz Consultant",
+      "reason": "below threshold or no candidate",
+      "candidateDisplayName": "David H. Meyrowitz - New York, NY - FindLaw Lawyer Directory",
+      "confidenceScore": 65,
+      "phone": "(212) 686-3300"
+    },
+    {
+      "leadId": "aicpa-064",
+      "contactName": "Rick Miller",
+      "firmName": "Compass Private Wealth Consulting",
+      "reason": "below threshold or no candidate"
+    },
+    {
+      "leadId": "aicpa-068",
+      "contactName": "Daniel M.",
+      "firmName": "Unknown",
+      "reason": "below threshold or no candidate"
+    },
+    {
+      "leadId": "aicpa-070",
+      "contactName": "William Mutschler",
+      "firmName": "W Andrew Mutschler, CPA",
+      "reason": "below threshold or no candidate"
+    },
+    {
+      "leadId": "aicpa-074",
+      "contactName": "Terri O.",
+      "firmName": "Unknown",
+      "reason": "below threshold or no candidate"
+    },
+    {
+      "leadId": "aicpa-077",
+      "contactName": "Michelle Pierson",
+      "firmName": "PIE CPA, PLLC",
+      "reason": "suspicious",
+      "candidateDisplayName": "Pi PLLC",
+      "confidenceScore": 100,
+      "phone": "(281) 846-5688",
+      "website": "https://annapicpa.taxdome.com/"
+    },
+    {
+      "leadId": "aicpa-080",
+      "contactName": "Marjorie R.",
+      "firmName": "Unknown",
+      "reason": "below threshold or no candidate"
+    },
+    {
+      "leadId": "aicpa-086",
+      "contactName": "Roberta R.",
+      "firmName": "Unknown",
+      "reason": "below threshold or no candidate"
+    },
+    {
+      "leadId": "aicpa-088",
+      "contactName": "Mark Seid",
+      "firmName": "Mark F Seid, CPA EA USTCP",
+      "reason": "below threshold or no candidate"
+    },
+    {
+      "leadId": "aicpa-095",
+      "contactName": "Kimberly T.",
+      "firmName": "Unknown",
+      "reason": "below threshold or no candidate"
+    },
+    {
+      "leadId": "aicpa-098",
+      "contactName": "Thomas Tomaszewski",
+      "firmName": "Thomas Tomaszewski CPA",
+      "reason": "below threshold or no candidate"
+    },
+    {
+      "leadId": "aicpa-099",
+      "contactName": "Christina Turpin",
+      "firmName": "Abacus Financial Services",
+      "reason": "below threshold or no candidate"
+    },
+    {
+      "leadId": "aicpa-005",
+      "contactName": "Evan Benevento",
+      "firmName": "Evan I. Benevento, CPA",
+      "reason": "unresolved middle-initial mismatch; evanjcpa.com returned 403 from this environment",
+      "candidateDisplayName": "Evan J. Benevento, CPA",
+      "confidenceScore": 100,
+      "phone": "(831) 920-5273",
+      "website": "https://evanjcpa.com/"
+    }
+  ]
+}

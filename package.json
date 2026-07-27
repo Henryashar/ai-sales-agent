@@ -6,21 +6,36 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "vitest --passWithNoTests"
+  },
+  "overrides": {
+    "postcss": "^8.5.14"
   },
   "dependencies": {
+    "@notionhq/client": "^5.21.0",
+    "@tanstack/react-table": "^8.21.3",
+    "cheerio": "^1.2.0",
+    "lucide-react": "^1.14.0",
     "next": "16.2.6",
+    "openai": "^6.37.0",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "tldts": "^7.0.30",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
+    "jsdom": "^29.1.1",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^4.1.6"
   }
 }

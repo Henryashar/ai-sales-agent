@@ -1,0 +1,19 @@
+username,full_name,job_title,company,city,state,phone,email,website,confidence,notes
+kdubin,,unknown,FFTS,Fort Collins,CO,,,, NOT_FOUND,Company name FFTS ambiguous - try FFTS Fort Collins CPA
+Abigail,,Operations Specialist,Rooted Tax,Minneapolis,MN,,,,LOW,Partial name only - search Rooted Tax Minneapolis staff
+Heidi Gouger,Heidi Gouger,Chief Operating Officer,MillerMusmar CPAs,Reston,VA,,,,HIGH,Real name confirmed - major regional firm
+AmberNash1,,Office Manager,Isler Group LLC,Corvallis,OR,,,,MEDIUM,Username suggests Amber Nash - verify
+Michelle JH,,Receptionist,Jordan Hatfield PLLC,Spokane Valley,WA,,,,MEDIUM,Partial name Michelle - search Jordan Hatfield PLLC staff
+Audrey S,,Operations Manager,Timberline Tax Group,Louisville,CO,,,,MEDIUM,Partial name Audrey - search Timberline Tax Group Louisville
+sergeih,,Ops Manager,Schaaf CPA,Westfield,NJ,,,,MEDIUM,Username suggests Sergei H - search Schaaf CPA Westfield
+StephanieMHCPA,,Office Manager,Mile High CPAs,Denver,CO,,,,MEDIUM,Username suggests Stephanie - search Mile High CPAs Denver
+Laura W,,Partner,Harker Mellinger LLC,Sheridan,WY,,,,MEDIUM,Partial name Laura - search Harker Mellinger LLC Sheridan
+DaveM,,Enrolled Agent,MT Tax,SF Peninsula,CA,,,,LOW,MT may be initials - search enrolled agent SF Peninsula CA
+agautreau,,Office Manager,Ledoux & Hankins CPAs,Baton Rouge,LA,,,,MEDIUM,Username suggests A Gautreau - search Ledoux Hankins CPAs
+kherrera,Kathleen J. Herrera,Owner,Kathleen J. Herrera CPA LLC,Omaha,NE,,,,HIGH,Full firm name matches owner name - direct lookup
+BeeHTC,,Office Administrator,HTC,Austin,TX,,,,LOW,HTC ambiguous in Austin - try HTC accounting CPA Austin
+Robin,,Tax Preparer,Zhu LLP,San Francisco,CA,,,,MEDIUM,Search Zhu LLP San Francisco staff tax preparer
+User707,,Owner,Remillard Advisors Inc,Fairfield,CA,,,,MEDIUM,Search Remillard Advisors Fairfield CA owner
+LCTrevino,,Client Service Representative,Monte R. Barnes FTC Inc,San Antonio,TX,,,,MEDIUM,Signature is Loryanna - likely Loryanna Trevino
+nikol13,,Customer Support,Intuition Financial Services LLC,New York,NY,,,,MEDIUM,Username suggests Nikol - search Intuition Financial Services NYC
+Madi_Hensley,,Client Relation Manager,Riley & Associates Ltd,Otsego,MN,,,,MEDIUM,Username suggests Madi Hensley - search Riley Associates Otsego MN

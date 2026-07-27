@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NAEA Lead Enrichment Agent
 
-## Getting Started
+Frontend-plus-API app for turning pasted NAEA directory text into Notion CRM leads, then enriching high-confidence records with public business contact data.
 
-First, run the development server:
+## Stack
+
+- Next.js App Router
+- React, TypeScript, Tailwind CSS
+- Zod for request/response validation
+- Notion SDK for CRM reads/writes
+- OpenAI SDK for structured normalization
+- Google Places REST calls for business lookup
+- Vitest for parser and dedupe tests
+
+## Local Setup
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Use `npm.cmd` instead of `npm` in PowerShell if script execution policy blocks `npm.ps1`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Environment
 
-## Learn More
+Create `.env.local` from `.env.example` and fill in:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+OPENAI_API_KEY=
+NOTION_API_KEY=
+NOTION_DATA_SOURCE_ID=
+GOOGLE_PLACES_API_KEY=
+SEARCH_API_KEY=
+AUTH_SESSION_SECRET=
+APP_ACCESS_TOKEN=
+APP_USERS_JSON=
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Keep real secrets out of Git. Only `.env.example` is intended to be committed.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+`APP_ACCESS_TOKEN` enables the lightweight sign-in screen with a shared access code. For per-user access codes, set
+`APP_USERS_JSON` to a JSON array such as:
 
-## Deploy on Vercel
+```json
+[{"name":"Henry","email":"henry@example.com","code":"personal-code"}]
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Use a long random value for `AUTH_SESSION_SECRET` in Vercel so signed-in sessions survive between requests.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Workflow
+
+1. Paste one or more NAEA directory records.
+2. Normalize the paste into structured leads.
+3. Dedupe against the Notion contact list.
+4. Enrich the insert/update candidates.
+5. Use **Export to Notion** to insert new leads and update matched Notion pages with the best available phone, email, and website fields.
+
+For Vercel, set the same environment variables in the project settings before deploying.
+
+## Verification
+
+```bash
+npm run lint
+npm run build
+npm test -- --run
+npm audit --audit-level=moderate
+```

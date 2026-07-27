@@ -1,0 +1,921 @@
+{
+  "inserted": 101,
+  "updated": 0,
+  "skipped": 0,
+  "failed": 0,
+  "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry",
+  "allOwnerLisaWhite": true,
+  "allSourceAicpa": true,
+  "allImportAuditMatched": true,
+  "records": [
+    {
+      "contactName": "Adam Aiken",
+      "firmName": "Patient, Aiken & Associates, PC",
+      "pageId": "38e1635a-d097-8163-b66f-d393fa0c99a0",
+      "url": "https://app.notion.com/p/Patient-Aiken-Associates-PC-38e1635ad0978163b66fd393fa0c99a0",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Adam Necelis",
+      "firmName": "Adam R Necelis CPA LLC",
+      "pageId": "38e1635a-d097-81a1-a1a3-d2495f5dbb50",
+      "url": "https://app.notion.com/p/Adam-R-Necelis-CPA-LLC-38e1635ad09781a1a1a3d2495f5dbb50",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Adrienne Anderson",
+      "firmName": "Anderson Accounting & Consulting",
+      "pageId": "38e1635a-d097-816c-900d-fe8fb27f8380",
+      "url": "https://app.notion.com/p/Anderson-Accounting-Consulting-38e1635ad097816c900dfe8fb27f8380",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Ajith Prabhu",
+      "firmName": "V Care Accounting Inc",
+      "pageId": "38e1635a-d097-81c5-963f-e945c8164ab9",
+      "url": "https://app.notion.com/p/V-Care-Accounting-Inc-38e1635ad09781c5963fe945c8164ab9",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Alan A.",
+      "firmName": "Unknown",
+      "pageId": "38e1635a-d097-810a-a7bd-dce525234216",
+      "url": "https://app.notion.com/p/Unknown-38e1635ad097810aa7bddce525234216",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Amanda Garcia",
+      "firmName": "Amanda Garcia LLC",
+      "pageId": "38e1635a-d097-8158-86ab-f566c14b87f5",
+      "url": "https://app.notion.com/p/Amanda-Garcia-LLC-38e1635ad097815886abf566c14b87f5",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Angie Grissom",
+      "firmName": "The Rainmaker Companies",
+      "pageId": "38e1635a-d097-810f-b94d-e6baf11780b2",
+      "url": "https://app.notion.com/p/The-Rainmaker-Companies-38e1635ad097810fb94de6baf11780b2",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Anthony Cucciniello",
+      "firmName": "Anthony Cucciniello CPA LLC",
+      "pageId": "38e1635a-d097-8105-880f-c36797404816",
+      "url": "https://app.notion.com/p/Anthony-Cucciniello-CPA-LLC-38e1635ad0978105880fc36797404816",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Bobbie Fontenot",
+      "firmName": "Bobbie L Fontenot, CPA",
+      "pageId": "38e1635a-d097-8197-a9d0-cc588bd3da6b",
+      "url": "https://app.notion.com/p/Bobbie-L-Fontenot-CPA-38e1635ad0978197a9d0cc588bd3da6b",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Brandon Brown",
+      "firmName": "Redwood Consulting Group LLC",
+      "pageId": "38e1635a-d097-816e-b86a-df2b294ed6c1",
+      "url": "https://app.notion.com/p/Redwood-Consulting-Group-LLC-38e1635ad097816eb86adf2b294ed6c1",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Brannon Poe",
+      "firmName": "Poe Group Advisors",
+      "pageId": "38e1635a-d097-81d5-b209-c058d02bdedd",
+      "url": "https://app.notion.com/p/Poe-Group-Advisors-38e1635ad09781d5b209c058d02bdedd",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Brenda K Lowe",
+      "firmName": "Brenda K Lowe CPA LLC",
+      "pageId": "38e1635a-d097-8105-9cbb-ccc412477fc1",
+      "url": "https://app.notion.com/p/Brenda-K-Lowe-CPA-LLC-38e1635ad09781059cbbccc412477fc1",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Carol Keane",
+      "firmName": "Carol Keane & Associates, CPAs",
+      "pageId": "38e1635a-d097-81ae-a168-c5f01c662088",
+      "url": "https://app.notion.com/p/Carol-Keane-Associates-CPAs-38e1635ad09781aea168c5f01c662088",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Chris Hervochon",
+      "firmName": "Better Numbers",
+      "pageId": "38e1635a-d097-8139-b507-dd4a9db8d222",
+      "url": "https://app.notion.com/p/Better-Numbers-38e1635ad0978139b507dd4a9db8d222",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Christian Leron",
+      "firmName": "Leron CPA",
+      "pageId": "38e1635a-d097-8177-8284-c348999bba66",
+      "url": "https://app.notion.com/p/Leron-CPA-38e1635ad09781778284c348999bba66",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Christina Turpin",
+      "firmName": "Abacus Financial Services",
+      "pageId": "38e1635a-d097-8155-9e28-c10b3c364e1a",
+      "url": "https://app.notion.com/p/Abacus-Financial-Services-38e1635ad09781559e28c10b3c364e1a",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Christy Upton",
+      "firmName": "Christy Upton CPA, PS.",
+      "pageId": "38e1635a-d097-814c-8d77-f7a7bbba46fe",
+      "url": "https://app.notion.com/p/Christy-Upton-CPA-PS-38e1635ad097814c8d77f7a7bbba46fe",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Clifford Isara",
+      "firmName": "Clifford Isara CPA LLC",
+      "pageId": "38e1635a-d097-81df-b9fd-eeab6db88441",
+      "url": "https://app.notion.com/p/Clifford-Isara-CPA-LLC-38e1635ad09781dfb9fdeeab6db88441",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Daniel M.",
+      "firmName": "Unknown",
+      "pageId": "38e1635a-d097-81dc-bb02-e51aa1f9e139",
+      "url": "https://app.notion.com/p/Unknown-38e1635ad09781dcbb02e51aa1f9e139",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Daniel Moore",
+      "firmName": "D.T. Moore & Company",
+      "pageId": "38e1635a-d097-8100-945e-d55abe09b235",
+      "url": "https://app.notion.com/p/D-T-Moore-Company-38e1635ad0978100945ed55abe09b235",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Dave Hamilton",
+      "firmName": "Riverview Tax & Accounting Inc",
+      "pageId": "38e1635a-d097-8106-9552-ffe47ffa9427",
+      "url": "https://app.notion.com/p/Riverview-Tax-Accounting-Inc-38e1635ad09781069552ffe47ffa9427",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "David Fritch",
+      "firmName": "David P. Fritch CPA, PC",
+      "pageId": "38e1635a-d097-8150-b4bb-d87f85ffbc63",
+      "url": "https://app.notion.com/p/David-P-Fritch-CPA-PC-38e1635ad0978150b4bbd87f85ffbc63",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "David Kushner",
+      "firmName": "Kushner LaGraize, LLC",
+      "pageId": "38e1635a-d097-81ab-8f7e-e95702f19910",
+      "url": "https://app.notion.com/p/Kushner-LaGraize-LLC-38e1635ad09781ab8f7ee95702f19910",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "David Meyrowitz",
+      "firmName": "David Meyrowitz Consultant",
+      "pageId": "38e1635a-d097-8177-8905-c12586724a21",
+      "url": "https://app.notion.com/p/David-Meyrowitz-Consultant-38e1635ad09781778905c12586724a21",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "David Morales",
+      "firmName": "Gowland, Morales & Smith, PLLC",
+      "pageId": "38e1635a-d097-81b0-b328-e56e4a85d28b",
+      "url": "https://app.notion.com/p/Gowland-Morales-Smith-PLLC-38e1635ad09781b0b328e56e4a85d28b",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "David Nolan",
+      "firmName": "Nolan & Associates",
+      "pageId": "38e1635a-d097-818f-8d29-cba714bfe192",
+      "url": "https://app.notion.com/p/Nolan-Associates-38e1635ad097818f8d29cba714bfe192",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Dawna Shelley",
+      "firmName": "Dawna Shelley CPA PC",
+      "pageId": "38e1635a-d097-814d-89f9-dbfaff935a05",
+      "url": "https://app.notion.com/p/Dawna-Shelley-CPA-PC-38e1635ad097814d89f9dbfaff935a05",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Dennis Gardiner",
+      "firmName": "Gardiner + Company CPAs",
+      "pageId": "38e1635a-d097-8122-afc7-d777e08e0d98",
+      "url": "https://app.notion.com/p/Gardiner-Company-CPAs-38e1635ad0978122afc7d777e08e0d98",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Dennis McNamara",
+      "firmName": "wHealth Advisors",
+      "pageId": "38e1635a-d097-8138-9e01-c3ab6018a774",
+      "url": "https://app.notion.com/p/wHealth-Advisors-38e1635ad09781389e01c3ab6018a774",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Dominic Rosa",
+      "firmName": "KBCA, LLC",
+      "pageId": "38e1635a-d097-813c-8bbb-f08594ba5806",
+      "url": "https://app.notion.com/p/KBCA-LLC-38e1635ad097813c8bbbf08594ba5806",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Doreen Carter",
+      "firmName": "Doreen Carter CPA, PLLC",
+      "pageId": "38e1635a-d097-81a7-8021-fe498bd0f15d",
+      "url": "https://app.notion.com/p/Doreen-Carter-CPA-PLLC-38e1635ad09781a78021fe498bd0f15d",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Elizabeth Rodrigues",
+      "firmName": "Elizabeth CPA, Inc",
+      "pageId": "38e1635a-d097-8109-ad7b-dc46cc395670",
+      "url": "https://app.notion.com/p/Elizabeth-CPA-Inc-38e1635ad0978109ad7bdc46cc395670",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Enya Spicer",
+      "firmName": "Enya Business",
+      "pageId": "38e1635a-d097-81c0-876c-d1a234fd619a",
+      "url": "https://app.notion.com/p/Enya-Business-38e1635ad09781c0876cd1a234fd619a",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Evan Benevento",
+      "firmName": "Evan I. Benevento, CPA",
+      "pageId": "38e1635a-d097-816b-904c-f1eff0fbdd6d",
+      "url": "https://app.notion.com/p/Evan-I-Benevento-CPA-38e1635ad097816b904cf1eff0fbdd6d",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Gregory Kollmeyer",
+      "firmName": "Kollmeyer & Company, LLC",
+      "pageId": "38e1635a-d097-81e1-804b-d748a4569c4d",
+      "url": "https://app.notion.com/p/Kollmeyer-Company-LLC-38e1635ad09781e1804bd748a4569c4d",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Gwendolyn Reilly",
+      "firmName": "Gwendolyn M Reilly CPA PLLC",
+      "pageId": "38e1635a-d097-8119-be57-cd24f4ebf4be",
+      "url": "https://app.notion.com/p/Gwendolyn-M-Reilly-CPA-PLLC-38e1635ad0978119be57cd24f4ebf4be",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Hope Nolan",
+      "firmName": "Nolan & Associates",
+      "pageId": "38e1635a-d097-811c-9627-f552ca902d50",
+      "url": "https://app.notion.com/p/Nolan-Associates-38e1635ad097811c9627f552ca902d50",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Isaac Van Etten",
+      "firmName": "Van Etten Tax & Business Services",
+      "pageId": "38e1635a-d097-81df-8a76-d9c33b770747",
+      "url": "https://app.notion.com/p/Van-Etten-Tax-Business-Services-38e1635ad09781df8a76d9c33b770747",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "James Saulnier",
+      "firmName": "Jim Saulnier & Associates",
+      "pageId": "38e1635a-d097-814c-a994-e912d15fee1b",
+      "url": "https://app.notion.com/p/Jim-Saulnier-Associates-38e1635ad097814ca994e912d15fee1b",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Jason Bisdorf",
+      "firmName": "Biz Financial, LLC",
+      "pageId": "38e1635a-d097-81dc-bfa4-febfa5543622",
+      "url": "https://app.notion.com/p/Biz-Financial-LLC-38e1635ad09781dcbfa4febfa5543622",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Jason Lucio",
+      "firmName": "Jason Lucio, CPA",
+      "pageId": "38e1635a-d097-81e0-aa03-e08ecd6e4b23",
+      "url": "https://app.notion.com/p/Jason-Lucio-CPA-38e1635ad09781e0aa03e08ecd6e4b23",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Jason Staats",
+      "firmName": "Jason on Firms",
+      "pageId": "38e1635a-d097-8124-9f2b-eec06b4a8c8b",
+      "url": "https://app.notion.com/p/Jason-on-Firms-38e1635ad09781249f2beec06b4a8c8b",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Jeffrey J.",
+      "firmName": "Unknown",
+      "pageId": "38e1635a-d097-81e9-be32-f4dea91de0a1",
+      "url": "https://app.notion.com/p/Unknown-38e1635ad09781e9be32f4dea91de0a1",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Jen Diehl",
+      "firmName": "JRD Financials",
+      "pageId": "38e1635a-d097-8193-9c38-f61cf3668726",
+      "url": "https://app.notion.com/p/JRD-Financials-38e1635ad09781939c38f61cf3668726",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Jesse Stacy",
+      "firmName": "JCS Retirement Tax Advisors",
+      "pageId": "38e1635a-d097-810e-8817-dd597d8badf1",
+      "url": "https://app.notion.com/p/JCS-Retirement-Tax-Advisors-38e1635ad097810e8817dd597d8badf1",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "John Lee",
+      "firmName": "John S. Lee, CPA",
+      "pageId": "38e1635a-d097-81a2-992c-ef42d8c59c05",
+      "url": "https://app.notion.com/p/John-S-Lee-CPA-38e1635ad09781a2992cef42d8c59c05",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "John Munley",
+      "firmName": "wHealth Advisors",
+      "pageId": "38e1635a-d097-8100-870a-c6c9c213cad0",
+      "url": "https://app.notion.com/p/wHealth-Advisors-38e1635ad0978100870ac6c9c213cad0",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Jon Hussey",
+      "firmName": "Central Maine Tax & Accounting",
+      "pageId": "38e1635a-d097-8137-85c1-dfa446f45bd1",
+      "url": "https://app.notion.com/p/Central-Maine-Tax-Accounting-38e1635ad097813785c1dfa446f45bd1",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Karen Brosi",
+      "firmName": "Karen Brosi, EA, CFP, a LLC",
+      "pageId": "38e1635a-d097-8185-bcf8-fd3777eb1085",
+      "url": "https://app.notion.com/p/Karen-Brosi-EA-CFP-a-LLC-38e1635ad0978185bcf8fd3777eb1085",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Kathleen Rehl",
+      "firmName": "RFA",
+      "pageId": "38e1635a-d097-81ac-9b95-fd8197a2ff16",
+      "url": "https://app.notion.com/p/RFA-38e1635ad09781ac9b95fd8197a2ff16",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Katie Thomas",
+      "firmName": "Leaders Online",
+      "pageId": "38e1635a-d097-8119-9522-dff9646f26a6",
+      "url": "https://app.notion.com/p/Leaders-Online-38e1635ad09781199522dff9646f26a6",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Kenneth Coplen",
+      "firmName": "Swink Coplen and Company, PC",
+      "pageId": "38e1635a-d097-8115-a249-f399d8285135",
+      "url": "https://app.notion.com/p/Swink-Coplen-and-Company-PC-38e1635ad0978115a249f399d8285135",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Kerri Buckley",
+      "firmName": "The Buckley Insurance Group",
+      "pageId": "38e1635a-d097-8186-b878-e8c3e8c7bfa6",
+      "url": "https://app.notion.com/p/The-Buckley-Insurance-Group-38e1635ad0978186b878e8c3e8c7bfa6",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Kimberly Kollmeyer",
+      "firmName": "Kollmeyer & Company, LLC",
+      "pageId": "38e1635a-d097-81f7-8cfb-d603e5cc78b1",
+      "url": "https://app.notion.com/p/Kollmeyer-Company-LLC-38e1635ad09781f78cfbd603e5cc78b1",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Kimberly T.",
+      "firmName": "Unknown",
+      "pageId": "38e1635a-d097-8182-acb4-dc0805109952",
+      "url": "https://app.notion.com/p/Unknown-38e1635ad0978182acb4dc0805109952",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Lora Broberg",
+      "firmName": "Viking Solutions LLC",
+      "pageId": "38e1635a-d097-81d3-a449-f83ca8ab83fd",
+      "url": "https://app.notion.com/p/Viking-Solutions-LLC-38e1635ad09781d3a449f83ca8ab83fd",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Manuel R Checo Paredes",
+      "firmName": "MCP Tax Service LLC",
+      "pageId": "38e1635a-d097-81e3-8fbb-d8de34d1b055",
+      "url": "https://app.notion.com/p/MCP-Tax-Service-LLC-38e1635ad09781e38fbbd8de34d1b055",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Marc Friedman",
+      "firmName": "Friedman and Associates, P.A.",
+      "pageId": "38e1635a-d097-812c-b6ca-d553748d47a8",
+      "url": "https://app.notion.com/p/Friedman-and-Associates-P-A-38e1635ad097812cb6cad553748d47a8",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Marie Cutlip",
+      "firmName": "Better Financial Solutions",
+      "pageId": "38e1635a-d097-8148-a522-c1af6d56efbf",
+      "url": "https://app.notion.com/p/Better-Financial-Solutions-38e1635ad0978148a522c1af6d56efbf",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Marjorie R.",
+      "firmName": "Unknown",
+      "pageId": "38e1635a-d097-81a1-a95d-ee51de4ed7d2",
+      "url": "https://app.notion.com/p/Unknown-38e1635ad09781a1a95dee51de4ed7d2",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Mark C.",
+      "firmName": "Unknown",
+      "pageId": "38e1635a-d097-811d-9620-d821dba440f8",
+      "url": "https://app.notion.com/p/Unknown-38e1635ad097811d9620d821dba440f8",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Mark Diehl",
+      "firmName": "Diehl CPA LLC",
+      "pageId": "38e1635a-d097-814e-aedc-e4deb6c38b72",
+      "url": "https://app.notion.com/p/Diehl-CPA-LLC-38e1635ad097814eaedce4deb6c38b72",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Mark Seid",
+      "firmName": "Mark F Seid, CPA EA USTCP",
+      "pageId": "38e1635a-d097-818c-a74a-c921f174b901",
+      "url": "https://app.notion.com/p/Mark-F-Seid-CPA-EA-USTCP-38e1635ad097818ca74ac921f174b901",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Mat Cox",
+      "firmName": "Titus CPA",
+      "pageId": "38e1635a-d097-81ea-ae6b-c511b7114b3d",
+      "url": "https://app.notion.com/p/Titus-CPA-38e1635ad09781eaae6bc511b7114b3d",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Matthew Bispeck",
+      "firmName": "Haffner & Associates LLC",
+      "pageId": "38e1635a-d097-8135-859d-d3831b256224",
+      "url": "https://app.notion.com/p/Haffner-Associates-LLC-38e1635ad0978135859dd3831b256224",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Michelle Pierson",
+      "firmName": "PIE CPA, PLLC",
+      "pageId": "38e1635a-d097-812d-ac8b-d6ca181fa1c8",
+      "url": "https://app.notion.com/p/PIE-CPA-PLLC-38e1635ad097812dac8bd6ca181fa1c8",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Nancy McClelland",
+      "firmName": "The Dancing Accountant",
+      "pageId": "38e1635a-d097-8161-af53-fe063f7e9c61",
+      "url": "https://app.notion.com/p/The-Dancing-Accountant-38e1635ad0978161af53fe063f7e9c61",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Neha Pabla",
+      "firmName": "Pabla Tax CPA",
+      "pageId": "38e1635a-d097-8163-b3d4-f2339ee3cab2",
+      "url": "https://app.notion.com/p/Pabla-Tax-CPA-38e1635ad0978163b3d4f2339ee3cab2",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Pamela Parks",
+      "firmName": "Ulbricht Public Accounting LLC",
+      "pageId": "38e1635a-d097-810f-9210-dd34aad7e333",
+      "url": "https://app.notion.com/p/Ulbricht-Public-Accounting-LLC-38e1635ad097810f9210dd34aad7e333",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Paola Martinez",
+      "firmName": "CPA Tax Adviser",
+      "pageId": "38e1635a-d097-8160-b7ac-ce8d28c1903f",
+      "url": "https://app.notion.com/p/CPA-Tax-Adviser-38e1635ad0978160b7acce8d28c1903f",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Pascal Kornfuehrer",
+      "firmName": "P5 Edge LLC",
+      "pageId": "38e1635a-d097-8191-8e2d-d637be2cde1b",
+      "url": "https://app.notion.com/p/P5-Edge-LLC-38e1635ad09781918e2dd637be2cde1b",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Punit Joshi",
+      "firmName": "A & P Accountancy Corporation",
+      "pageId": "38e1635a-d097-8195-95b8-f690aa7cc4b2",
+      "url": "https://app.notion.com/p/A-P-Accountancy-Corporation-38e1635ad097819595b8f690aa7cc4b2",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Quentin Johns",
+      "firmName": "The Peoples CFO",
+      "pageId": "38e1635a-d097-81dc-9420-c0c01dd3349e",
+      "url": "https://app.notion.com/p/The-Peoples-CFO-38e1635ad09781dc9420c0c01dd3349e",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Quinn Miller",
+      "firmName": "Harmony CPA Consulting LLC",
+      "pageId": "38e1635a-d097-811b-b8cb-c889f7de9807",
+      "url": "https://app.notion.com/p/Harmony-CPA-Consulting-LLC-38e1635ad097811bb8cbc889f7de9807",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Rachel Ellis",
+      "firmName": "Ellis CPA LLC",
+      "pageId": "38e1635a-d097-81cc-ac41-fc9d8ba77d7e",
+      "url": "https://app.notion.com/p/Ellis-CPA-LLC-38e1635ad09781ccac41fc9d8ba77d7e",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Rahul Sharma",
+      "firmName": "RS Dental CPA",
+      "pageId": "38e1635a-d097-81dc-8ea6-e87c2d7bd42e",
+      "url": "https://app.notion.com/p/RS-Dental-CPA-38e1635ad09781dc8ea6e87c2d7bd42e",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Randall Franklin",
+      "firmName": "Franklin Wealth Management Inc",
+      "pageId": "38e1635a-d097-81fc-91aa-dd586a651863",
+      "url": "https://app.notion.com/p/Franklin-Wealth-Management-Inc-38e1635ad09781fc91aadd586a651863",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Richard Davis",
+      "firmName": "Richard A Davis, CPA",
+      "pageId": "38e1635a-d097-81a5-8c42-e61feac558e4",
+      "url": "https://app.notion.com/p/Richard-A-Davis-CPA-38e1635ad09781a58c42e61feac558e4",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Richard Smith",
+      "firmName": "R.P. Smith, CPA PC",
+      "pageId": "38e1635a-d097-8150-8c03-d0ea4d69f42e",
+      "url": "https://app.notion.com/p/R-P-Smith-CPA-PC-38e1635ad09781508c03d0ea4d69f42e",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Rick Miller",
+      "firmName": "Compass Private Wealth Consulting",
+      "pageId": "38e1635a-d097-8115-a935-ed4a5a099e9f",
+      "url": "https://app.notion.com/p/Compass-Private-Wealth-Consulting-38e1635ad0978115a935ed4a5a099e9f",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Ricky Huey",
+      "firmName": "HRH Accountancy Corporation",
+      "pageId": "38e1635a-d097-816a-97cb-c29e68e41d40",
+      "url": "https://app.notion.com/p/HRH-Accountancy-Corporation-38e1635ad097816a97cbc29e68e41d40",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Robert Franzen",
+      "firmName": "Robert M Franzen, CPA",
+      "pageId": "38e1635a-d097-81e8-a99d-cf90dcee8eed",
+      "url": "https://app.notion.com/p/Robert-M-Franzen-CPA-38e1635ad09781e8a99dcf90dcee8eed",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Robert Riley",
+      "firmName": "Isler Northwest LLC",
+      "pageId": "38e1635a-d097-81b2-bc88-f8e1fd613787",
+      "url": "https://app.notion.com/p/Isler-Northwest-LLC-38e1635ad09781b2bc88f8e1fd613787",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Roberta R.",
+      "firmName": "Unknown",
+      "pageId": "38e1635a-d097-81b4-8762-f043ffeae3da",
+      "url": "https://app.notion.com/p/Unknown-38e1635ad09781b48762f043ffeae3da",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Ruth King",
+      "firmName": "Financially Fit Business, LLC",
+      "pageId": "38e1635a-d097-813f-adb2-e936ccc856e3",
+      "url": "https://app.notion.com/p/Financially-Fit-Business-LLC-38e1635ad097813fadb2e936ccc856e3",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Sam Bellman",
+      "firmName": "Titus CPAs",
+      "pageId": "38e1635a-d097-81b1-994e-d762b1905bcf",
+      "url": "https://app.notion.com/p/Titus-CPAs-38e1635ad09781b1994ed762b1905bcf",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Sam Liang",
+      "firmName": "Tax Fitness LLC",
+      "pageId": "38e1635a-d097-8134-b5ba-c9cf4115d7e1",
+      "url": "https://app.notion.com/p/Tax-Fitness-LLC-38e1635ad0978134b5bac9cf4115d7e1",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Sean Duffy",
+      "firmName": "Sean F. Duffy CPA",
+      "pageId": "38e1635a-d097-8150-bd13-e002a8084743",
+      "url": "https://app.notion.com/p/Sean-F-Duffy-CPA-38e1635ad0978150bd13e002a8084743",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Susan Tenney",
+      "firmName": "Susan Tenney CPA",
+      "pageId": "38e1635a-d097-81df-b924-ce4d46e430a6",
+      "url": "https://app.notion.com/p/Susan-Tenney-CPA-38e1635ad09781dfb924ce4d46e430a6",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Suzanne Briel",
+      "firmName": "Bobst & Briel CPAs, Inc",
+      "pageId": "38e1635a-d097-81ef-adaa-ea49358ac4a6",
+      "url": "https://app.notion.com/p/Bobst-Briel-CPAs-Inc-38e1635ad09781efadaaea49358ac4a6",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Terrance D.",
+      "firmName": "Unknown",
+      "pageId": "38e1635a-d097-81eb-9a2d-c1e39713cca3",
+      "url": "https://app.notion.com/p/Unknown-38e1635ad09781eb9a2dc1e39713cca3",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Terri O.",
+      "firmName": "Unknown",
+      "pageId": "38e1635a-d097-81d1-a1d7-c357105cf5cb",
+      "url": "https://app.notion.com/p/Unknown-38e1635ad09781d1a1d7c357105cf5cb",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Thomas Tomaszewski",
+      "firmName": "Thomas Tomaszewski CPA",
+      "pageId": "38e1635a-d097-8134-aff5-e158d3c00e77",
+      "url": "https://app.notion.com/p/Thomas-Tomaszewski-CPA-38e1635ad0978134aff5e158d3c00e77",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Tom Duncan",
+      "firmName": "Vision Capital Partners",
+      "pageId": "38e1635a-d097-81aa-b1e1-dc8200082bae",
+      "url": "https://app.notion.com/p/Vision-Capital-Partners-38e1635ad09781aab1e1dc8200082bae",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Tony Khait",
+      "firmName": "Eco-Tax Inc",
+      "pageId": "38e1635a-d097-818e-8bcf-ce204d0152eb",
+      "url": "https://app.notion.com/p/Eco-Tax-Inc-38e1635ad097818e8bcfce204d0152eb",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Trevor H.",
+      "firmName": "Unknown",
+      "pageId": "38e1635a-d097-81ed-9e54-c7a328b635ce",
+      "url": "https://app.notion.com/p/Unknown-38e1635ad09781ed9e54c7a328b635ce",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Trish Cheek",
+      "firmName": "Trish Cheek CPA PLLC",
+      "pageId": "38e1635a-d097-8147-bce8-dd55fd9994ee",
+      "url": "https://app.notion.com/p/Trish-Cheek-CPA-PLLC-38e1635ad0978147bce8dd55fd9994ee",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Victor Hess",
+      "firmName": "Buttonwood Advisors, LLC",
+      "pageId": "38e1635a-d097-813e-b376-f1e31c2a42bd",
+      "url": "https://app.notion.com/p/Buttonwood-Advisors-LLC-38e1635ad097813eb376f1e31c2a42bd",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Vincent Blume",
+      "firmName": "Blume, Vincent L PC",
+      "pageId": "38e1635a-d097-8104-b726-e4155bd7fc1f",
+      "url": "https://app.notion.com/p/Blume-Vincent-L-PC-38e1635ad0978104b726e4155bd7fc1f",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "William Mutschler",
+      "firmName": "W Andrew Mutschler, CPA",
+      "pageId": "38e1635a-d097-8108-a95b-ce2213b6e9d1",
+      "url": "https://app.notion.com/p/W-Andrew-Mutschler-CPA-38e1635ad0978108a95bce2213b6e9d1",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    },
+    {
+      "contactName": "Zach Boyd",
+      "firmName": "Boyd CPA",
+      "pageId": "38e1635a-d097-815c-ae51-c66e656ee847",
+      "url": "https://app.notion.com/p/Boyd-CPA-38e1635ad097815cae51c66e656ee847",
+      "owner": "Lisa White",
+      "source": "AICPA",
+      "importAudit": "Imported via AICPA ENGAGE screenshot extraction | batch=AICPA ENGAGE 2026 | run=2026-06-29T14:54:14.304Z | by=Henry"
+    }
+  ]
+}

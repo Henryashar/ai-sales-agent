@@ -1,0 +1,1183 @@
+{
+  "generatedAt": "2026-05-26T18:15:57.997Z",
+  "notionRowsRead": 312,
+  "exportedContacts": 160,
+  "skippedWithoutEmailOrPhone": 134,
+  "duplicatesRemovedCount": 18,
+  "skipped": [
+    {
+      "reason": "missing_identifier",
+      "firmName": "Ryan Stevens",
+      "contactName": "Ryan Stevens",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Ryan-Stevens-36c1635ad09781c5a775c0a5367b5023"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Foltz Accounting and Tax Services Partner",
+      "contactName": "Carmen Foltz",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Foltz-Accounting-and-Tax-Services-Partner-36c1635ad09781d08a97f7875a99cda7"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Petros Co",
+      "contactName": "Steven Sapper",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Petros-Co-36c1635ad0978139a950ffb30955d42a"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "HAMED HAMIDNIA",
+      "contactName": "HAMED HAMIDNIA",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/HAMED-HAMIDNIA-36c1635ad097817eae4bedd81daecc68"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Jose G Mata",
+      "contactName": "Jose G Mata",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Jose-G-Mata-36c1635ad09781909b32c2836db1e3d1"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Gregory Funk",
+      "contactName": "Gregory Funk",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Gregory-Funk-36c1635ad0978116ade9e3f1370f9903"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Ricardo Alvarez",
+      "contactName": "Ricardo Alvarez",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Ricardo-Alvarez-36c1635ad09781deb80ad97dbecd32cc"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "RJ Tax MAvens",
+      "contactName": "Julie Fagan",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/RJ-Tax-MAvens-36c1635ad097819c9a32cb29f864c4d5"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "ROBINSTAR BUSINESS & TAX CONSULTANTS, INC.",
+      "contactName": "CLIFFORD BENNET",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/ROBINSTAR-BUSINESS-TAX-CONSULTANTS-INC-36c1635ad097819fb067e72369de5f24"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Joseph Palermo",
+      "contactName": "Joseph Palermo",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Joseph-Palermo-36c1635ad0978172a738c19d61ec3f41"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Tax Pro Team Inc",
+      "contactName": "Stephanie Matticks",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Tax-Pro-Team-Inc-36c1635ad0978139b7a8ce8a968e9d33"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Kelbaugh Tax Service",
+      "contactName": "Jeannette Kelbaugh",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Kelbaugh-Tax-Service-36c1635ad09781fa8f0ade52573697fa"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Marlene He",
+      "contactName": "Marlene He",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Marlene-He-36c1635ad09781cbb797d627886bad51"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "SSBS SDCA, INC. San Diego, CA 921112254 United States Leanora Sanford",
+      "contactName": "Susumu Sakurai",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/SSBS-SDCA-INC-San-Diego-CA-921112254-United-States-Leanora-Sanford-36c1635ad09781c18fdafe98172970b0"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Patricia Hoggard",
+      "contactName": "Patricia Hoggard",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Patricia-Hoggard-36c1635ad0978156834ac913e1979cfc"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Tullio Financial Services, LLC",
+      "contactName": "Michael Tullio",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Tullio-Financial-Services-LLC-36c1635ad09781fd81cdd42ed20b6017"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Brass Tax Ryder Professional Group, Inc",
+      "contactName": "Jane Ryder",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Brass-Tax-Ryder-Professional-Group-Inc-36c1635ad09781539513d7cc06ba7c47"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Shawn Choo-Murphy",
+      "contactName": "Shawn Choo-Murphy",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Shawn-Choo-Murphy-36c1635ad0978124bf9ccce44beae4b4"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Harold Lippa",
+      "contactName": "Harold Lippa",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Harold-Lippa-36c1635ad097819fb3f1e3d981a1e863"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Woods Tax Services LLC. TaxReview2Do LLC",
+      "contactName": "David Woods",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Woods-Tax-Services-LLC-TaxReview2Do-LLC-36c1635ad09781028acac1e74d834ea5"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "AB TAWIL@ ASSOCIALTES LLC",
+      "contactName": "Alberto Tawil Hanono",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/AB-TAWIL-ASSOCIALTES-LLC-36c1635ad09781a887fbca0dc221c7e4"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Pamela Theobald",
+      "contactName": "Pamela Theobald",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Pamela-Theobald-36c1635ad097817c9985fa3bd9927369"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Latimer Accounting & Associates, Inc.",
+      "contactName": "Sarina Latimer",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Latimer-Accounting-Associates-Inc-36c1635ad09781a6bd04ce14ee54e467"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Sandra Brooks",
+      "contactName": "Sandra Brooks",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Sandra-Brooks-36c1635ad097817d99d3f0083c4929f6"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Chryssostomides Financial Services",
+      "contactName": "Pandelis Philip Chryssostomides, Jr.",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Chryssostomides-Financial-Services-36c1635ad09781608882ee5e74dff39a"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Max Salom",
+      "contactName": "Max Salom",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Max-Salom-36c1635ad0978171899be2a18c707334"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Andrew Samaniego Tax Planning and Resolution",
+      "contactName": "Andrew Samaniego",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Andrew-Samaniego-Tax-Planning-and-Resolution-36c1635ad097811aa975cddeade379f4"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Baskin and Associates",
+      "contactName": "Alan Baskin",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Baskin-and-Associates-36c1635ad097817f9724db862f848a1f"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "JoAnn Glatthaar",
+      "contactName": "JoAnn Glatthaar",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/JoAnn-Glatthaar-36c1635ad097814ab39be0482ce32e6e"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Price & Farrington Associates, Inc.",
+      "contactName": "Daniela Farrington",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Price-Farrington-Associates-Inc-36c1635ad09781fe8d23da5480dbfb77"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "AS TAX CONSULTING INC",
+      "contactName": "ANDREW SZUBERLA",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/AS-TAX-CONSULTING-INC-36c1635ad09781d995ddc70bf3fd3501"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "T Leaf Ledgers",
+      "contactName": "Justin Smiley",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/T-Leaf-Ledgers-36c1635ad0978122afd9c649e935b1c8"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Blue Sky Tax Prep",
+      "contactName": "Tom Taulli",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Blue-Sky-Tax-Prep-3681635ad09781599519f9ed499038ec"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Jacob Lifshin",
+      "contactName": "Jacob Lifshin",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Jacob-Lifshin-3681635ad09781d89054e7030c0926eb"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Accounting Navigation Inc",
+      "contactName": "Ani Bezhanyan",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Accounting-Navigation-Inc-3681635ad097818289f0eb6dcf7190fb"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Nuria Bermudez",
+      "contactName": "Nuria Bermudez",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Nuria-Bermudez-3681635ad097810a97bbe1074fa68be8"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Anahit Melkonyan",
+      "contactName": "Anahit Melkonyan",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Anahit-Melkonyan-3681635ad0978149b3dafec44cf380e6"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Mahn Hong",
+      "contactName": "Mahn Hong",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Mahn-Hong-3681635ad0978198907be1a45aa78ab7"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "TAX4US, Inc.",
+      "contactName": "Robik Zadorian",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/TAX4US-Inc-3681635ad0978124abf6efe706bc0699"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Mariana Torres",
+      "contactName": "Mariana Torres",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Mariana-Torres-3681635ad09781158a03f88365b55d94"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Nicole Green",
+      "contactName": "Nicole Green",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Nicole-Green-3681635ad09781c680bbcc39642eabaf"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Emma Lementsyan",
+      "contactName": "Emma Lementsyan",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Emma-Lementsyan-3681635ad09781379829d5042b0d2652"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Jackie Fu",
+      "contactName": "Jackie Fu",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Jackie-Fu-3681635ad0978127a1bcf5b86310ecbc"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Anthony Watson",
+      "contactName": "Anthony Watson",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Anthony-Watson-3681635ad09781baac0ed5e0c6368095"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "EDWARD YOUSEFIAN",
+      "contactName": "EDWARD YOUSEFIAN",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/EDWARD-YOUSEFIAN-3681635ad097817295d0d772967818cb"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Veracity Tax & Accounting Service, LLC",
+      "contactName": "Xiao Dong Hu",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Veracity-Tax-Accounting-Service-LLC-3681635ad09781bb825bde8fc5a8bc63"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Sharon Q. Tax & Advocacy",
+      "contactName": "SHARON QIN",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Sharon-Q-Tax-Advocacy-3681635ad097811389aaf2e0dc097a23"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Eileen McClintock",
+      "contactName": "Eileen McClintock",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Eileen-McClintock-3681635ad09781dd8d75eabd71e7ca69"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "PRESIDENT",
+      "contactName": "Antonia Enriquez",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/PRESIDENT-3681635ad0978183988aef3924788c34"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Tax Prep Tech",
+      "contactName": "Zachary Hellman",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Tax-Prep-Tech-3681635ad0978177ad4de1fc0a9005a8"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Qing Huang",
+      "contactName": "Qing Huang",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Qing-Huang-3641635ad0978192b970e155a3cf74f8"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Minjoo Pack",
+      "contactName": "Minjoo Pack",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Minjoo-Pack-3641635ad097816d8f83f4e01edde455"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "John Schulte",
+      "contactName": "John Schulte",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/John-Schulte-3641635ad097819fb674ded6c2afe688"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "DT-TAX",
+      "contactName": "Diane C Takenaka",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/DT-TAX-3641635ad0978146a347fcf904485cca"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Intuit",
+      "contactName": "Jan McFarlane",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Intuit-3641635ad09781469590f27df99cefbb"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Pamela Villarreal & Associates",
+      "contactName": "Pamela Villarreal",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Pamela-Villarreal-Associates-3641635ad097815c8ff8c4d4d76f83fd"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Grant OHalloran",
+      "contactName": "Grant OHalloran",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Grant-OHalloran-3641635ad097815b9602f497806425a4"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Manuel Wong",
+      "contactName": "Manuel Wong",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Manuel-Wong-3641635ad0978178ad2fe28ff693b853"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "WSF Tax Group",
+      "contactName": "Randy Redmond",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/WSF-Tax-Group-3641635ad09781de9327dcb9d8eb1edf"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Schumacher Financial Consulting",
+      "contactName": "P. J. (Paul) Schumacher",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Schumacher-Financial-Consulting-3641635ad097812996dfdc33067109e5"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "DHARWADKAR & ASSOCIATES",
+      "contactName": "Shubhangi Dharwadkar",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/DHARWADKAR-ASSOCIATES-3641635ad097819f9f27f5be5722d5ae"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "David Kabachnick",
+      "contactName": "David Kabachnick",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/David-Kabachnick-3641635ad09781a280a6faf79902edbc"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Cuong Le",
+      "contactName": "Cuong Le",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Cuong-Le-3641635ad097818fb70efa962bcf6f6b"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Dianna Gorina",
+      "contactName": "Dianna Gorina",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Dianna-Gorina-3641635ad09781db93f6e7ed8d40fa16"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Doris Abrahams",
+      "contactName": "Doris Abrahams",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Doris-Abrahams-3641635ad09781c8b400fc54554d0ef2"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Diane Gray",
+      "contactName": "Diane Gray",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Diane-Gray-3641635ad0978185b3a5ec885dba76ca"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Callas & Carlson",
+      "contactName": "Layth Carlson",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Callas-Carlson-3641635ad09781398367da74f701c154"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Robert Hall & Associates",
+      "contactName": "Chad Moseley",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Robert-Hall-Associates-3641635ad097810e8de5ce3d811fb105"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Hengameh Amirian",
+      "contactName": "Hengameh Amirian",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Hengameh-Amirian-3641635ad09781b3972cdc44719cbd4b"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Behrouz Rafael",
+      "contactName": "Behrouz Rafael",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Behrouz-Rafael-3641635ad0978167982bcb46a7943ea2"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Andrade & Associates",
+      "contactName": "Lynwood Ford",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Andrade-Associates-3641635ad0978139ad50d7de9a390b6f"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Global Connect Pro Inc.",
+      "contactName": "Amit Jain",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Global-Connect-Pro-Inc-3641635ad0978101a336f0ebec4e3f70"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Frank Haynes",
+      "contactName": "Frank Haynes",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Frank-Haynes-3641635ad097810890eed94423388564"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Gisela Klose",
+      "contactName": "Gisela Klose",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Gisela-Klose-3641635ad0978134979be8fa50855343"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Lawrence Russell",
+      "contactName": "Lawrence Russell",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Lawrence-Russell-3641635ad09781b78535cd3942c06d09"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Lawrence & Kristina Russell, EAs",
+      "contactName": "Kristina Russell",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Lawrence-Kristina-Russell-EAs-3641635ad09781ebba22c981fdf887fa"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "C. A. T. S. Tax Service, Inc.",
+      "contactName": "Kathy Dambra",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/C-A-T-S-Tax-Service-Inc-3641635ad0978116bf00e4df8e3da4df"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Alive Tax Solutions",
+      "contactName": "Sunpob Deeprasertwit",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Alive-Tax-Solutions-3641635ad09781df87dfd5998e512e22"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Joann Miyamoto",
+      "contactName": "Joann Miyamoto",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Joann-Miyamoto-3641635ad097813382e1ee0431d90f52"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Cindy Szerlip",
+      "contactName": "Cindy Szerlip",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Cindy-Szerlip-3641635ad09781e19d23d6c5b1245fa0"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Garry Frank",
+      "contactName": "Garry Frank",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Garry-Frank-3641635ad09781b29116de45d98dbbf1"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Joseph Mandelbaum",
+      "contactName": "Joseph Mandelbaum",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Joseph-Mandelbaum-3641635ad0978145b82edf37b8bafe6f"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Venture West Bookkeeping & Tax Solutions",
+      "contactName": "Michele Weatherford",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Venture-West-Bookkeeping-Tax-Solutions-3641635ad097817ba038d173097e3f11"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Ivy Takenaka",
+      "contactName": "Ivy Takenaka",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Ivy-Takenaka-3641635ad097810682bef5279e1c4cfd"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Darrin Henriksen",
+      "contactName": "Darrin Henriksen",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Darrin-Henriksen-3641635ad09781af8399f9f1ed9d923c"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Roy Stevenson",
+      "contactName": "Roy Stevenson",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Roy-Stevenson-3641635ad09781b7aee8e03297f1fdcd"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Tax Advice Guys President",
+      "contactName": "Joe Davidson",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Tax-Advice-Guys-President-3641635ad09781659ec7c198ede76cd7"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "C.A.T.S. Tax Service, Inc.",
+      "contactName": "Tamara Giuliano",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/C-A-T-S-Tax-Service-Inc-3641635ad097815abe86d3053dcb2648"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "J Anthony Pena Tax & Financial",
+      "contactName": "Joseph Anthony Pena",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/J-Anthony-Pena-Tax-Financial-3641635ad09781e7b5dbc808f1ec3144"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Peter Globe",
+      "contactName": "Peter Globe",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Peter-Globe-3641635ad097812fb92dc001ae5c9eb5"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "P and D Tax Services, Inc.",
+      "contactName": "Patricia Vannucci",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/P-and-D-Tax-Services-Inc-3641635ad0978145a917dc05de2c8a71"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Todd Song Accounting & Tax Consulting",
+      "contactName": "Todd Song",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Todd-Song-Accounting-Tax-Consulting-3641635ad09781bda9eae77b5f2db04c"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Anaheim Premier Management",
+      "contactName": "DANG NGUYEN",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Anaheim-Premier-Management-3641635ad09781c18390dbedbab77bb8"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Accounting & Tax Advisory office of Kevin y Rhee",
+      "contactName": "Kevin Rhee",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Accounting-Tax-Advisory-office-of-Kevin-y-Rhee-3641635ad09781f386e2ca44956bc92b"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "David Chang",
+      "contactName": "David Chang",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/David-Chang-3641635ad09781e3bb38f89bb2343b06"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Global Gate LLC",
+      "contactName": "Steve Hunter",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Global-Gate-LLC-3601635ad097816ea451c65071997f42"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Independent EA",
+      "contactName": "Veronica Dosher",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Independent-EA-3601635ad097816fa315c5d7d34d210f"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Independent EA",
+      "contactName": "Tams Lai",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Independent-EA-3601635ad097817e9f7ad8e32aebe4bb"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Independent EA",
+      "contactName": "Diane Hulbrock",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Independent-EA-3601635ad09781a5b5fcc846aa75b406"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Independent EA",
+      "contactName": "Lynne Bray",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Independent-EA-3601635ad09781aea126d433667d8270"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Independent EA",
+      "contactName": "Paul Brown",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Independent-EA-3601635ad09781b08fabc1aa8c5cecb1"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Independent EA",
+      "contactName": "VIJAYALAKSHMI SHUNMUGARAJA",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Independent-EA-3601635ad09781b6a09cd12c5adcc62e"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Independent EA",
+      "contactName": "Audrey Lew",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Independent-EA-3601635ad09781e7968ef3d9d4f4894f"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Independent EA",
+      "contactName": "Dieter Vanagtmael",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Independent-EA-3601635ad09781efa9c9e61965145564"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Duffy Kruspodin, LLP",
+      "contactName": "David Poh",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Duffy-Kruspodin-LLP-3601635ad09781a2b463e9510bd30df3"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Tax Law Advocates",
+      "contactName": "Scott Mullerleile",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Tax-Law-Advocates-3601635ad09781c3bec2eebdded2511c"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "US-LATAM Tax Group, LLC",
+      "contactName": "Louis Barajas",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/US-LATAM-Tax-Group-LLC-3601635ad09781fba9b4c2e38a73a3c0"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Aaron Widera",
+      "contactName": "Aaron Widera",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Aaron-Widera-35f1635ad09781e492daff93444d8b48"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Murphy Tax Solutions LLC",
+      "contactName": "Chassity Murphy",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Murphy-Tax-Solutions-LLC-35f1635ad09781f081faeeb336af94ff"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "CAIQUO & ASSOCIATES",
+      "contactName": "BONDZIE CAIQUO",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/CAIQUO-ASSOCIATES-35f1635ad09781fcbfded4cdf5ddd613"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Vanesa Geiberger",
+      "contactName": "Vanesa Geiberger",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Vanesa-Geiberger-35f1635ad097812ab57ddf616d5e7d20"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Shannon Hall",
+      "contactName": "Shannon Hall",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Shannon-Hall-35f1635ad097813691a0ff314d33d788"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "JC Financial & Tax Services LLC",
+      "contactName": "Jim Chhun",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/JC-Financial-Tax-Services-LLC-35f1635ad097815ba36be26185e4f439"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "F&S Services, Inc.",
+      "contactName": "Susana Valdez",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/F-S-Services-Inc-35f1635ad097815e9d1bd58f9c8f0f05"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Shanshan Han",
+      "contactName": "Shanshan Han",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Shanshan-Han-35f1635ad0978194b6f9e1782a3bd4b4"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Tax Prestige",
+      "contactName": "Alberto Sanchez",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Tax-Prestige-35f1635ad097819c96a5d01ac165b34d"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Hiroshi Nakajima",
+      "contactName": "Hiroshi Nakajima",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Hiroshi-Nakajima-35f1635ad09781b092e0e8fb1fc5ce11"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "H&R Block",
+      "contactName": "Georgina Aguilar Cilia",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/H-R-Block-35f1635ad09781c8ab40c6000659f3cb"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Randy Gomez",
+      "contactName": "Randy Gomez",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Randy-Gomez-35f1635ad09781d0a234f430a14078b4"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Hidalgo Bookkeeping & Taxes LLC",
+      "contactName": "Juan Diego Hidalgo Cossio",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Hidalgo-Bookkeeping-Taxes-LLC-35f1635ad09781eca996f9c36fdad453"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Na'imah Lafferty",
+      "contactName": "Na'imah Lafferty",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Na-imah-Lafferty-35f1635ad097810987e4fee65514f3aa"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Samantha Carter",
+      "contactName": "Samantha Carter",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Samantha-Carter-35f1635ad097812a8f20e9a0622d5836"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Frank Haynes, Jr., J.D., EA",
+      "contactName": "Frank Haynes",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Frank-Haynes-Jr-J-D-EA-35f1635ad0978138ada0eaff76345f96"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Henry Terry",
+      "contactName": "Henry Terry",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Henry-Terry-35f1635ad0978166b289daf3b1085812"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Miguel Salazar",
+      "contactName": "Miguel Salazar",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Miguel-Salazar-35f1635ad09781e7a967ddedbf55bc43"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Sherry Smith EA",
+      "contactName": "Sherry Smith",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Sherry-Smith-EA-35f1635ad09781f9a115f471c405d070"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "L&M TAX SERVICES",
+      "contactName": "Maggie Monge",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/L-M-TAX-SERVICES-35f1635ad097819591b3d0142bda0338"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "John Sano",
+      "contactName": "John Sano",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/John-Sano-35f1635ad09781b58a24c9547e095454"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Daniel's Tax & Notary",
+      "contactName": "Daniel Kovalchuck",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Daniel-s-Tax-Notary-35f1635ad09781e99635eccf40c176c3"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Witt McDee, E.A. Tax & Business Service, Inc.",
+      "contactName": "Witt McDee",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Witt-McDee-E-A-Tax-Business-Service-Inc-35f1635ad09781ee8bf1f7bf019b69cb"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Edwin Medina",
+      "contactName": "Edwin Medina",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Edwin-Medina-35f1635ad09781f4aa83c51b408173f4"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "",
+      "contactName": "",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/35c1635ad09780838389c641b2393cb3"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Tax Experts of OC",
+      "contactName": "",
+      "phone": "",
+      "notionUrl": "https://www.notion.so/Tax-Experts-of-OC-35b1635ad0978136bb9ce35cb1af224b"
+    },
+    {
+      "reason": "missing_identifier",
+      "firmName": "Workinger CPA",
+      "contactName": "Tyler",
+      "phone": "(760) 230-5040 ext.2",
+      "notionUrl": "https://www.notion.so/Workinger-CPA-35b1635ad09781cf9e6edd08aaa08b5f"
+    }
+  ],
+  "duplicateRows": [
+    {
+      "identifier": "phone:18182424888",
+      "kept": {
+        "firmName": "Robert Hall & Associates",
+        "contactName": "Floyd Watson",
+        "notionUrl": "https://www.notion.so/Robert-Hall-Associates-3681635ad09781eea558c4d1cc5c428b"
+      },
+      "skipped": {
+        "firmName": "Robert Hall & Associates",
+        "contactName": "Candice Cane",
+        "notionUrl": "https://www.notion.so/Robert-Hall-Associates-3681635ad097811dbcf4c905f52720a1"
+      }
+    },
+    {
+      "identifier": "phone:18182424888",
+      "kept": {
+        "firmName": "Robert Hall & Associates",
+        "contactName": "Floyd Watson",
+        "notionUrl": "https://www.notion.so/Robert-Hall-Associates-3681635ad09781eea558c4d1cc5c428b"
+      },
+      "skipped": {
+        "firmName": "Robert Hall & Associates",
+        "contactName": "Armo Dergrigorian",
+        "notionUrl": "https://www.notion.so/Robert-Hall-Associates-3681635ad097818dbad3ff003afc50ab"
+      }
+    },
+    {
+      "identifier": "phone:18182424888",
+      "kept": {
+        "firmName": "Robert Hall & Associates",
+        "contactName": "Floyd Watson",
+        "notionUrl": "https://www.notion.so/Robert-Hall-Associates-3681635ad09781eea558c4d1cc5c428b"
+      },
+      "skipped": {
+        "firmName": "Robert Hall & Associates",
+        "contactName": "Juan L. Pellegrinaggio",
+        "notionUrl": "https://www.notion.so/Robert-Hall-Associates-3681635ad09781d9b5fcefff71bf0f85"
+      }
+    },
+    {
+      "identifier": "phone:18182424888",
+      "kept": {
+        "firmName": "Robert Hall & Associates",
+        "contactName": "Floyd Watson",
+        "notionUrl": "https://www.notion.so/Robert-Hall-Associates-3681635ad09781eea558c4d1cc5c428b"
+      },
+      "skipped": {
+        "firmName": "Robert Hall & Associates",
+        "contactName": "Tyler Sparrow",
+        "notionUrl": "https://www.notion.so/Robert-Hall-Associates-3681635ad09781cf8e29d9a5167aa08f"
+      }
+    },
+    {
+      "identifier": "phone:18182424888",
+      "kept": {
+        "firmName": "Robert Hall & Associates",
+        "contactName": "Floyd Watson",
+        "notionUrl": "https://www.notion.so/Robert-Hall-Associates-3681635ad09781eea558c4d1cc5c428b"
+      },
+      "skipped": {
+        "firmName": "Robert Hall & Associates",
+        "contactName": "Selin Abdalian",
+        "notionUrl": "https://www.notion.so/Robert-Hall-Associates-3681635ad097817c9e80e2ad807b1423"
+      }
+    },
+    {
+      "identifier": "phone:18182424888",
+      "kept": {
+        "firmName": "Robert Hall & Associates",
+        "contactName": "Floyd Watson",
+        "notionUrl": "https://www.notion.so/Robert-Hall-Associates-3681635ad09781eea558c4d1cc5c428b"
+      },
+      "skipped": {
+        "firmName": "Robert Hall and Associates",
+        "contactName": "Alyssa Reilly",
+        "notionUrl": "https://www.notion.so/Robert-Hall-and-Associates-3681635ad097810da554ebf6c70df311"
+      }
+    },
+    {
+      "identifier": "phone:18182424888",
+      "kept": {
+        "firmName": "Robert Hall & Associates",
+        "contactName": "Floyd Watson",
+        "notionUrl": "https://www.notion.so/Robert-Hall-Associates-3681635ad09781eea558c4d1cc5c428b"
+      },
+      "skipped": {
+        "firmName": "Robert Hall & Associates",
+        "contactName": "Kevin Schaefer",
+        "notionUrl": "https://www.notion.so/Robert-Hall-Associates-3681635ad0978151bb70ca92ef36db90"
+      }
+    },
+    {
+      "identifier": "phone:18182424888",
+      "kept": {
+        "firmName": "Robert Hall & Associates",
+        "contactName": "Floyd Watson",
+        "notionUrl": "https://www.notion.so/Robert-Hall-Associates-3681635ad09781eea558c4d1cc5c428b"
+      },
+      "skipped": {
+        "firmName": "Robert Hall & Associates",
+        "contactName": "Daniel Passon",
+        "notionUrl": "https://www.notion.so/Robert-Hall-Associates-3681635ad09781c28ad5cbe798418d5d"
+      }
+    },
+    {
+      "identifier": "phone:18182424888",
+      "kept": {
+        "firmName": "Robert Hall & Associates",
+        "contactName": "Floyd Watson",
+        "notionUrl": "https://www.notion.so/Robert-Hall-Associates-3681635ad09781eea558c4d1cc5c428b"
+      },
+      "skipped": {
+        "firmName": "Robert Hall & Associates",
+        "contactName": "Philip Duncan",
+        "notionUrl": "https://www.notion.so/Robert-Hall-Associates-3681635ad0978186b9cbf9095ea4a129"
+      }
+    },
+    {
+      "identifier": "phone:18182424888",
+      "kept": {
+        "firmName": "Robert Hall & Associates",
+        "contactName": "Floyd Watson",
+        "notionUrl": "https://www.notion.so/Robert-Hall-Associates-3681635ad09781eea558c4d1cc5c428b"
+      },
+      "skipped": {
+        "firmName": "Robert Hall & Associates",
+        "contactName": "Stephen Hall",
+        "notionUrl": "https://www.notion.so/Robert-Hall-Associates-3681635ad09781adb5aaff24626cf1c8"
+      }
+    },
+    {
+      "identifier": "phone:12605190656",
+      "kept": {
+        "firmName": "Schmidt & Associates",
+        "contactName": "Sylvia Helfrick",
+        "notionUrl": "https://www.notion.so/Schmidt-Associates-3641635ad097815b89ceff8fc9ff79d3"
+      },
+      "skipped": {
+        "firmName": "Schmidt & Associates",
+        "contactName": "Deborah Moore",
+        "notionUrl": "https://www.notion.so/Schmidt-Associates-3641635ad097815a9d8fcd386bb85e73"
+      }
+    },
+    {
+      "identifier": "phone:17148269744",
+      "kept": {
+        "firmName": "Phillips Financial Services",
+        "contactName": "Daniel Phillips",
+        "notionUrl": "https://www.notion.so/Phillips-Financial-Services-3641635ad0978152b710e5ec90e4a76d"
+      },
+      "skipped": {
+        "firmName": "Phillips Financial Services",
+        "contactName": "James Phillips",
+        "notionUrl": "https://www.notion.so/Phillips-Financial-Services-3641635ad09781d5b6a3c82c5afbd614"
+      }
+    },
+    {
+      "identifier": "phone:17148324633",
+      "kept": {
+        "firmName": "Joni Terens",
+        "contactName": "Joni Terens",
+        "notionUrl": "https://www.notion.so/Joni-Terens-3641635ad0978183a4f4e933649a967a"
+      },
+      "skipped": {
+        "firmName": "Independent EA",
+        "contactName": "Joni Terens",
+        "notionUrl": "https://www.notion.so/Independent-EA-3601635ad097815b92a0f87e13b2d06c"
+      }
+    },
+    {
+      "identifier": "phone:12605190656",
+      "kept": {
+        "firmName": "Schmidt & Associates",
+        "contactName": "Sylvia Helfrick",
+        "notionUrl": "https://www.notion.so/Schmidt-Associates-3641635ad097815b89ceff8fc9ff79d3"
+      },
+      "skipped": {
+        "firmName": "Schmidt & Associates",
+        "contactName": "Kathryn Harrington",
+        "notionUrl": "https://www.notion.so/Schmidt-Associates-3601635ad097810fbaddedc7c080828f"
+      }
+    },
+    {
+      "identifier": "phone:12605190656",
+      "kept": {
+        "firmName": "Schmidt & Associates",
+        "contactName": "Sylvia Helfrick",
+        "notionUrl": "https://www.notion.so/Schmidt-Associates-3641635ad097815b89ceff8fc9ff79d3"
+      },
+      "skipped": {
+        "firmName": "Schmidt & Associates",
+        "contactName": "Kathleen Rossow",
+        "notionUrl": "https://www.notion.so/Schmidt-Associates-3601635ad09781ffaf10fb140292e981"
+      }
+    },
+    {
+      "identifier": "email:pennywiserconsulting@gmail.com",
+      "kept": {
+        "firmName": "Pennywiser Consulting Co.",
+        "contactName": "Sandy Peng",
+        "notionUrl": "https://www.notion.so/Pennywiser-Consulting-Co-35f1635ad097814aab0cf325df9b9d88"
+      },
+      "skipped": {
+        "firmName": "Pennywiser Consulting Co",
+        "contactName": "Jessica Wai Yi Chang",
+        "notionUrl": "https://www.notion.so/Pennywiser-Consulting-Co-35f1635ad09781949ec0cc75998fe466"
+      }
+    },
+    {
+      "identifier": "email:rcavish@earthlink.net",
+      "kept": {
+        "firmName": "Norwalk Business Service, Inc.",
+        "contactName": "Richard Cavish",
+        "notionUrl": "https://www.notion.so/Norwalk-Business-Service-Inc-35f1635ad097812dbd17fa0ab52e23d8"
+      },
+      "skipped": {
+        "firmName": "Norwalk Business Service, Inc.",
+        "contactName": "Brenan Cavish",
+        "notionUrl": "https://www.notion.so/Norwalk-Business-Service-Inc-35f1635ad097819b8277d3d66c6d7b1d"
+      }
+    },
+    {
+      "identifier": "phone:18182424888",
+      "kept": {
+        "firmName": "Robert Hall & Associates",
+        "contactName": "Floyd Watson",
+        "notionUrl": "https://www.notion.so/Robert-Hall-Associates-3681635ad09781eea558c4d1cc5c428b"
+      },
+      "skipped": {
+        "firmName": "Robert Hall & Associates",
+        "contactName": "John Goshima",
+        "notionUrl": "https://www.notion.so/Robert-Hall-Associates-35f1635ad097818eaf54d48e26beccd7"
+      }
+    }
+  ]
+}

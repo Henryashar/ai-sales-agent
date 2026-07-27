@@ -1,0 +1,3304 @@
+﻿Loaded 101 lead(s) from input/aicpa_engage_leads_batch1.json.
+Mode: DRY RUN - no Notion export write
+Dedupe decision counts: { insert: 101, update_existing: 0, skip: 0, review: 0 }
+Enrichment result: {
+  leadId: 'aicpa-001',
+  contactName: 'Adam Aiken',
+  firmName: 'Patient, Aiken & Associates, PC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Patient, Aiken & Associates PC',
+    confidenceScore: 100,
+    formattedAddress: '50 Lake Ave, Worcester, MA 01604, USA',
+    city: 'Worcester',
+    state: 'MA',
+    phone: '(508) 791-7982',
+    email: undefined,
+    website: 'http://www.patientcpa.com/'
+  },
+  locationBackfill: {
+    city: 'Worcester',
+    state: 'MA',
+    zip: '01604',
+    formattedAddress: '50 Lake Ave, Worcester, MA 01604, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'http://www.patientcpa.com/',
+      'https://maps.google.com/?cid=18007502967495516681&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-002',
+  contactName: 'Adrienne Anderson',
+  firmName: 'Anderson Accounting & Consulting',
+  action: 'insert',
+  topCandidate: undefined,
+  locationBackfill: undefined,
+  issues: [ 'city/state not confidently found' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-003',
+  contactName: 'Alan A.',
+  firmName: 'Unknown',
+  action: 'insert',
+  topCandidate: undefined,
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'last name truncated',
+    'firm name not shown',
+    'title not shown',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-004',
+  contactName: 'Sam Bellman',
+  firmName: 'Titus CPAs',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Titus CPAs (formerly Lischkoff & Pitts)',
+    confidenceScore: 100,
+    formattedAddress: '3100 Independence Dr, Birmingham, AL 35209, USA',
+    city: 'Birmingham',
+    state: 'AL',
+    phone: '(205) 870-3158',
+    email: undefined,
+    website: 'https://www.tituscpa.com/'
+  },
+  locationBackfill: {
+    city: 'Birmingham',
+    state: 'AL',
+    zip: '35209',
+    formattedAddress: '3100 Independence Dr, Birmingham, AL 35209, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'https://www.tituscpa.com/',
+      'https://maps.google.com/?cid=2842373790551166280&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-005',
+  contactName: 'Evan Benevento',
+  firmName: 'Evan I. Benevento, CPA',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Evan J. Benevento, CPA',
+    confidenceScore: 100,
+    formattedAddress: '561 Auto Center Dr Ste 100A, Watsonville, CA 95076, USA',
+    city: 'Watsonville',
+    state: 'CA',
+    phone: '(831) 920-5273',
+    email: undefined,
+    website: 'https://evanjcpa.com/'
+  },
+  locationBackfill: {
+    city: 'Watsonville',
+    state: 'CA',
+    zip: '95076',
+    formattedAddress: '561 Auto Center Dr Ste 100A, Watsonville, CA 95076, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'https://evanjcpa.com/',
+      'https://maps.google.com/?cid=10456031017906812107&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [
+    'city missing',
+    'state missing',
+    'card cut off by page break, title/pass type not visible'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-006',
+  contactName: 'Jason Bisdorf',
+  firmName: 'Biz Financial, LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Business Financial Solutions, Inc',
+    confidenceScore: 100,
+    formattedAddress: '4218 E La Palma Ave, Anaheim, CA 92807, USA',
+    city: 'Anaheim',
+    state: 'CA',
+    phone: '(714) 983-7265',
+    email: undefined,
+    website: 'https://www.yourbfs.com/'
+  },
+  locationBackfill: {
+    city: 'Anaheim',
+    state: 'CA',
+    zip: '92807',
+    formattedAddress: '4218 E La Palma Ave, Anaheim, CA 92807, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'https://www.yourbfs.com/',
+      'https://maps.google.com/?cid=5133976095427359220&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-007',
+  contactName: 'Matthew Bispeck',
+  firmName: 'Haffner & Associates LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Haffner & Associates CPAs',
+    confidenceScore: 100,
+    formattedAddress: '128 E Main St, Macungie, PA 18062, USA',
+    city: 'Macungie',
+    state: 'PA',
+    phone: '(610) 966-5137',
+    email: undefined,
+    website: 'https://haffnercpas.com/'
+  },
+  locationBackfill: {
+    city: 'Macungie',
+    state: 'PA',
+    zip: '18062',
+    formattedAddress: '128 E Main St, Macungie, PA 18062, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'https://haffnercpas.com/',
+      'https://maps.google.com/?cid=6767956597662729308&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-008',
+  contactName: 'Vincent Blume',
+  firmName: 'Blume, Vincent L PC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Vincent L Blume CPA',
+    confidenceScore: 95,
+    formattedAddress: '5124 N Claremont Ave Fl 2, Chicago, IL 60625, USA',
+    city: 'Chicago',
+    state: 'IL',
+    phone: '(773) 275-1166',
+    email: undefined,
+    website: undefined
+  },
+  locationBackfill: {
+    city: 'Chicago',
+    state: 'IL',
+    zip: '60625',
+    formattedAddress: '5124 N Claremont Ave Fl 2, Chicago, IL 60625, USA',
+    confidenceScore: 95,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'https://maps.google.com/?cid=8689984597750784815&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-009',
+  contactName: 'Zach Boyd',
+  firmName: 'Boyd CPA',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'Boyd CPA | Tax & Advisory For People Who Like To Be Treated Like People',
+    confidenceScore: 100,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: undefined,
+    email: 'info@zboydcpa.com',
+    website: 'https://zboydcpa.com'
+  },
+  locationBackfill: {
+    city: 'Buckeye',
+    state: 'AZ',
+    zip: '85326',
+    formattedAddress: '715 Monroe Ave, Buckeye, AZ 85326, USA',
+    confidenceScore: 95,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'https://maps.google.com/?cid=1529537491941770809&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-010',
+  contactName: 'Suzanne Briel',
+  firmName: 'Bobst & Briel CPAs, Inc',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'web_search',
+    displayName: 'Bobst Book & Briel CPAs Inc - Tax Preparation Service in Auburn CA ...',
+    confidenceScore: 72,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(530) 885-7171',
+    email: undefined,
+    website: undefined
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-011',
+  contactName: 'Lora Broberg',
+  firmName: 'Viking Solutions LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'Viking Solutions LLC | North Metro Home Tech',
+    confidenceScore: 100,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(773) 597-8975',
+    email: 'craig.munson@gmail.com',
+    website: 'https://www.vikingsolutionsmn.com'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-012',
+  contactName: 'Karen Brosi',
+  firmName: 'Karen Brosi, EA, CFP, a LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'web_search',
+    displayName: 'BROSI KAREN EA CFP - 635 Bryant St, Palo Alto, California - Yelp',
+    confidenceScore: 72,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(650) 327-2765',
+    email: undefined,
+    website: undefined
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-013',
+  contactName: 'Brandon Brown',
+  firmName: 'Redwood Consulting Group LLC',
+  action: 'insert',
+  topCandidate: undefined,
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'online-pass-only attendee, may not have attended in person',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-014',
+  contactName: 'Kerri Buckley',
+  firmName: 'The Buckley Insurance Group',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'Medicare Plans, Supplements & Part D | Buckley Insurance NJ',
+    confidenceScore: 100,
+    formattedAddress: '2060 NJ-88, Brick Township, NJ 08724, USA',
+    city: 'Brick Township',
+    state: 'NJ',
+    phone: '(732) 746-3320',
+    email: undefined,
+    website: 'https://www.thebuckleyinsurancegroup.com'
+  },
+  locationBackfill: {
+    city: 'Brick Township',
+    state: 'NJ',
+    zip: '08724',
+    formattedAddress: '2060 NJ-88, Brick Township, NJ 08724, USA',
+    confidenceScore: 100,
+    sourceType: 'website_contact_page',
+    sourceUrls: [
+      'https://www.thebuckleyinsurancegroup.com/',
+      'https://www.thebuckleyinsurancegroup.com/contact',
+      'https://www.thebuckleyinsurancegroup.com/about',
+      'https://www.thebuckleyinsurancegroup.com/team',
+      'https://maps.google.com/?cid=9091087792788663327&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [
+    'city missing',
+    'state missing',
+    'not a CPA/tax firm - verify fit before outreach'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-015',
+  contactName: 'Doreen Carter',
+  firmName: 'Doreen Carter CPA, PLLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'web_search',
+    displayName: 'Doreen Carter CPA PLLC Information - RocketReach',
+    confidenceScore: 72,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(919) 399-0829',
+    email: undefined,
+    website: undefined
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'online-pass-only attendee',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-016',
+  contactName: 'Manuel R Checo Paredes',
+  firmName: 'MCP Tax Service LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'MCP Tax Service LLC',
+    confidenceScore: 100,
+    formattedAddress: '14154 SE Stark St, Portland, OR 97233, USA',
+    city: 'Portland',
+    state: 'OR',
+    phone: '(971) 255-1239',
+    email: undefined,
+    website: 'https://mcptaxservice.com/'
+  },
+  locationBackfill: {
+    city: 'Portland',
+    state: 'OR',
+    zip: '97233',
+    formattedAddress: '14154 SE Stark St, Portland, OR 97233, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'https://mcptaxservice.com/',
+      'https://maps.google.com/?cid=16570854411412999554&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-017',
+  contactName: 'Trish Cheek',
+  firmName: 'Trish Cheek CPA PLLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'Trish Cheek CPA PLLC - Tax Service - Brevard, North Carolina',
+    confidenceScore: 100,
+    formattedAddress: '4 Market St #4101, Brevard, NC 28712, USA',
+    city: undefined,
+    state: undefined,
+    phone: '(828) 862-3960',
+    email: 'trish@trishcheekcpa.com',
+    website: 'https://trishcheekcpa.com'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-018',
+  contactName: 'Mark C.',
+  firmName: 'Unknown',
+  action: 'insert',
+  topCandidate: undefined,
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'last name truncated',
+    'firm not shown',
+    'title not shown',
+    'pass type not shown',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-019',
+  contactName: 'Kenneth Coplen',
+  firmName: 'Swink Coplen and Company, PC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Swink Coplen & Company, P.C.',
+    confidenceScore: 100,
+    formattedAddress: '3890 S Lindbergh Blvd, Sappington, MO 63127, USA',
+    city: 'Sappington',
+    state: 'MO',
+    phone: '(314) 842-2001',
+    email: undefined,
+    website: 'http://www.swinkcpas.com/'
+  },
+  locationBackfill: {
+    city: 'Sappington',
+    state: 'MO',
+    zip: '63127',
+    formattedAddress: '3890 S Lindbergh Blvd, Sappington, MO 63127, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'http://www.swinkcpas.com/',
+      'https://maps.google.com/?cid=878150490298055630&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-020',
+  contactName: 'Mat Cox',
+  firmName: 'Titus CPA',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'Titus – Certified Public Accountants',
+    confidenceScore: 100,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(205) 870-3158',
+    email: 'contact@tituscpa.com',
+    website: 'https://tituscpa.com'
+  },
+  locationBackfill: {
+    city: 'Toledo',
+    state: 'OH',
+    zip: '43617',
+    formattedAddress: '3220 Central Park West, Toledo, OH 43617, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'http://www.toledocpa.com/',
+      'https://maps.google.com/?cid=6412204531864745229&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-021',
+  contactName: 'Anthony Cucciniello',
+  firmName: 'Anthony Cucciniello CPA LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Anthony J. Cucciniello, CPA',
+    confidenceScore: 100,
+    formattedAddress: '293 Eisenhower Pkwy #140, Livingston, NJ 07039, USA',
+    city: undefined,
+    state: undefined,
+    phone: '(973) 214-7909',
+    email: undefined,
+    website: 'http://ajc-cpa.com/'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-022',
+  contactName: 'Marie Cutlip',
+  firmName: 'Better Financial Solutions',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'betterfinancialsolutions.com',
+    confidenceScore: 100,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(260) 630-0015',
+    email: undefined,
+    website: 'https://betterfinancialsolutions.com'
+  },
+  locationBackfill: {
+    city: 'North Canton',
+    state: 'OH',
+    zip: '44720',
+    formattedAddress: '6465 Frank Ave NW, North Canton, OH 44720, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'http://www.bfscpas.com/',
+      'https://maps.google.com/?cid=13876484019445977090&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing', 'online-pass-only attendee' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-023',
+  contactName: 'Richard Davis',
+  firmName: 'Richard A Davis, CPA',
+  action: 'insert',
+  topCandidate: undefined,
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-024',
+  contactName: 'Terrance D.',
+  firmName: 'Unknown',
+  action: 'insert',
+  topCandidate: undefined,
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'last name truncated',
+    'firm not shown',
+    'title not shown',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-025',
+  contactName: 'Mark Diehl',
+  firmName: 'Diehl CPA LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Diehl & Company, Inc.',
+    confidenceScore: 100,
+    formattedAddress: '2151 Michelson Dr #160, Irvine, CA 92612, USA',
+    city: undefined,
+    state: undefined,
+    phone: '(949) 250-1400',
+    email: undefined,
+    website: 'https://www.griffithsdiehl.com/'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-026',
+  contactName: 'Jen Diehl',
+  firmName: 'JRD Financials',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'JRD FINANCIALS | Streamline Your Business Finances',
+    confidenceScore: 100,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(745) 857-8635',
+    email: 'jen@jrdfinancials.com',
+    website: 'https://www.jrdfinancials.com'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'card cut off by page break, pass type not visible',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-027',
+  contactName: 'Sean Duffy',
+  firmName: 'Sean F. Duffy CPA',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'official_site',
+    displayName: 'Camarillo, CA Accounting Firm | Home Page | Sean F Duffy CPA',
+    confidenceScore: 100,
+    formattedAddress: '400 Mobil Ave Ste D12, Camarillo, CA 93010, USA',
+    city: 'Camarillo',
+    state: 'CA',
+    phone: '(805) 445-8383',
+    email: 'sean@happycpa.com',
+    website: 'https://www.seanduffy.cpa'
+  },
+  locationBackfill: {
+    city: 'Camarillo',
+    state: 'CA',
+    zip: '93010',
+    formattedAddress: '400 Mobil Ave Ste D12, Camarillo, CA 93010, USA',
+    confidenceScore: 100,
+    sourceType: 'official_site',
+    sourceUrls: [
+      'https://www.seanduffy.cpa/',
+      'http://www.seanduffy.cpa/',
+      'https://maps.google.com/?cid=6044659612647793607&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-028',
+  contactName: 'Tom Duncan',
+  firmName: 'Vision Capital Partners',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'official_site',
+    displayName: 'Vision Capital Partners: Financial Planning & Portfolio Management',
+    confidenceScore: 100,
+    formattedAddress: '2211 Old Earhart Rd. Suite 155 Ann Arbor, MI 48105',
+    city: 'Ann Arbor',
+    state: 'MI',
+    phone: '(734) 356-3250',
+    email: 'info@myvcp.com',
+    website: 'https://www.visioncapitalpartners.com'
+  },
+  locationBackfill: {
+    city: 'Ann Arbor',
+    state: 'MI',
+    zip: '48105',
+    formattedAddress: '2211 Old Earhart Rd. Suite 155 Ann Arbor, MI 48105',
+    confidenceScore: 100,
+    sourceType: 'official_site',
+    sourceUrls: [
+      'https://www.visioncapitalpartners.com/',
+      'http://www.visioncapitalpartners.com/',
+      'https://maps.google.com/?cid=13609040584745561372&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA',
+      'https://www.visioncapitalpartners.com/contact'
+    ]
+  },
+  issues: [
+    'city missing',
+    'state missing',
+    'not a CPA/tax firm - verify fit before outreach'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-029',
+  contactName: 'Rachel Ellis',
+  firmName: 'Ellis CPA LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Ellis & Ellis CPAs, Inc.',
+    confidenceScore: 100,
+    formattedAddress: '225 S Lake Ave Ste 300, Pasadena, CA 91101, USA',
+    city: 'Pasadena',
+    state: 'CA',
+    phone: '(626) 577-4404',
+    email: undefined,
+    website: 'http://www.ellisandelliscpas.com/'
+  },
+  locationBackfill: {
+    city: 'Pasadena',
+    state: 'CA',
+    zip: '91101',
+    formattedAddress: '225 S Lake Ave Ste 300, Pasadena, CA 91101, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'http://www.ellisandelliscpas.com/',
+      'https://maps.google.com/?cid=5704203592302418809&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-030',
+  contactName: 'Bobbie Fontenot',
+  firmName: 'Bobbie L Fontenot, CPA',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'web_search',
+    displayName: 'Bobbie L. Fontenot, CPA | Tax Preparer in Richmond, TX',
+    confidenceScore: 72,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(713) 898-2453',
+    email: undefined,
+    website: undefined
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-031',
+  contactName: 'Randall Franklin',
+  firmName: 'Franklin Wealth Management Inc',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'official_site',
+    displayName: 'Financial Consulting Firm | Franklin Financial Group',
+    confidenceScore: 80,
+    formattedAddress: '329 North Main Street, Madisonville, KY 42431',
+    city: 'Madisonville',
+    state: 'KY',
+    phone: '(270) 875-4640',
+    email: 'randy@franklinwealthmanagement.com',
+    website: 'https://www.franklinwealthmanagement.com'
+  },
+  locationBackfill: {
+    city: 'Madisonville',
+    state: 'KY',
+    zip: '42431',
+    formattedAddress: '329 North Main Street, Madisonville, KY 42431',
+    confidenceScore: 80,
+    sourceType: 'official_site',
+    sourceUrls: [ 'https://www.franklinwealthmanagement.com/' ]
+  },
+  issues: [
+    'city missing',
+    'state missing',
+    'firm name truncated in source image',
+    'online-pass-only attendee',
+    'not confirmed CPA/tax firm - verify fit'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-032',
+  contactName: 'Robert Franzen',
+  firmName: 'Robert M Franzen, CPA',
+  action: 'insert',
+  topCandidate: undefined,
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-033',
+  contactName: 'Marc Friedman',
+  firmName: 'Friedman and Associates, P.A.',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Friedman & Associates Pa',
+    confidenceScore: 100,
+    formattedAddress: '10461 Mill Run Cir, Owings Mills, MD 21117, USA',
+    city: 'Owings Mills',
+    state: 'MD',
+    phone: '(410) 653-2456',
+    email: undefined,
+    website: 'https://friedmancpa.com/'
+  },
+  locationBackfill: {
+    city: 'Owings Mills',
+    state: 'MD',
+    zip: '21117',
+    formattedAddress: '10461 Mill Run Cir, Owings Mills, MD 21117, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'https://friedmancpa.com/',
+      'https://maps.google.com/?cid=7248701967667955646&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-034',
+  contactName: 'David Fritch',
+  firmName: 'David P. Fritch CPA, PC',
+  action: 'insert',
+  topCandidate: undefined,
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'card cut off by page break, pass type not visible',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-035',
+  contactName: 'Amanda Garcia',
+  firmName: 'Amanda Garcia LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'Home | Amanda Garcia, LLC',
+    confidenceScore: 100,
+    formattedAddress: '1500 Main St. Springfield, MA 01115',
+    city: 'St. Springfield',
+    state: 'MA',
+    phone: '(413) 330-9614',
+    email: 'amanda@garciacpallc.com',
+    website: 'https://garciacpallc.com'
+  },
+  locationBackfill: {
+    city: 'St. Springfield',
+    state: 'MA',
+    zip: '01115',
+    formattedAddress: '1500 Main St. Springfield, MA 01115',
+    confidenceScore: 100,
+    sourceType: 'website_contact_page',
+    sourceUrls: [
+      'https://garciacpallc.com/',
+      'https://garciacpallc.com/contact/',
+      'http://garciacpallc.com/',
+      'https://maps.google.com/?cid=4817075040838763930&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-036',
+  contactName: 'Dennis Gardiner',
+  firmName: 'Gardiner + Company CPAs',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'GARDINER + COMPANY CPAs',
+    confidenceScore: 100,
+    formattedAddress: '10555 New York Ave #200, Urbandale, IA 50322, USA',
+    city: undefined,
+    state: undefined,
+    phone: '(515) 270-1446',
+    email: undefined,
+    website: 'http://www.gardinercpa.com/'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-037',
+  contactName: 'Angie Grissom',
+  firmName: 'The Rainmaker Companies',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'Rainmaker',
+    confidenceScore: 100,
+    formattedAddress: '99 East Main Street Suite 200 Franklin, TN 37064',
+    city: 'Franklin',
+    state: 'TN',
+    phone: '(615) 208-3170',
+    email: undefined,
+    website: 'https://therainmakercompanies.com'
+  },
+  locationBackfill: {
+    city: 'Franklin',
+    state: 'TN',
+    zip: '37064',
+    formattedAddress: '99 East Main Street Suite 200 Franklin, TN 37064',
+    confidenceScore: 100,
+    sourceType: 'website_contact_page',
+    sourceUrls: [
+      'https://therainmakercompanies.com/',
+      'https://therainmakercompanies.com/contact/',
+      'https://therainmakercompanies.com/overview/',
+      'https://therainmakercompanies.com/our-team/',
+      'https://maps.google.com/?cid=17938204947366805595&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA',
+      'https://therainmakercompanies.com/contact'
+    ]
+  },
+  issues: [
+    'city missing',
+    'state missing',
+    'not a CPA/tax firm - consulting/practice-growth, verify fit'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-038',
+  contactName: 'Dave Hamilton',
+  firmName: 'Riverview Tax & Accounting Inc',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Riverview Tax & Accounting',
+    confidenceScore: 100,
+    formattedAddress: '6435 US-301, Riverview, FL 33578, USA',
+    city: 'Riverview',
+    state: 'FL',
+    phone: '(813) 672-8297',
+    email: undefined,
+    website: 'http://riverviewtaxcpa.com/'
+  },
+  locationBackfill: {
+    city: 'Riverview',
+    state: 'FL',
+    zip: '33578',
+    formattedAddress: '6435 US-301, Riverview, FL 33578, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'http://riverviewtaxcpa.com/',
+      'https://maps.google.com/?cid=3597599386748874638&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [
+    'city missing',
+    'state missing',
+    'card cut off by page break, pass type not visible'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-039',
+  contactName: 'Chris Hervochon',
+  firmName: 'Better Numbers',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'Better Numbers: Accounting for growth minded entrepreneurs',
+    confidenceScore: 100,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(843) 608-0298',
+    email: 'info@betternumbers.cpa',
+    website: 'https://betternumbers.cpa'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-040',
+  contactName: 'Victor Hess',
+  firmName: 'Buttonwood Advisors, LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'web_search',
+    displayName: 'Contact Us - Buttonwood Financial Advisors',
+    confidenceScore: 72,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(410) 988-2391',
+    email: undefined,
+    website: undefined
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'online-pass-only attendee',
+    'verify CPA/tax fit',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-041',
+  contactName: 'Trevor H.',
+  firmName: 'Unknown',
+  action: 'insert',
+  topCandidate: undefined,
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'last name truncated',
+    'firm not shown',
+    'title not shown',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-042',
+  contactName: 'Ricky Huey',
+  firmName: 'HRH Accountancy Corporation',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'HRH Accountancy Corporation',
+    confidenceScore: 100,
+    formattedAddress: '505 Montgomery St Ste 1100, San Francisco, CA 94111, USA',
+    city: 'San Francisco',
+    state: 'CA',
+    phone: '(415) 788-3351',
+    email: undefined,
+    website: 'http://www.hrhaccountants.com/'
+  },
+  locationBackfill: {
+    city: 'San Francisco',
+    state: 'CA',
+    zip: '94111',
+    formattedAddress: '505 Montgomery St Ste 1100, San Francisco, CA 94111, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'http://www.hrhaccountants.com/',
+      'https://maps.google.com/?cid=17787518579098762100&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-043',
+  contactName: 'Jon Hussey',
+  firmName: 'Central Maine Tax & Accounting',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Central Maine Accounting & Tax Services',
+    confidenceScore: 100,
+    formattedAddress: '681 Hallowell Litchfield Rd, West Gardiner, ME 04345, USA',
+    city: 'West Gardiner',
+    state: 'ME',
+    phone: '(207) 724-7300',
+    email: undefined,
+    website: 'http://centralmaineaccounting.com/'
+  },
+  locationBackfill: {
+    city: 'West Gardiner',
+    state: 'ME',
+    zip: '04345',
+    formattedAddress: '681 Hallowell Litchfield Rd, West Gardiner, ME 04345, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'http://centralmaineaccounting.com/',
+      'https://maps.google.com/?cid=1706874225935088178&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [
+    'city missing',
+    'state missing',
+    'card cut off by page break, title and pass type not visible'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-044',
+  contactName: 'Clifford Isara',
+  firmName: 'Clifford Isara CPA LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'web_search',
+    displayName: 'Contact Us - Clifford Isara CPA',
+    confidenceScore: 72,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(808) 597-1337',
+    email: undefined,
+    website: undefined
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-045',
+  contactName: 'Jeffrey J.',
+  firmName: 'Unknown',
+  action: 'insert',
+  topCandidate: undefined,
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'last name truncated',
+    'firm not shown',
+    'title not shown',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-046',
+  contactName: 'Quentin Johns',
+  firmName: 'The Peoples CFO',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Peoples Choice Tax & Accounting',
+    confidenceScore: 100,
+    formattedAddress: '18002 Irvine Blvd Ste 104, Tustin, CA 92780, USA',
+    city: 'Tustin',
+    state: 'CA',
+    phone: '(949) 939-3861',
+    email: undefined,
+    website: 'https://www.pctaxservice.com/'
+  },
+  locationBackfill: {
+    city: 'Tustin',
+    state: 'CA',
+    zip: '92780',
+    formattedAddress: '18002 Irvine Blvd Ste 104, Tustin, CA 92780, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'https://www.pctaxservice.com/',
+      'https://maps.google.com/?cid=5153842694388038612&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [
+    'city missing',
+    'state missing',
+    'verify CPA/tax fit - CFO advisory positioning'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-047',
+  contactName: 'Punit Joshi',
+  firmName: 'A & P Accountancy Corporation',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'A & P Accountancy Corporation',
+    confidenceScore: 100,
+    formattedAddress: '221 E Walnut St Ste 250, Pasadena, CA 91101, USA',
+    city: 'Pasadena',
+    state: 'CA',
+    phone: '(818) 347-9167',
+    email: undefined,
+    website: 'http://www.apaccountants.com/'
+  },
+  locationBackfill: {
+    city: 'Pasadena',
+    state: 'CA',
+    zip: '91101',
+    formattedAddress: '221 E Walnut St Ste 250, Pasadena, CA 91101, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'http://www.apaccountants.com/',
+      'https://maps.google.com/?cid=10585261489303003850&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-048',
+  contactName: 'Carol Keane',
+  firmName: 'Carol Keane & Associates, CPAs',
+  action: 'insert',
+  topCandidate: undefined,
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'card cut off by page break, pass type not visible',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-049',
+  contactName: 'Tony Khait',
+  firmName: 'Eco-Tax Inc',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Eco-Tax, Inc.',
+    confidenceScore: 100,
+    formattedAddress: '3121 Ocean Ave Ste 303, Brooklyn, NY 11235, USA',
+    city: 'Brooklyn',
+    state: 'NY',
+    phone: '(347) 673-6360',
+    email: undefined,
+    website: 'https://eco-tax.com/'
+  },
+  locationBackfill: {
+    city: 'Brooklyn',
+    state: 'NY',
+    zip: '11235',
+    formattedAddress: '3121 Ocean Ave Ste 303, Brooklyn, NY 11235, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'https://eco-tax.com/',
+      'https://maps.google.com/?cid=12957271393468822191&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-050',
+  contactName: 'Ruth King',
+  firmName: 'Financially Fit Business, LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'Financially Fit Business | Smart Financial Tracking Software',
+    confidenceScore: 100,
+    formattedAddress: '3883 Rogers Bridge Road Suite 205B, Duluth, GA 30097',
+    city: 'Duluth',
+    state: 'GA',
+    phone: '(470) 784-0950',
+    email: 'support@financiallyfit.business',
+    website: 'https://financiallyfit.business'
+  },
+  locationBackfill: {
+    city: 'Duluth',
+    state: 'GA',
+    zip: '30097',
+    formattedAddress: '3883 Rogers Bridge Road Suite 205B, Duluth, GA 30097',
+    confidenceScore: 100,
+    sourceType: 'website_contact_page',
+    sourceUrls: [
+      'https://financiallyfit.business/',
+      'https://financiallyfit.business/contact-us/',
+      'https://financiallyfit.business/contact-us'
+    ]
+  },
+  issues: [
+    'city missing',
+    'state missing',
+    'exhibitor badge - may be vendor not prospect, verify fit'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-051',
+  contactName: 'Kimberly Kollmeyer',
+  firmName: 'Kollmeyer & Company, LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Kollmeyer & Co LLC, Certified Public Accountants',
+    confidenceScore: 100,
+    formattedAddress: '3555 S Culpepper Cir #200, Springfield, MO 65804, USA',
+    city: undefined,
+    state: undefined,
+    phone: '(417) 881-9393',
+    email: undefined,
+    website: 'https://kcocpa.com/'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-052',
+  contactName: 'Gregory Kollmeyer',
+  firmName: 'Kollmeyer & Company, LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Kollmeyer & Co LLC, Certified Public Accountants',
+    confidenceScore: 100,
+    formattedAddress: '3555 S Culpepper Cir #200, Springfield, MO 65804, USA',
+    city: undefined,
+    state: undefined,
+    phone: '(417) 881-9393',
+    email: undefined,
+    website: 'https://kcocpa.com/'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'same firm as Kimberly Kollmeyer - likely spouses/co-owners, dedupe by firm not name',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-053',
+  contactName: 'Pascal Kornfuehrer',
+  firmName: 'P5 Edge LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'web_search',
+    displayName: 'Contact - The O&P EDGE Magazine',
+    confidenceScore: 90,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(866) 613-0257',
+    email: 'info@opedge.com',
+    website: 'https://opedge.com'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'card cut off by page break, pass type not visible',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-054',
+  contactName: 'David Kushner',
+  firmName: 'Kushner LaGraize, LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Kushner LaGraize LLC',
+    confidenceScore: 100,
+    formattedAddress: '3330 W Esplanade Ave Ste 100, Metairie, LA 70002, USA',
+    city: 'Metairie',
+    state: 'LA',
+    phone: '(504) 838-9991',
+    email: undefined,
+    website: 'https://kl.cpa/'
+  },
+  locationBackfill: {
+    city: 'Metairie',
+    state: 'LA',
+    zip: '70002',
+    formattedAddress: '3330 W Esplanade Ave Ste 100, Metairie, LA 70002, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'https://kl.cpa/',
+      'https://maps.google.com/?cid=15624244510711054245&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing', 'online-pass-only attendee' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-055',
+  contactName: 'John Lee',
+  firmName: 'John S. Lee, CPA',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'Certified Public Accountant in Liberal, KS | John Lee Accounting & Tax',
+    confidenceScore: 85,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(620) 655-4070',
+    email: 'john@johnleeaccounting.com',
+    website: 'https://johnleeaccounting.com'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-056',
+  contactName: 'Christian Leron',
+  firmName: 'Leron CPA',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'Leron CPA | Tax & Accounting Services in Reno, NV',
+    confidenceScore: 100,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(775) 240-4805',
+    email: 'emailchris@leroncpa.com',
+    website: 'https://leroncpa.com'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-057',
+  contactName: 'Sam Liang',
+  firmName: 'Tax Fitness LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'Tax Fitness Solutions',
+    confidenceScore: 85,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(833) 331-6688',
+    email: 'support@taxfitness.com',
+    website: 'https://www.taxfitness.com'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-058',
+  contactName: 'Brenda K Lowe',
+  firmName: 'Brenda K Lowe CPA LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Brenda K. Lowe CPA LLC',
+    confidenceScore: 100,
+    formattedAddress: '4801 US-61 Unit 305, White Bear Lake, MN 55110, USA',
+    city: 'White Bear Lake',
+    state: 'MN',
+    phone: '(612) 419-9769',
+    email: 'brenda@brendalowecpa.com',
+    website: 'http://brendalowecpa.com/'
+  },
+  locationBackfill: {
+    city: 'White Bear Lake',
+    state: 'MN',
+    zip: '55110',
+    formattedAddress: '4801 US-61 Unit 305, White Bear Lake, MN 55110, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'http://brendalowecpa.com/',
+      'https://maps.google.com/?cid=6652825470075765852&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA',
+      'https://www.brendalowecpa.com/contact_us_2.html',
+      'https://prospeo.io/c/brenda-k-lowe-cpa-email-format'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-059',
+  contactName: 'Jason Lucio',
+  firmName: 'Jason Lucio, CPA',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'web_search',
+    displayName: 'Jason Lucio Email & Phone Number | Certified Public Accountant',
+    confidenceScore: 72,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(512) 736-8995',
+    email: undefined,
+    website: undefined
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-060',
+  contactName: 'Paola Martinez',
+  firmName: 'CPA Tax Adviser',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'Tampa Bay, Florida CPA',
+    confidenceScore: 100,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(727) 753-9433',
+    email: 'contactadmin@procpa.net',
+    website: 'https://www.cpataxadviser.net'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'firm name appears generic/descriptive rather than a registered firm name - verify',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-061',
+  contactName: 'Nancy McClelland',
+  firmName: 'The Dancing Accountant',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'The Dancing Accountant | Accounting Services for Small Businesses',
+    confidenceScore: 100,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: undefined,
+    email: 'nancy@thedancingaccountant.com',
+    website: 'https://www.thedancingaccountant.com'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-062',
+  contactName: 'Dennis McNamara',
+  firmName: 'wHealth Advisors',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'wHealth Advisors',
+    confidenceScore: 100,
+    formattedAddress: '43 W Front St #16, Red Bank, NJ 07701, USA',
+    city: undefined,
+    state: undefined,
+    phone: '(732) 852-5089',
+    email: undefined,
+    website: 'http://whealthfa.com/'
+  },
+  locationBackfill: {
+    city: 'Spencerport',
+    state: 'NY',
+    zip: '14559',
+    formattedAddress: '24 West Ave Suite 201, Spencerport, NY 14559',
+    confidenceScore: 70,
+    sourceType: 'official_site',
+    sourceUrls: [ 'https://www.healthwealthadvisors.com/' ]
+  },
+  issues: [
+    'city missing',
+    'state missing',
+    'not confirmed CPA/tax firm - advisory positioning, verify fit'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-063',
+  contactName: 'David Meyrowitz',
+  firmName: 'David Meyrowitz Consultant',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'web_search',
+    displayName: 'David H. Meyrowitz - New York, NY - FindLaw Lawyer Directory',
+    confidenceScore: 65,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(212) 686-3300',
+    email: undefined,
+    website: undefined
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'not confirmed CPA/tax firm - generic consultant title, verify fit',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-064',
+  contactName: 'Rick Miller',
+  firmName: 'Compass Private Wealth Consulting',
+  action: 'insert',
+  topCandidate: undefined,
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'firm name truncated in source image',
+    'not confirmed CPA/tax firm - wealth advisory, verify fit',
+    'online-pass-only attendee',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-065',
+  contactName: 'Quinn Miller',
+  firmName: 'Harmony CPA Consulting LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'web_search',
+    displayName: 'Home - HARMONY & COMPANY',
+    confidenceScore: 72,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(718) 206-1518',
+    email: undefined,
+    website: undefined
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-066',
+  contactName: 'Daniel Moore',
+  firmName: 'D.T. Moore & Company',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'D. T. Moore and Company, LLC',
+    confidenceScore: 100,
+    formattedAddress: '217 N Lincoln Ave, Salem, OH 44460, USA',
+    city: 'Salem',
+    state: 'OH',
+    phone: '(330) 332-5336',
+    email: undefined,
+    website: 'http://www.dtmooreandcompany.com/'
+  },
+  locationBackfill: {
+    city: 'Salem',
+    state: 'OH',
+    zip: '44460',
+    formattedAddress: '217 N Lincoln Ave, Salem, OH 44460, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'http://www.dtmooreandcompany.com/',
+      'https://maps.google.com/?cid=2201828014347621243&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [
+    'city missing',
+    'state missing',
+    'card cut off by page break, pass type not visible'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-067',
+  contactName: 'David Morales',
+  firmName: 'Gowland, Morales & Smith, PLLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'web_search',
+    displayName: 'Contact Us | Gowland, Morales, & Smith | CPAs',
+    confidenceScore: 72,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(361) 993-1000',
+    email: undefined,
+    website: undefined
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-068',
+  contactName: 'Daniel M.',
+  firmName: 'Unknown',
+  action: 'insert',
+  topCandidate: undefined,
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'last name truncated',
+    'firm not shown',
+    'title not shown',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-069',
+  contactName: 'John Munley',
+  firmName: 'wHealth Advisors',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'web_search',
+    displayName: 'Contact - wHealth Advisors - Financially Fit For Life',
+    confidenceScore: 72,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(732) 852-5089',
+    email: undefined,
+    website: undefined
+  },
+  locationBackfill: {
+    city: 'Spencerport',
+    state: 'NY',
+    zip: '14559',
+    formattedAddress: '24 West Ave Suite 201, Spencerport, NY 14559',
+    confidenceScore: 70,
+    sourceType: 'official_site',
+    sourceUrls: [ 'https://www.healthwealthadvisors.com/' ]
+  },
+  issues: [
+    'city missing',
+    'state missing',
+    'not confirmed CPA/tax firm - advisory positioning, verify fit',
+    'same firm as Dennis McNamara'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-070',
+  contactName: 'William Mutschler',
+  firmName: 'W Andrew Mutschler, CPA',
+  action: 'insert',
+  topCandidate: undefined,
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-071',
+  contactName: 'Adam Necelis',
+  firmName: 'Adam R Necelis CPA LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'Adam R. Necelis CPA LLC of New Castle, Delaware - official website | WilmingtonDelawareDirect.us',
+    confidenceScore: 100,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(866) 445-9004',
+    email: undefined,
+    website: 'https://adam-r-necelis-cpa-llc.wilmingtondelawaredirect.us'
+  },
+  locationBackfill: {
+    city: 'New Castle',
+    state: 'DE',
+    zip: '19720',
+    formattedAddress: '700 Delaware St, New Castle, DE 19720, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'http://www.neceliscpa.com/',
+      'https://maps.google.com/?cid=3937869576519713419&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [
+    'city missing',
+    'state missing',
+    'card cut off by page break, pass type not visible'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-072',
+  contactName: 'David Nolan',
+  firmName: 'Nolan & Associates',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Nolan & Associates, Inc.',
+    confidenceScore: 95,
+    formattedAddress: '112 N 7th St, Mitchell, IN 47446, USA',
+    city: 'Mitchell',
+    state: 'IN',
+    phone: '(812) 849-4442',
+    email: undefined,
+    website: undefined
+  },
+  locationBackfill: {
+    city: 'Mitchell',
+    state: 'IN',
+    zip: '47446',
+    formattedAddress: '112 N 7th St, Mitchell, IN 47446, USA',
+    confidenceScore: 95,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'https://maps.google.com/?cid=14946140070992578218&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-073',
+  contactName: 'Hope Nolan',
+  firmName: 'Nolan & Associates',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'official_site',
+    displayName: 'Nolan & Associates',
+    confidenceScore: 90,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(689) 594-5877',
+    email: 'office@nolan.ie',
+    website: 'https://www.nolanassociates.ie'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'same firm as David Nolan - likely co-owners, dedupe by firm not name',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-074',
+  contactName: 'Terri O.',
+  firmName: 'Unknown',
+  action: 'insert',
+  topCandidate: undefined,
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'last name truncated',
+    'firm not shown',
+    'title not shown',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-075',
+  contactName: 'Neha Pabla',
+  firmName: 'Pabla Tax CPA',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'official_site',
+    displayName: "Pabla's Accounting & Tax Services",
+    confidenceScore: 100,
+    formattedAddress: '9613 41 Ave NW #203, Edmonton, AB T6E 5X7, Canada',
+    city: undefined,
+    state: undefined,
+    phone: '(780) 466-7898',
+    email: 'taxcanada.org@gmail.com',
+    website: 'https://pablastax.com'
+  },
+  locationBackfill: {
+    city: 'San Mateo',
+    state: 'CA',
+    zip: '94402',
+    formattedAddress: '177 Bovet Rd 6th floor, San Mateo, CA 94402, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'https://www.pablataxcpa.com/?utm_source=google&utm_medium=google_business_profile&utm_campaign=website_click',
+      'https://maps.google.com/?cid=8609520717799094012&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA',
+      'https://maps.google.com/?cid=2708975445977883805&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-076',
+  contactName: 'Pamela Parks',
+  firmName: 'Ulbricht Public Accounting LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Ulbricht Public Accounting LLC',
+    confidenceScore: 100,
+    formattedAddress: '620 S Holladay Dr #4, Seaside, OR 97138, USA',
+    city: undefined,
+    state: undefined,
+    phone: '(503) 738-7282',
+    email: undefined,
+    website: 'http://www.ulbrichtllc.com/'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'firm name truncated in source image',
+    'card cut off by page break, pass type not visible',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-077',
+  contactName: 'Michelle Pierson',
+  firmName: 'PIE CPA, PLLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Pi PLLC',
+    confidenceScore: 100,
+    formattedAddress: '2500 Yale St Ste B, Houston, TX 77008, USA',
+    city: 'Houston',
+    state: 'TX',
+    phone: '(281) 846-5688',
+    email: undefined,
+    website: 'https://annapicpa.taxdome.com/'
+  },
+  locationBackfill: {
+    city: 'Houston',
+    state: 'TX',
+    zip: '77008',
+    formattedAddress: '2500 Yale St Ste B, Houston, TX 77008, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'https://annapicpa.taxdome.com/',
+      'https://maps.google.com/?cid=675509344830284015&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-078',
+  contactName: 'Brannon Poe',
+  firmName: 'Poe Group Advisors',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'Accounting Practice Sales - Buy or Sell | Poe Group Advisors',
+    confidenceScore: 100,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(888) 246-0974',
+    email: 'info@poegroupadvisors.com',
+    website: 'https://poegroupadvisors.com'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'exhibitor badge - may be vendor not prospect, verify fit',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-079',
+  contactName: 'Ajith Prabhu',
+  firmName: 'V Care Accounting Inc',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'V Care Accounting | Orlando, FL | 850-533-6765',
+    confidenceScore: 100,
+    formattedAddress: '417 Racetrack Rd NW, Fort Walton Beach, FL 32547, USA',
+    city: 'Fort Walton Beach',
+    state: 'FL',
+    phone: '(447) 202-6052',
+    email: 'ajith.vcare@gmail.com',
+    website: 'https://vcareaccounting.com'
+  },
+  locationBackfill: {
+    city: 'Fort Walton Beach',
+    state: 'FL',
+    zip: '32547',
+    formattedAddress: '417 Racetrack Rd NW, Fort Walton Beach, FL 32547, USA',
+    confidenceScore: 100,
+    sourceType: 'website_contact_page',
+    sourceUrls: [
+      'https://vcareaccounting.com/',
+      'https://vcareaccounting.com/contact/',
+      'http://vcareaccounting.com/',
+      'https://maps.google.com/?cid=5771815044523536081&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA',
+      'https://vcareaccounting.com/profile',
+      'https://vcareaccounting.com',
+      'http://vcareaccounting.com/contact'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-080',
+  contactName: 'Marjorie R.',
+  firmName: 'Unknown',
+  action: 'insert',
+  topCandidate: undefined,
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'last name truncated',
+    'firm not shown',
+    'title not shown',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-081',
+  contactName: 'Kathleen Rehl',
+  firmName: 'RFA',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'RFA Financial Center / Office of Ricardo F Alvarez EA',
+    confidenceScore: 100,
+    formattedAddress: '1671 Palm Ave, San Diego, CA 92154, USA',
+    city: 'San Diego',
+    state: 'CA',
+    phone: '(619) 429-1849',
+    email: undefined,
+    website: 'http://www.rfafinancialcenter.com/'
+  },
+  locationBackfill: {
+    city: 'San Diego',
+    state: 'CA',
+    zip: '92154',
+    formattedAddress: '1671 Palm Ave, San Diego, CA 92154, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'http://www.rfafinancialcenter.com/',
+      'https://maps.google.com/?cid=13814316815707109528&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [
+    'city missing',
+    'state missing',
+    'firm name is an abbreviation, full name unclear',
+    'card cut off by page break, pass type not visible'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-082',
+  contactName: 'Gwendolyn Reilly',
+  firmName: 'Gwendolyn M Reilly CPA PLLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Gwendolyn M. Reilly, CPA, PLLC',
+    confidenceScore: 100,
+    formattedAddress: '5000 Centregreen Way #500, Cary, NC 27513, USA',
+    city: undefined,
+    state: undefined,
+    phone: '(919) 428-9857',
+    email: undefined,
+    website: 'https://gmreillycpa.com/'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-083',
+  contactName: 'Robert Riley',
+  firmName: 'Isler Northwest LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Isler Northwest LLC',
+    confidenceScore: 100,
+    formattedAddress: '1300 SW 5th Ave #2600, Portland, OR 97201, USA',
+    city: undefined,
+    state: undefined,
+    phone: '(503) 224-5321',
+    email: undefined,
+    website: 'http://www.islernw.com/'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-084',
+  contactName: 'Elizabeth Rodrigues',
+  firmName: 'Elizabeth CPA, Inc',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Elizabeth A. Curtis, EA',
+    confidenceScore: 100,
+    formattedAddress: '6040 Commerce Blvd #109, Rohnert Park, CA 94928, USA',
+    city: undefined,
+    state: undefined,
+    phone: '(707) 978-5902',
+    email: undefined,
+    website: 'http://www.curtis-ea.com/'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-085',
+  contactName: 'Dominic Rosa',
+  firmName: 'KBCA, LLC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: "KBCA | Carson City CPA's – We are your trusted Carson City CPA Firm",
+    confidenceScore: 100,
+    formattedAddress: '3860 Gs Richards Blvd, Carson City, NV 89703, USA',
+    city: 'Carson City',
+    state: 'NV',
+    phone: '(775) 885-8847',
+    email: 'info@kbcallc.com',
+    website: 'https://kbcallc.com'
+  },
+  locationBackfill: {
+    city: 'Carson City',
+    state: 'NV',
+    zip: '89703',
+    formattedAddress: '3860 Gs Richards Blvd, Carson City, NV 89703, USA',
+    confidenceScore: 100,
+    sourceType: 'website_contact_page',
+    sourceUrls: [
+      'https://kbcallc.com/',
+      'https://kbcallc.com/contact/',
+      'https://kbcallc.com/about/',
+      'http://kbcallc.com/',
+      'https://maps.google.com/?cid=2569481192903427961&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA',
+      'https://kbcallc.com/contact'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-086',
+  contactName: 'Roberta R.',
+  firmName: 'Unknown',
+  action: 'insert',
+  topCandidate: undefined,
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'last name truncated',
+    'firm not shown',
+    'title not shown',
+    'pass type not shown',
+    'card cut off by page break',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-087',
+  contactName: 'James Saulnier',
+  firmName: 'Jim Saulnier & Associates',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Jim Saulnier and Associates',
+    confidenceScore: 100,
+    formattedAddress: '506 E Mulberry St, Fort Collins, CO 80524, USA',
+    city: 'Fort Collins',
+    state: 'CO',
+    phone: '(970) 530-0556',
+    email: undefined,
+    website: 'http://www.jimhelps.com/'
+  },
+  locationBackfill: {
+    city: 'Fort Collins',
+    state: 'CO',
+    zip: '80524',
+    formattedAddress: '506 E Mulberry St, Fort Collins, CO 80524, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'http://www.jimhelps.com/',
+      'https://maps.google.com/?cid=16781506383022982978&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-088',
+  contactName: 'Mark Seid',
+  firmName: 'Mark F Seid, CPA EA USTCP',
+  action: 'insert',
+  topCandidate: undefined,
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-089',
+  contactName: 'Rahul Sharma',
+  firmName: 'RS Dental CPA',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'Dental CPA Accounting and Tax – Dental CPA Firm',
+    confidenceScore: 100,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(860) 578-4283',
+    email: 'info@rsdentalcpa.com',
+    website: 'https://rsdentalcpa.com'
+  },
+  locationBackfill: {
+    city: 'Newport Beach',
+    state: 'CA',
+    zip: '92660',
+    formattedAddress: '4695 MacArthur Ct 11th floor, Newport Beach, CA 92660, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'https://www.cadentalmedicalcpa.com/',
+      'https://maps.google.com/?cid=6413779848443682153&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [ 'city missing', 'state missing' ]
+}
+Enrichment result: {
+  leadId: 'aicpa-090',
+  contactName: 'Dawna Shelley',
+  firmName: 'Dawna Shelley CPA PC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'Accounting | Dawna Shelley CPA | Salt Lake City',
+    confidenceScore: 85,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(782) 219-0632',
+    email: '605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com',
+    website: 'https://www.dawnashelleycpa.com'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-091',
+  contactName: 'Richard Smith',
+  firmName: 'R.P. Smith, CPA PC',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'RP Smith CPA PC',
+    confidenceScore: 100,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(503) 831-1415',
+    email: 'rick@rpsmithcpa.com',
+    website: 'https://www.rpsmithcpa.com'
+  },
+  locationBackfill: {
+    city: 'Rickreall',
+    state: 'OR',
+    zip: '97371',
+    formattedAddress: '10345 Coville Rd, Rickreall, OR 97371, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'https://www.rpsmithcpa.com/contact-us',
+      'https://maps.google.com/?cid=16180618153538969936&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [
+    'city missing',
+    'state missing',
+    'card cut off by page break, pass type not visible'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-092',
+  contactName: 'Enya Spicer',
+  firmName: 'Enya Business',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'official_site',
+    displayName: "I'm Enya Business",
+    confidenceScore: 90,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(782) 694-4014',
+    email: 'enya@enyabusiness.com',
+    website: 'https://www.enyabusiness.com'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'not confirmed CPA/tax firm - generic business name, verify fit',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-093',
+  contactName: 'Jason Staats',
+  firmName: 'Jason on Firms',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'Jason On Firms',
+    confidenceScore: 100,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(782) 742-8988',
+    email: undefined,
+    website: 'https://www.jasononfirms.com'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'exhibitor badge - may be vendor/media not prospect, verify fit',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-094',
+  contactName: 'Jesse Stacy',
+  firmName: 'JCS Retirement Tax Advisors',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'JCS Retirement Tax Advisors | Optimize Your Retirement Now',
+    confidenceScore: 100,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(777) 576-6292',
+    email: undefined,
+    website: 'https://www.jcsretirementtaxadvisors.com'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-095',
+  contactName: 'Kimberly T.',
+  firmName: 'Unknown',
+  action: 'insert',
+  topCandidate: undefined,
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'last name truncated',
+    'firm not shown',
+    'title not shown',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-096',
+  contactName: 'Susan Tenney',
+  firmName: 'Susan Tenney CPA',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'website_contact_page',
+    displayName: 'Susan Tenney CPA',
+    confidenceScore: 100,
+    formattedAddress: '451 Eastland Dr Ste 8, Twin Falls, ID 83301, USA',
+    city: 'Twin Falls',
+    state: 'ID',
+    phone: '(208) 734-4428',
+    email: '83301stenneycpa@yahoo.com',
+    website: 'https://susantenneycpa.com'
+  },
+  locationBackfill: {
+    city: 'Twin Falls',
+    state: 'ID',
+    zip: '83301',
+    formattedAddress: '451 Eastland Dr Ste 8, Twin Falls, ID 83301, USA',
+    confidenceScore: 100,
+    sourceType: 'website_contact_page',
+    sourceUrls: [
+      'https://susantenneycpa.com/',
+      'https://susantenneycpa.com/contact-us/',
+      'http://susantenneycpa.com/',
+      'https://maps.google.com/?cid=12080401602082080450&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [
+    'city missing',
+    'state missing',
+    'card cut off by page break, pass type not visible'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-097',
+  contactName: 'Katie Thomas',
+  firmName: 'Leaders Online',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'web_search',
+    displayName: 'Contact Us | Leaders Credit Union | West Tennessee',
+    confidenceScore: 72,
+    formattedAddress: undefined,
+    city: undefined,
+    state: undefined,
+    phone: '(731) 664-1784',
+    email: undefined,
+    website: undefined
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'not confirmed CPA/tax firm - verify fit',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-098',
+  contactName: 'Thomas Tomaszewski',
+  firmName: 'Thomas Tomaszewski CPA',
+  action: 'insert',
+  topCandidate: undefined,
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-099',
+  contactName: 'Christina Turpin',
+  firmName: 'Abacus Financial Services',
+  action: 'insert',
+  topCandidate: undefined,
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-100',
+  contactName: 'Christy Upton',
+  firmName: 'Christy Upton CPA, PS.',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Christy Upton CPA, PS',
+    confidenceScore: 100,
+    formattedAddress: '222 Lee St SW #116, Tumwater, WA 98501, USA',
+    city: undefined,
+    state: undefined,
+    phone: '(360) 350-0859',
+    email: undefined,
+    website: 'http://uptontax.com/'
+  },
+  locationBackfill: undefined,
+  issues: [
+    'city missing',
+    'state missing',
+    'city/state not confidently found'
+  ]
+}
+Enrichment result: {
+  leadId: 'aicpa-101',
+  contactName: 'Isaac Van Etten',
+  firmName: 'Van Etten Tax & Business Services',
+  action: 'insert',
+  topCandidate: {
+    sourceType: 'google_places',
+    displayName: 'Van Etten Tax & Business Services',
+    confidenceScore: 100,
+    formattedAddress: '915 Highland Pointe Dr Ste 250, Roseville, CA 95678, USA',
+    city: 'Roseville',
+    state: 'CA',
+    phone: '(279) 225-1112',
+    email: undefined,
+    website: 'https://vanettentax.com/'
+  },
+  locationBackfill: {
+    city: 'Roseville',
+    state: 'CA',
+    zip: '95678',
+    formattedAddress: '915 Highland Pointe Dr Ste 250, Roseville, CA 95678, USA',
+    confidenceScore: 100,
+    sourceType: 'google_places',
+    sourceUrls: [
+      'https://vanettentax.com/',
+      'https://maps.google.com/?cid=18190063459969004660&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA'
+    ]
+  },
+  issues: [
+    'city missing',
+    'state missing',
+    'firm name may be truncated in source image',
+    'card cut off at end of document, pass type not visible'
+  ]
+}
+Dry run complete. Built export payload but did not POST /api/notion/export.
+Final summary: {
+  inserted: 0,
+  updated: 0,
+  skipped: 0,
+  review: 0,
+  exportableInsert: 101,
+  exportableUpdateExisting: 0
+}
+Leads still missing city/state after enrichment: [
+  {
+    id: 'aicpa-003',
+    contactName: 'Alan A.',
+    firmName: 'Unknown',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'last name truncated',
+      'firm name not shown',
+      'title not shown',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-010',
+    contactName: 'Suzanne Briel',
+    firmName: 'Bobst & Briel CPAs, Inc',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-011',
+    contactName: 'Lora Broberg',
+    firmName: 'Viking Solutions LLC',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-012',
+    contactName: 'Karen Brosi',
+    firmName: 'Karen Brosi, EA, CFP, a LLC',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-013',
+    contactName: 'Brandon Brown',
+    firmName: 'Redwood Consulting Group LLC',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'online-pass-only attendee, may not have attended in person',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-015',
+    contactName: 'Doreen Carter',
+    firmName: 'Doreen Carter CPA, PLLC',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'online-pass-only attendee',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-017',
+    contactName: 'Trish Cheek',
+    firmName: 'Trish Cheek CPA PLLC',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-018',
+    contactName: 'Mark C.',
+    firmName: 'Unknown',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'last name truncated',
+      'firm not shown',
+      'title not shown',
+      'pass type not shown',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-021',
+    contactName: 'Anthony Cucciniello',
+    firmName: 'Anthony Cucciniello CPA LLC',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-023',
+    contactName: 'Richard Davis',
+    firmName: 'Richard A Davis, CPA',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-024',
+    contactName: 'Terrance D.',
+    firmName: 'Unknown',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'last name truncated',
+      'firm not shown',
+      'title not shown',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-025',
+    contactName: 'Mark Diehl',
+    firmName: 'Diehl CPA LLC',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-026',
+    contactName: 'Jen Diehl',
+    firmName: 'JRD Financials',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'card cut off by page break, pass type not visible',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-030',
+    contactName: 'Bobbie Fontenot',
+    firmName: 'Bobbie L Fontenot, CPA',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-032',
+    contactName: 'Robert Franzen',
+    firmName: 'Robert M Franzen, CPA',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-034',
+    contactName: 'David Fritch',
+    firmName: 'David P. Fritch CPA, PC',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'card cut off by page break, pass type not visible',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-036',
+    contactName: 'Dennis Gardiner',
+    firmName: 'Gardiner + Company CPAs',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-039',
+    contactName: 'Chris Hervochon',
+    firmName: 'Better Numbers',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-040',
+    contactName: 'Victor Hess',
+    firmName: 'Buttonwood Advisors, LLC',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'online-pass-only attendee',
+      'verify CPA/tax fit',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-041',
+    contactName: 'Trevor H.',
+    firmName: 'Unknown',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'last name truncated',
+      'firm not shown',
+      'title not shown',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-044',
+    contactName: 'Clifford Isara',
+    firmName: 'Clifford Isara CPA LLC',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-045',
+    contactName: 'Jeffrey J.',
+    firmName: 'Unknown',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'last name truncated',
+      'firm not shown',
+      'title not shown',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-048',
+    contactName: 'Carol Keane',
+    firmName: 'Carol Keane & Associates, CPAs',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'card cut off by page break, pass type not visible',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-051',
+    contactName: 'Kimberly Kollmeyer',
+    firmName: 'Kollmeyer & Company, LLC',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-052',
+    contactName: 'Gregory Kollmeyer',
+    firmName: 'Kollmeyer & Company, LLC',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'same firm as Kimberly Kollmeyer - likely spouses/co-owners, dedupe by firm not name',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-053',
+    contactName: 'Pascal Kornfuehrer',
+    firmName: 'P5 Edge LLC',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'card cut off by page break, pass type not visible',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-055',
+    contactName: 'John Lee',
+    firmName: 'John S. Lee, CPA',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-056',
+    contactName: 'Christian Leron',
+    firmName: 'Leron CPA',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-057',
+    contactName: 'Sam Liang',
+    firmName: 'Tax Fitness LLC',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-059',
+    contactName: 'Jason Lucio',
+    firmName: 'Jason Lucio, CPA',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-060',
+    contactName: 'Paola Martinez',
+    firmName: 'CPA Tax Adviser',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'firm name appears generic/descriptive rather than a registered firm name - verify',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-061',
+    contactName: 'Nancy McClelland',
+    firmName: 'The Dancing Accountant',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-063',
+    contactName: 'David Meyrowitz',
+    firmName: 'David Meyrowitz Consultant',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'not confirmed CPA/tax firm - generic consultant title, verify fit',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-064',
+    contactName: 'Rick Miller',
+    firmName: 'Compass Private Wealth Consulting',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'firm name truncated in source image',
+      'not confirmed CPA/tax firm - wealth advisory, verify fit',
+      'online-pass-only attendee',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-065',
+    contactName: 'Quinn Miller',
+    firmName: 'Harmony CPA Consulting LLC',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-067',
+    contactName: 'David Morales',
+    firmName: 'Gowland, Morales & Smith, PLLC',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-068',
+    contactName: 'Daniel M.',
+    firmName: 'Unknown',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'last name truncated',
+      'firm not shown',
+      'title not shown',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-070',
+    contactName: 'William Mutschler',
+    firmName: 'W Andrew Mutschler, CPA',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-073',
+    contactName: 'Hope Nolan',
+    firmName: 'Nolan & Associates',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'same firm as David Nolan - likely co-owners, dedupe by firm not name',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-074',
+    contactName: 'Terri O.',
+    firmName: 'Unknown',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'last name truncated',
+      'firm not shown',
+      'title not shown',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-076',
+    contactName: 'Pamela Parks',
+    firmName: 'Ulbricht Public Accounting LLC',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'firm name truncated in source image',
+      'card cut off by page break, pass type not visible',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-078',
+    contactName: 'Brannon Poe',
+    firmName: 'Poe Group Advisors',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'exhibitor badge - may be vendor not prospect, verify fit',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-080',
+    contactName: 'Marjorie R.',
+    firmName: 'Unknown',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'last name truncated',
+      'firm not shown',
+      'title not shown',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-082',
+    contactName: 'Gwendolyn Reilly',
+    firmName: 'Gwendolyn M Reilly CPA PLLC',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-083',
+    contactName: 'Robert Riley',
+    firmName: 'Isler Northwest LLC',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-084',
+    contactName: 'Elizabeth Rodrigues',
+    firmName: 'Elizabeth CPA, Inc',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-086',
+    contactName: 'Roberta R.',
+    firmName: 'Unknown',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'last name truncated',
+      'firm not shown',
+      'title not shown',
+      'pass type not shown',
+      'card cut off by page break',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-088',
+    contactName: 'Mark Seid',
+    firmName: 'Mark F Seid, CPA EA USTCP',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-090',
+    contactName: 'Dawna Shelley',
+    firmName: 'Dawna Shelley CPA PC',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-092',
+    contactName: 'Enya Spicer',
+    firmName: 'Enya Business',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'not confirmed CPA/tax firm - generic business name, verify fit',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-093',
+    contactName: 'Jason Staats',
+    firmName: 'Jason on Firms',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'exhibitor badge - may be vendor/media not prospect, verify fit',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-094',
+    contactName: 'Jesse Stacy',
+    firmName: 'JCS Retirement Tax Advisors',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-095',
+    contactName: 'Kimberly T.',
+    firmName: 'Unknown',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'last name truncated',
+      'firm not shown',
+      'title not shown',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-097',
+    contactName: 'Katie Thomas',
+    firmName: 'Leaders Online',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'not confirmed CPA/tax firm - verify fit',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-098',
+    contactName: 'Thomas Tomaszewski',
+    firmName: 'Thomas Tomaszewski CPA',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-099',
+    contactName: 'Christina Turpin',
+    firmName: 'Abacus Financial Services',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  },
+  {
+    id: 'aicpa-100',
+    contactName: 'Christy Upton',
+    firmName: 'Christy Upton CPA, PS.',
+    city: 'TBD',
+    state: 'XX',
+    issues: [
+      'city missing',
+      'state missing',
+      'city/state not confidently found'
+    ]
+  }
+]
