@@ -26,6 +26,17 @@ import type {
   Owner,
 } from "@/lib/leads/schemas";
 
+type ExportDestination = "hubspot" | "notion";
+
+type HubSpotExportRecord = {
+  success: boolean;
+  hubspotId: string;
+  action: "inserted" | "updated" | "skipped";
+  leadId?: string;
+  contactName?: string;
+  firmName?: string;
+};
+
 const samplePaste = `Profile Picture
 MaryJane Link
 The Tax Link
@@ -46,7 +57,9 @@ export default function Home() {
   const [batchLabel, setBatchLabel] = useState("");
   const [result, setResult] = useState<NormalizeResponse | null>(null);
   const [dedupeResult, setDedupeResult] = useState<DedupeResponse | null>(null);
+  const [exportDestination, setExportDestination] = useState<ExportDestination>("hubspot");
   const [exportResult, setExportResult] = useState<NotionExportResponse | null>(null);
+  const [hubSpotExportResult, setHubSpotExportResult] = useState<HubSpotExportRecord[] | null>(null);
   const [enrichmentResults, setEnrichmentResults] = useState<EnrichmentResponse[]>([]);
   const [error, setError] = useState("");
   const [dedupeError, setDedupeError] = useState("");
@@ -127,6 +140,7 @@ export default function Home() {
       setResult(payload);
       setDedupeResult(null);
       setExportResult(null);
+      setHubSpotExportResult(null);
       setEnrichmentResults([]);
       setDedupeError("");
       setExportError("");
@@ -145,6 +159,7 @@ export default function Home() {
     setResult(null);
     setDedupeResult(null);
     setExportResult(null);
+    setHubSpotExportResult(null);
     setEnrichmentResults([]);
     setError("");
     setDedupeError("");
@@ -178,6 +193,7 @@ export default function Home() {
 
       setDedupeResult(payload);
       setExportResult(null);
+      setHubSpotExportResult(null);
       setEnrichmentResults([]);
       setExportError("");
       setEnrichmentError("");
@@ -189,7 +205,7 @@ export default function Home() {
     }
   }
 
-  async function exportToNotion() {
+  async function exportLeads() {
     if (!dedupeResult || !result) {
       return;
     }
@@ -200,7 +216,7 @@ export default function Home() {
     const timeoutId = window.setTimeout(() => controller.abort(), 120_000);
 
     try {
-      const response = await fetch("/api/notion/export", {
+      const response = await fetch(`/api/${exportDestination}/export`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         cache: "no-store",
@@ -219,7 +235,14 @@ export default function Home() {
         throw new Error(payload.detail ?? payload.error ?? "Export request failed.");
       }
 
-      setExportResult(payload);
+      if (exportDestination === "hubspot") {
+        const records = Array.isArray(payload.results) ? payload.results : [payload];
+        setHubSpotExportResult(records as HubSpotExportRecord[]);
+        setExportResult(null);
+      } else {
+        setExportResult(payload as NotionExportResponse);
+        setHubSpotExportResult(null);
+      }
     } catch (requestError) {
       setExportError(toRequestErrorMessage(requestError, "Export request timed out or failed."));
     } finally {
@@ -230,13 +253,18 @@ export default function Home() {
 
   const insertableCount = dedupeResult?.decisions.filter((decision) => decision.action === "insert").length ?? 0;
   const updateableCount = dedupeResult?.decisions.filter((decision) => decision.action === "update_existing").length ?? 0;
-  const exportableCount = insertableCount + updateableCount;
+  const exportableCount =
+    exportDestination === "hubspot"
+      ? (dedupeResult?.decisions.length ?? 0)
+      : insertableCount + updateableCount;
   const enrichableDecisions = useMemo(
     () =>
-      dedupeResult?.decisions.filter(
-        (decision) => decision.action === "insert" || decision.action === "update_existing",
+      dedupeResult?.decisions.filter((decision) =>
+        exportDestination === "hubspot"
+          ? true
+          : decision.action === "insert" || decision.action === "update_existing",
       ) ?? [],
-    [dedupeResult],
+    [dedupeResult, exportDestination],
   );
   const enrichableLeads = useMemo(
     () => enrichableDecisions.map((decision) => decision.incomingLead),
@@ -275,6 +303,7 @@ export default function Home() {
 
       setEnrichmentResults(responses);
       setExportResult(null);
+      setHubSpotExportResult(null);
     } catch (requestError) {
       setEnrichmentError(toRequestErrorMessage(requestError, "Enrichment request timed out or failed."));
     } finally {
@@ -289,7 +318,7 @@ export default function Home() {
       ? "dedupe"
       : enrichmentResults.length === 0 && enrichableLeads.length > 0
         ? "enrich"
-        : !exportResult && exportableCount > 0
+        : !exportResult && !hubSpotExportResult && exportableCount > 0
           ? "export"
           : "done";
   const isWorking = isLoading || isDedupeLoading || isEnrichmentLoading || isExportLoading;
@@ -298,7 +327,7 @@ export default function Home() {
     { key: "normalize", label: "Normalize", complete: Boolean(result) },
     { key: "dedupe", label: "Dedupe", complete: Boolean(dedupeResult) },
     { key: "enrich", label: "Enrich", complete: enrichmentResults.length > 0 || (Boolean(dedupeResult) && enrichableLeads.length === 0) },
-    { key: "export", label: "Export", complete: Boolean(exportResult) },
+    { key: "export", label: "Export", complete: Boolean(exportResult || hubSpotExportResult) },
   ];
   const primaryAction = {
     normalize: {
@@ -323,11 +352,13 @@ export default function Home() {
       run: enrichInsertCandidates,
     },
     export: {
-      label: `Export ${exportableCount} lead${exportableCount === 1 ? "" : "s"} to Notion`,
+      label: `Export ${exportableCount} lead${exportableCount === 1 ? "" : "s"} to ${
+        exportDestination === "hubspot" ? "HubSpot" : "Notion"
+      }`,
       icon: Send,
       disabled: exportableCount === 0,
       loading: isExportLoading,
-      run: exportToNotion,
+      run: exportLeads,
     },
     done: {
       label: "Workflow complete",
@@ -349,7 +380,7 @@ export default function Home() {
               Lead enrichment console
             </h1>
             <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-600">
-              Paste directory output, review the dedupe and enrichment evidence, then export a clean contact list to Notion.
+              Paste directory output, review the dedupe and enrichment evidence, then export a clean contact list to your CRM.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-2 text-sm text-slate-600">
@@ -440,7 +471,7 @@ export default function Home() {
                 <div>
                   <h2 className="text-base font-semibold text-slate-950">Workflow</h2>
                   <p className="mt-1 text-sm leading-6 text-slate-600">
-                    One button moves the batch from paste to Notion. Review the tables on the right before the export step.
+                    One button moves the batch from paste to your CRM. Review the tables on the right before the export step.
                   </p>
                 </div>
                 <PrimaryIcon className="h-5 w-5 shrink-0 text-emerald-700" aria-hidden="true" />
@@ -467,6 +498,37 @@ export default function Home() {
                   );
                 })}
               </div>
+
+              <fieldset className="mt-4">
+                <legend className="text-xs font-semibold uppercase tracking-[0.08em] text-slate-500">Export to</legend>
+                <div className="mt-2 inline-flex rounded-md border border-slate-300 bg-slate-50 p-1">
+                  {(["hubspot", "notion"] as const).map((destination) => (
+                    <label
+                      key={destination}
+                      className={`cursor-pointer rounded px-3 py-1.5 text-sm font-semibold transition ${
+                        exportDestination === destination
+                          ? "bg-white text-emerald-700 shadow-sm"
+                          : "text-slate-600 hover:text-slate-950"
+                      }`}
+                    >
+                      <input
+                        type="radio"
+                        name="export-destination"
+                        value={destination}
+                        checked={exportDestination === destination}
+                        onChange={() => {
+                          setExportDestination(destination);
+                          setExportResult(null);
+                          setHubSpotExportResult(null);
+                          setEnrichmentResults([]);
+                        }}
+                        className="sr-only"
+                      />
+                      {destination === "hubspot" ? "HubSpot" : "Notion"}
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
 
               <button
                 type="button"
@@ -510,6 +572,18 @@ export default function Home() {
                   {exportResult.inserted.length + exportResult.updated.length === 1 ? "" : "s"}.
                   {` Inserted ${exportResult.inserted.length}, updated ${exportResult.updated.length}.`}
                   {exportResult.skipped.length ? ` Skipped ${exportResult.skipped.length}.` : ""}
+                </div>
+              ) : null}
+              {hubSpotExportResult ? (
+                <div className="mt-3 rounded-md border border-emerald-200 bg-emerald-50 p-3 text-sm leading-6 text-emerald-900">
+                  HubSpot export complete.{" "}
+                  {hubSpotExportResult.map((record) => record.action).join(", ")}
+                  {hubSpotExportResult.some((record) => record.hubspotId)
+                    ? ` — contact ID${hubSpotExportResult.length === 1 ? "" : "s"}: ${hubSpotExportResult
+                        .filter((record) => record.hubspotId)
+                        .map((record) => record.hubspotId)
+                        .join(", ")}`
+                    : ""}
                 </div>
               ) : null}
             </div>
@@ -720,6 +794,34 @@ export default function Home() {
                       ) : null}
                     </tbody>
                   </table>
+                </div>
+              </div>
+            ) : null}
+
+            {hubSpotExportResult ? (
+              <div className="overflow-hidden rounded-lg border border-emerald-200 bg-white shadow-sm">
+                <div className="flex flex-col gap-1 border-b border-emerald-100 bg-emerald-50 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
+                  <h2 className="text-base font-semibold text-emerald-950">HubSpot export receipt</h2>
+                  <span className="text-sm text-emerald-800">{hubSpotExportResult.length} processed</span>
+                </div>
+                <div className="divide-y divide-slate-100">
+                  {hubSpotExportResult.map((record, index) => (
+                    <div
+                      key={`${record.leadId ?? index}:${record.hubspotId}`}
+                      className="grid gap-1 px-4 py-3 text-sm sm:grid-cols-[1fr_1fr_auto]"
+                    >
+                      <div>
+                        <div className="font-medium text-slate-950">{record.contactName ?? "Contact"}</div>
+                        <div className="text-slate-600">{record.firmName ?? "-"}</div>
+                      </div>
+                      <div className="text-slate-700">
+                        HubSpot contact ID: {record.hubspotId || "No matching contact"}
+                      </div>
+                      <span className="inline-flex h-fit w-fit rounded-md bg-emerald-50 px-2 py-1 text-xs font-semibold capitalize text-emerald-700 ring-1 ring-emerald-200">
+                        {record.action}
+                      </span>
+                    </div>
+                  ))}
                 </div>
               </div>
             ) : null}
