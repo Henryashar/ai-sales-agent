@@ -45,13 +45,35 @@ export async function POST(request: Request) {
       const candidate = candidatesByLeadId.get(lead.id);
 
       if (decision.action === "insert") {
-        results.push(withLeadDetails(lead, await exportHubSpotContact(lead, candidate)));
+        results.push(
+          withLeadDetails(
+            lead,
+            await exportHubSpotContact(
+              lead,
+              candidate,
+              undefined,
+              input.defaults.source,
+              input.defaults.batchLabel,
+            ),
+          ),
+        );
         continue;
       }
 
       if (decision.action === "update_existing" && decision.matchedLead) {
         const existingContact = mapDedupeLeadToContact(decision.matchedLead);
-        results.push(withLeadDetails(lead, await exportHubSpotContact(lead, candidate, existingContact)));
+        results.push(
+          withLeadDetails(
+            lead,
+            await exportHubSpotContact(
+              lead,
+              candidate,
+              existingContact,
+              input.defaults.source,
+              input.defaults.batchLabel,
+            ),
+          ),
+        );
         continue;
       }
 

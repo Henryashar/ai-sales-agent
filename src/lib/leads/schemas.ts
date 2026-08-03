@@ -1,8 +1,8 @@
 import { z } from "zod";
 
-export const ownerSchema = z.enum(["Claudia", "Henry", "Lisa White"]);
+export const ownerSchema = z.enum(["Lisa", "Tamar", "Dawn", "Henry"]);
 
-export const leadSourceSchema = z.enum(["NAEA", "AICPA", "Cold", "Referral", "Chamber", "Other"]);
+export const leadSourceSchema = z.enum(["NAEA", "IRS RPO", "AICPA", "Cold", "Referral", "Chamber", "Other"]);
 
 export const leadStatusSchema = z.enum(["Cold List", "Lead"]);
 
@@ -45,7 +45,7 @@ export const dedupeDecisionSchema = z.object({
 
 export const normalizeRequestSchema = z.object({
   rawText: z.string().min(1, "Paste at least one NAEA lead block."),
-  owner: ownerSchema.default("Claudia"),
+  owner: ownerSchema.default("Henry"),
   status: leadStatusSchema.default("Cold List"),
   source: leadSourceSchema.default("NAEA"),
   batchLabel: z.string().optional(),
@@ -69,6 +69,7 @@ export const normalizeResponseSchema = z.object({
 
 export const dedupeRequestSchema = z.object({
   leads: z.array(normalizedLeadSchema),
+  destination: z.enum(["hubspot", "notion"]).default("hubspot"),
 });
 
 export const dedupeResponseSchema = z.object({

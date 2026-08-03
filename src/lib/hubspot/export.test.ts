@@ -54,9 +54,16 @@ describe("exportHubSpotContact", () => {
         firstname: "Mary",
         lastname: "Jane Link",
         phone: candidate.phone,
-        time_zone: "Pacific",
         likely_calling_time_zone: "Pacific",
         time_zone_confidence: "High",
+        time_zone_source: "Phone area code",
+        lead_notes: "Source: NAEA",
+        credential_type: "EA",
+      }),
+    );
+    expect(createContact).toHaveBeenCalledWith(
+      expect.not.objectContaining({
+        hs_lead_source: expect.anything(),
       }),
     );
   });

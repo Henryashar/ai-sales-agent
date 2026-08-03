@@ -25,13 +25,15 @@ import type {
   NotionExportResponse,
   Owner,
 } from "@/lib/leads/schemas";
+import { getTimezoneFromPhone, type USPhoneTimezone } from "@/lib/timezone";
 
 type ExportDestination = "hubspot" | "notion";
+type ExportActionFilter = "inserted" | "updated" | "skipped";
 
 type HubSpotExportRecord = {
   success: boolean;
   hubspotId: string;
-  action: "inserted" | "updated" | "skipped";
+  action: ExportActionFilter;
   leadId?: string;
   contactName?: string;
   firmName?: string;
@@ -44,14 +46,14 @@ The Tax Link
 Seal Beach, CA 90740-4522
 United States`;
 
-const owners: Owner[] = ["Claudia", "Henry"];
+const owners: Owner[] = ["Lisa", "Tamar", "Dawn", "Henry"];
 const statuses: LeadStatus[] = ["Cold List", "Lead"];
-const sources: LeadSource[] = ["NAEA", "Cold", "Referral", "Chamber", "Other"];
+const sources: LeadSource[] = ["NAEA", "IRS RPO", "Cold", "Referral", "Chamber", "Other"];
 
 export default function Home() {
   const [signedInUser, setSignedInUser] = useState<AuthUser | null>(null);
   const [rawText, setRawText] = useState(samplePaste);
-  const [owner, setOwner] = useState<Owner>("Claudia");
+  const [owner, setOwner] = useState<Owner>("Henry");
   const [status, setStatus] = useState<LeadStatus>("Cold List");
   const [source, setSource] = useState<LeadSource>("NAEA");
   const [batchLabel, setBatchLabel] = useState("");
@@ -60,6 +62,7 @@ export default function Home() {
   const [exportDestination, setExportDestination] = useState<ExportDestination>("hubspot");
   const [exportResult, setExportResult] = useState<NotionExportResponse | null>(null);
   const [hubSpotExportResult, setHubSpotExportResult] = useState<HubSpotExportRecord[] | null>(null);
+  const [exportActionFilter, setExportActionFilter] = useState<ExportActionFilter | null>(null);
   const [enrichmentResults, setEnrichmentResults] = useState<EnrichmentResponse[]>([]);
   const [error, setError] = useState("");
   const [dedupeError, setDedupeError] = useState("");
@@ -111,6 +114,34 @@ export default function Home() {
     };
   }, [result]);
 
+  const phoneByLeadId = useMemo(() => {
+    const phones = new Map<string, string>();
+
+    for (const entry of enrichmentResults) {
+      const candidate = [...entry.candidates]
+        .filter((item) => item.confidenceScore >= 70)
+        .filter((item) => item.phone || item.email || item.website)
+        .sort((left, right) => right.confidenceScore - left.confidenceScore)[0];
+
+      if (candidate?.phone) {
+        phones.set(entry.leadId, candidate.phone);
+      }
+    }
+
+    return phones;
+  }, [enrichmentResults]);
+
+  const timezoneByLeadId = useMemo(() => {
+    const timezones = new Map<string, USPhoneTimezone>();
+
+    for (const lead of result?.leads ?? []) {
+      const phone = phoneByLeadId.get(lead.id) ?? "";
+      timezones.set(lead.id, phone ? getTimezoneFromPhone(phone) : "Unknown");
+    }
+
+    return timezones;
+  }, [phoneByLeadId, result?.leads]);
+
   async function normalizeLeads() {
     setError("");
     setIsLoading(true);
@@ -141,6 +172,7 @@ export default function Home() {
       setDedupeResult(null);
       setExportResult(null);
       setHubSpotExportResult(null);
+      setExportActionFilter(null);
       setEnrichmentResults([]);
       setDedupeError("");
       setExportError("");
@@ -160,6 +192,7 @@ export default function Home() {
     setDedupeResult(null);
     setExportResult(null);
     setHubSpotExportResult(null);
+    setExportActionFilter(null);
     setEnrichmentResults([]);
     setError("");
     setDedupeError("");
@@ -167,7 +200,7 @@ export default function Home() {
     setEnrichmentError("");
   }
 
-  async function dedupeAgainstNotion() {
+  async function dedupeAgainstCrm() {
     if (!result?.leads.length) {
       return;
     }
@@ -183,17 +216,33 @@ export default function Home() {
         headers: { "Content-Type": "application/json" },
         cache: "no-store",
         signal: controller.signal,
-        body: JSON.stringify({ leads: result.leads }),
+        body: JSON.stringify({
+          leads: result.leads,
+          destination: exportDestination,
+        }),
       });
       const payload = await parseJsonResponse(response);
 
       if (!response.ok) {
-        throw new Error(payload.detail ?? payload.error ?? "Dedupe request failed.");
+        const issueSummary = Array.isArray(payload.issues)
+          ? payload.issues
+              .map((issue: { path?: string; message?: string }) =>
+                [issue.path, issue.message].filter(Boolean).join(": "),
+              )
+              .filter(Boolean)
+              .join("; ")
+          : "";
+        throw new Error(
+          [payload.detail ?? payload.error ?? "Dedupe request failed.", issueSummary]
+            .filter(Boolean)
+            .join(" "),
+        );
       }
 
       setDedupeResult(payload);
       setExportResult(null);
       setHubSpotExportResult(null);
+      setExportActionFilter(null);
       setEnrichmentResults([]);
       setExportError("");
       setEnrichmentError("");
@@ -239,9 +288,11 @@ export default function Home() {
         const records = Array.isArray(payload.results) ? payload.results : [payload];
         setHubSpotExportResult(records as HubSpotExportRecord[]);
         setExportResult(null);
+        setExportActionFilter(null);
       } else {
         setExportResult(payload as NotionExportResponse);
         setHubSpotExportResult(null);
+        setExportActionFilter(null);
       }
     } catch (requestError) {
       setExportError(toRequestErrorMessage(requestError, "Export request timed out or failed."));
@@ -284,18 +335,18 @@ export default function Home() {
     try {
       const responses = await Promise.all(
         enrichableLeads.map(async (lead) => {
-        const response = await fetch("/api/enrich", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          cache: "no-store",
-          signal: controller.signal,
-          body: JSON.stringify({ lead }),
-        });
-        const payload = await parseJsonResponse(response);
+          const response = await fetch("/api/enrich", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            cache: "no-store",
+            signal: controller.signal,
+            body: JSON.stringify({ lead }),
+          });
+          const payload = await parseJsonResponse(response);
 
-        if (!response.ok) {
-          throw new Error(payload.error ?? `Enrichment failed for ${lead.firmName}.`);
-        }
+          if (!response.ok) {
+            throw new Error(payload.error ?? `Enrichment failed for ${lead.firmName}.`);
+          }
 
           return payload as EnrichmentResponse;
         }),
@@ -304,6 +355,7 @@ export default function Home() {
       setEnrichmentResults(responses);
       setExportResult(null);
       setHubSpotExportResult(null);
+      setExportActionFilter(null);
     } catch (requestError) {
       setEnrichmentError(toRequestErrorMessage(requestError, "Enrichment request timed out or failed."));
     } finally {
@@ -312,63 +364,80 @@ export default function Home() {
     }
   }
 
-  const workflowStep = !result
-    ? "normalize"
-    : !dedupeResult
-      ? "dedupe"
-      : enrichmentResults.length === 0 && enrichableLeads.length > 0
-        ? "enrich"
-        : !exportResult && !hubSpotExportResult && exportableCount > 0
-          ? "export"
-          : "done";
+  const normalizeComplete = Boolean(result);
+  const dedupeComplete = Boolean(dedupeResult);
+  const enrichComplete =
+    enrichmentResults.length > 0 || (Boolean(dedupeResult) && enrichableLeads.length === 0);
+  const exportComplete = Boolean(exportResult || hubSpotExportResult);
   const isWorking = isLoading || isDedupeLoading || isEnrichmentLoading || isExportLoading;
   const workflowError = error || dedupeError || enrichmentError || exportError;
+
+  const hubSpotSummary = useMemo(() => {
+    if (!hubSpotExportResult) {
+      return null;
+    }
+
+    return {
+      inserted: hubSpotExportResult.filter((record) => record.action === "inserted").length,
+      updated: hubSpotExportResult.filter((record) => record.action === "updated").length,
+      skipped: hubSpotExportResult.filter((record) => record.action === "skipped").length,
+    };
+  }, [hubSpotExportResult]);
+
+  const filteredLeads = useMemo(() => {
+    const leads = result?.leads ?? [];
+
+    if (!exportActionFilter || !hubSpotExportResult) {
+      return leads;
+    }
+
+    const matchingIds = new Set(
+      hubSpotExportResult
+        .filter((record) => record.action === exportActionFilter && record.leadId)
+        .map((record) => record.leadId as string),
+    );
+
+    return leads.filter((lead) => matchingIds.has(lead.id));
+  }, [exportActionFilter, hubSpotExportResult, result?.leads]);
+
   const workflowSteps = [
-    { key: "normalize", label: "Normalize", complete: Boolean(result) },
-    { key: "dedupe", label: "Dedupe", complete: Boolean(dedupeResult) },
-    { key: "enrich", label: "Enrich", complete: enrichmentResults.length > 0 || (Boolean(dedupeResult) && enrichableLeads.length === 0) },
-    { key: "export", label: "Export", complete: Boolean(exportResult || hubSpotExportResult) },
-  ];
-  const primaryAction = {
-    normalize: {
-      label: "Normalize pasted leads",
+    {
+      key: "normalize",
+      label: "Normalize",
       icon: Wand2,
-      disabled: rawText.trim().length === 0,
+      complete: normalizeComplete,
+      enabled: rawText.trim().length > 0,
       loading: isLoading,
       run: normalizeLeads,
     },
-    dedupe: {
-      label: "Dedupe against Notion",
+    {
+      key: "dedupe",
+      label: "Dedupe",
       icon: GitCompareArrows,
-      disabled: !result?.leads.length,
+      complete: dedupeComplete,
+      enabled: Boolean(result?.leads.length),
       loading: isDedupeLoading,
-      run: dedupeAgainstNotion,
+      run: dedupeAgainstCrm,
     },
-    enrich: {
-      label: `Enrich ${enrichableLeads.length} lead${enrichableLeads.length === 1 ? "" : "s"}`,
+    {
+      key: "enrich",
+      label: "Enrich",
       icon: Search,
-      disabled: enrichableLeads.length === 0,
+      complete: enrichComplete,
+      enabled: Boolean(dedupeResult) && enrichableLeads.length > 0,
       loading: isEnrichmentLoading,
       run: enrichInsertCandidates,
     },
-    export: {
-      label: `Export ${exportableCount} lead${exportableCount === 1 ? "" : "s"} to ${
-        exportDestination === "hubspot" ? "HubSpot" : "Notion"
-      }`,
+    {
+      key: "export",
+      label: "Export",
       icon: Send,
-      disabled: exportableCount === 0,
+      complete: exportComplete,
+      enabled: Boolean(dedupeResult) && enrichComplete && exportableCount > 0,
       loading: isExportLoading,
       run: exportLeads,
     },
-    done: {
-      label: "Workflow complete",
-      icon: CheckCircle2,
-      disabled: true,
-      loading: false,
-      run: async () => undefined,
-    },
-  }[workflowStep];
-  const PrimaryIcon = primaryAction.icon;
+  ] as const;
 
   return (
     <main className="min-h-screen bg-[#f7f8fb] text-slate-950">
@@ -456,45 +525,64 @@ export default function Home() {
               </div>
             </div>
 
-            <label className="flex min-h-[430px] flex-col rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-              <span className="text-sm font-semibold text-slate-800">Raw NAEA text</span>
-              <textarea
-                value={rawText}
-                onChange={(event) => setRawText(event.target.value)}
-                className="mt-3 min-h-[340px] flex-1 resize-y rounded-md border border-slate-300 bg-slate-50 p-3 font-mono text-sm leading-6 text-slate-950 outline-none transition placeholder:text-slate-400 focus:border-emerald-600 focus:bg-white focus:ring-2 focus:ring-emerald-100"
-                placeholder="Paste one or more copied NAEA directory records..."
-              />
-            </label>
+            <div className="flex min-h-[430px] flex-col rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
+              <label className="flex flex-1 flex-col">
+                <span className="text-sm font-semibold text-slate-800">
+                  {source === "IRS RPO" ? "Raw IRS RPO text" : "Raw NAEA text"}
+                </span>
+                <textarea
+                  value={rawText}
+                  onChange={(event) => setRawText(event.target.value)}
+                  className="mt-3 min-h-[340px] flex-1 resize-y rounded-md border border-slate-300 bg-slate-50 p-3 font-mono text-sm leading-6 text-slate-950 outline-none transition placeholder:text-slate-400 focus:border-emerald-600 focus:bg-white focus:ring-2 focus:ring-emerald-100"
+                  placeholder={
+                    source === "IRS RPO"
+                      ? "Paste IRS RPO directory results..."
+                      : "Paste one or more copied NAEA directory records..."
+                  }
+                />
+              </label>
+              {source === "IRS RPO" ? (
+                <p className="mt-3 text-sm leading-6 text-slate-600">
+                  Search irs.treasury.gov/rpo/rpo.jsf by zip code, copy all results, paste here.
+                </p>
+              ) : null}
+            </div>
 
             <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-              <div className="flex items-start justify-between gap-3">
-                <div>
-                  <h2 className="text-base font-semibold text-slate-950">Workflow</h2>
-                  <p className="mt-1 text-sm leading-6 text-slate-600">
-                    One button moves the batch from paste to your CRM. Review the tables on the right before the export step.
-                  </p>
-                </div>
-                <PrimaryIcon className="h-5 w-5 shrink-0 text-emerald-700" aria-hidden="true" />
+              <div>
+                <h2 className="text-base font-semibold text-slate-950">Workflow</h2>
+                <p className="mt-1 text-sm leading-6 text-slate-600">
+                  Run each step when you are ready. Review the tables on the right before exporting.
+                </p>
               </div>
 
-              <div className="mt-4 grid grid-cols-4 gap-2">
+              <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-4">
                 {workflowSteps.map((step, index) => {
-                  const isActive = step.key === workflowStep;
+                  const Icon = step.icon;
+                  const disabled = isWorking || !step.enabled;
 
                   return (
-                    <div
+                    <button
                       key={step.key}
-                      className={`rounded-md border px-2 py-2 text-center text-xs font-semibold ${
-                        step.complete
-                          ? "border-emerald-200 bg-emerald-50 text-emerald-700"
-                          : isActive
-                            ? "border-slate-300 bg-slate-100 text-slate-950"
-                            : "border-slate-200 bg-white text-slate-500"
+                      type="button"
+                      onClick={step.run}
+                      disabled={disabled}
+                      className={`rounded-md border px-2 py-3 text-center text-xs font-semibold transition ${
+                        step.loading
+                          ? "border-emerald-300 bg-emerald-50 text-emerald-800"
+                          : step.complete
+                            ? "border-emerald-200 bg-emerald-50 text-emerald-700 hover:bg-emerald-100"
+                            : step.enabled
+                              ? "border-slate-300 bg-white text-slate-950 hover:bg-slate-50"
+                              : "cursor-not-allowed border-slate-200 bg-slate-50 text-slate-400"
                       }`}
                     >
-                      <span className="block text-[10px] text-slate-500">Step {index + 1}</span>
-                      {step.label}
-                    </div>
+                      <span className="block text-[10px] font-medium text-slate-500">Step {index + 1}</span>
+                      <span className="mt-1 inline-flex items-center justify-center gap-1">
+                        {step.loading ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Icon className="h-3.5 w-3.5" />}
+                        {step.label}
+                      </span>
+                    </button>
                   );
                 })}
               </div>
@@ -518,8 +606,10 @@ export default function Home() {
                         checked={exportDestination === destination}
                         onChange={() => {
                           setExportDestination(destination);
+                          setDedupeResult(null);
                           setExportResult(null);
                           setHubSpotExportResult(null);
+                          setExportActionFilter(null);
                           setEnrichmentResults([]);
                         }}
                         className="sr-only"
@@ -532,21 +622,8 @@ export default function Home() {
 
               <button
                 type="button"
-                onClick={primaryAction.run}
-                disabled={isWorking || primaryAction.disabled}
-                className="mt-4 inline-flex h-11 w-full items-center justify-center gap-2 rounded-md bg-emerald-700 px-4 text-sm font-semibold text-white transition hover:bg-emerald-800 disabled:cursor-not-allowed disabled:bg-slate-300"
-              >
-                {primaryAction.loading ? (
-                  <Loader2 className="h-4 w-4 animate-spin" />
-                ) : (
-                  <PrimaryIcon className="h-4 w-4" />
-                )}
-                {primaryAction.label}
-              </button>
-              <button
-                type="button"
                 onClick={resetWorkflow}
-                className="mt-2 inline-flex h-9 w-full items-center justify-center gap-2 rounded-md border border-slate-300 bg-white px-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-50"
+                className="mt-4 inline-flex h-9 w-full items-center justify-center gap-2 rounded-md border border-slate-300 bg-white px-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-50"
               >
                 <RotateCcw className="h-4 w-4" />
                 Start a new batch
@@ -561,6 +638,40 @@ export default function Home() {
                 </div>
               </div>
 
+              {hubSpotSummary ? (
+                <div className="mt-3 rounded-md border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm text-emerald-900">
+                  <span className="mr-1 text-emerald-700" aria-hidden="true">
+                    ✓
+                  </span>
+                  <SummaryAction
+                    count={hubSpotSummary.inserted}
+                    label="inserted"
+                    active={exportActionFilter === "inserted"}
+                    onClick={() =>
+                      setExportActionFilter((current) => (current === "inserted" ? null : "inserted"))
+                    }
+                  />
+                  <span className="mx-2 text-emerald-700">·</span>
+                  <SummaryAction
+                    count={hubSpotSummary.updated}
+                    label="updated"
+                    active={exportActionFilter === "updated"}
+                    onClick={() =>
+                      setExportActionFilter((current) => (current === "updated" ? null : "updated"))
+                    }
+                  />
+                  <span className="mx-2 text-emerald-700">·</span>
+                  <SummaryAction
+                    count={hubSpotSummary.skipped}
+                    label="skipped"
+                    active={exportActionFilter === "skipped"}
+                    onClick={() =>
+                      setExportActionFilter((current) => (current === "skipped" ? null : "skipped"))
+                    }
+                  />
+                </div>
+              ) : null}
+
               {workflowError ? (
                 <div className="mt-3 rounded-md border border-red-200 bg-red-50 p-3 text-sm leading-6 text-red-800">
                   {workflowError}
@@ -572,18 +683,6 @@ export default function Home() {
                   {exportResult.inserted.length + exportResult.updated.length === 1 ? "" : "s"}.
                   {` Inserted ${exportResult.inserted.length}, updated ${exportResult.updated.length}.`}
                   {exportResult.skipped.length ? ` Skipped ${exportResult.skipped.length}.` : ""}
-                </div>
-              ) : null}
-              {hubSpotExportResult ? (
-                <div className="mt-3 rounded-md border border-emerald-200 bg-emerald-50 p-3 text-sm leading-6 text-emerald-900">
-                  HubSpot export complete.{" "}
-                  {hubSpotExportResult.map((record) => record.action).join(", ")}
-                  {hubSpotExportResult.some((record) => record.hubspotId)
-                    ? ` — contact ID${hubSpotExportResult.length === 1 ? "" : "s"}: ${hubSpotExportResult
-                        .filter((record) => record.hubspotId)
-                        .map((record) => record.hubspotId)
-                        .join(", ")}`
-                    : ""}
                 </div>
               ) : null}
             </div>
@@ -599,7 +698,18 @@ export default function Home() {
 
             <div className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
               <div className="flex items-center justify-between border-b border-slate-200 px-4 py-3">
-                <h2 className="text-base font-semibold text-slate-950">Normalize preview</h2>
+                <div>
+                  <h2 className="text-base font-semibold text-slate-950">Normalize preview</h2>
+                  {exportActionFilter ? (
+                    <button
+                      type="button"
+                      onClick={() => setExportActionFilter(null)}
+                      className="mt-1 text-xs font-semibold text-emerald-700 underline-offset-2 hover:underline"
+                    >
+                      Showing {exportActionFilter} · Clear filter
+                    </button>
+                  ) : null}
+                </div>
                 {result ? (
                   <span className="text-sm text-slate-500">
                     Defaults: {result.defaults.owner} / {result.defaults.status} / {result.defaults.source}
@@ -608,25 +718,29 @@ export default function Home() {
               </div>
 
               <div className="overflow-x-auto">
-                <table className="w-full min-w-[860px] border-collapse text-left text-sm">
+                <table className="w-full min-w-[940px] border-collapse text-left text-sm">
                   <thead className="bg-slate-50 text-xs uppercase tracking-[0.08em] text-slate-500">
                     <tr>
                       <th className="px-4 py-3 font-semibold">Contact</th>
                       <th className="px-4 py-3 font-semibold">Firm</th>
                       <th className="px-4 py-3 font-semibold">Credential</th>
                       <th className="px-4 py-3 font-semibold">Location</th>
+                      <th className="px-4 py-3 font-semibold">Timezone</th>
                       <th className="px-4 py-3 font-semibold">Confidence</th>
                       <th className="px-4 py-3 font-semibold">Issues</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100">
-                    {(result?.leads ?? []).map((lead) => (
+                    {filteredLeads.map((lead) => (
                       <tr key={lead.id} className="align-top">
                         <td className="px-4 py-3 font-medium text-slate-950">{lead.contactName}</td>
                         <td className="px-4 py-3 text-slate-700">{lead.firmName}</td>
                         <td className="px-4 py-3 text-slate-700">{lead.credential ?? "-"}</td>
                         <td className="px-4 py-3 text-slate-700">
                           {lead.city}, {lead.state} {lead.zip}
+                        </td>
+                        <td className="px-4 py-3 text-slate-700">
+                          {timezoneByLeadId.get(lead.id) ?? "Unknown"}
                         </td>
                         <td className="px-4 py-3">
                           <ConfidenceBadge score={lead.parseConfidence} />
@@ -652,15 +766,17 @@ export default function Home() {
                     ))}
                     {!result ? (
                       <tr>
-                        <td colSpan={6} className="px-4 py-16 text-center text-slate-500">
+                        <td colSpan={7} className="px-4 py-16 text-center text-slate-500">
                           Normalize pasted records to preview structured leads.
                         </td>
                       </tr>
                     ) : null}
-                    {result && result.leads.length === 0 ? (
+                    {result && filteredLeads.length === 0 ? (
                       <tr>
-                        <td colSpan={6} className="px-4 py-16 text-center text-slate-500">
-                          No valid leads were parsed from this paste.
+                        <td colSpan={7} className="px-4 py-16 text-center text-slate-500">
+                          {exportActionFilter
+                            ? `No ${exportActionFilter} contacts in this batch.`
+                            : "No valid leads were parsed from this paste."}
                         </td>
                       </tr>
                     ) : null}
@@ -690,7 +806,8 @@ export default function Home() {
                 <div className="flex flex-col gap-1 border-b border-slate-200 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
                   <h2 className="text-base font-semibold text-slate-950">Dedupe decisions</h2>
                   <span className="text-sm text-slate-500">
-                    Compared against {dedupeResult.existingCount} Notion records
+                    Compared against {dedupeResult.existingCount}{" "}
+                    {exportDestination === "hubspot" ? "HubSpot contacts" : "Notion records"}
                   </span>
                 </div>
                 <div className="overflow-x-auto">
@@ -926,6 +1043,30 @@ export default function Home() {
         </section>
       </div>
     </main>
+  );
+}
+
+function SummaryAction({
+  count,
+  label,
+  active,
+  onClick,
+}: {
+  count: number;
+  label: string;
+  active: boolean;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`font-semibold underline-offset-2 hover:underline ${
+        active ? "text-emerald-950 underline" : "text-emerald-900"
+      }`}
+    >
+      {count} {label}
+    </button>
   );
 }
 

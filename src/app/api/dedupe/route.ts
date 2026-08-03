@@ -4,6 +4,8 @@ import { ZodError } from "zod";
 
 import { unauthorizedResponse } from "@/lib/auth/responses";
 import { getSessionFromRequest } from "@/lib/auth/session";
+import { HubSpotApiError } from "@/lib/hubspot/client";
+import { listHubSpotLeadsForDedupe } from "@/lib/hubspot/dedupe";
 import { dedupeLeads } from "@/lib/leads/dedupe";
 import { dedupeRequestSchema, dedupeResponseSchema } from "@/lib/leads/schemas";
 import { listNotionLeads } from "@/lib/notion/leads";
@@ -13,10 +15,16 @@ export async function POST(request: Request) {
     return unauthorizedResponse();
   }
 
+  let destination: "hubspot" | "notion" | undefined;
+
   try {
     const body = await request.json();
     const input = dedupeRequestSchema.parse(body);
-    const existingLeads = await listNotionLeads();
+    destination = input.destination;
+    const existingLeads =
+      destination === "hubspot"
+        ? await listHubSpotLeadsForDedupe(input.leads)
+        : await listNotionLeads();
 
     const response = dedupeResponseSchema.parse({
       decisions: dedupeLeads(input.leads, existingLeads),
@@ -38,6 +46,16 @@ export async function POST(request: Request) {
       );
     }
 
+    if (error instanceof HubSpotApiError) {
+      return NextResponse.json(
+        {
+          error: "Could not read HubSpot contacts.",
+          detail: error.message,
+        },
+        { status: error.status || 502 },
+      );
+    }
+
     if (error instanceof APIResponseError) {
       return NextResponse.json(
         {
@@ -49,7 +67,12 @@ export async function POST(request: Request) {
     }
 
     return NextResponse.json(
-      { error: "Unable to dedupe leads against Notion." },
+      {
+        error:
+          destination === "hubspot"
+            ? "Unable to dedupe leads against HubSpot."
+            : "Unable to dedupe leads against Notion.",
+      },
       { status: 500 },
     );
   }

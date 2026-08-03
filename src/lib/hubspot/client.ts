@@ -10,26 +10,23 @@ const CONTACT_PROPERTIES = [
   "phone",
   "email",
   "website",
-  "credential_type",
-  "timezone",
-  "hs_lead_source",
 ] as const;
 
 export type HubSpotContact = {
   id: string;
   properties: {
-    firstname?: string;
-    lastname?: string;
-    company?: string;
-    city?: string;
-    state?: string;
-    zip?: string;
-    phone?: string;
-    email?: string;
-    website?: string;
-    credential_type?: string;
-    timezone?: string;
-    hs_lead_source?: string;
+    firstname?: string | null;
+    lastname?: string | null;
+    company?: string | null;
+    city?: string | null;
+    state?: string | null;
+    zip?: string | null;
+    phone?: string | null;
+    email?: string | null;
+    website?: string | null;
+    credential_type?: string | null;
+    timezone?: string | null;
+    hs_lead_source?: string | null;
   };
 };
 

@@ -62,7 +62,7 @@ describe("buildCreateLeadProperties", () => {
         issues: [],
       },
       {
-        owner: "Claudia",
+        owner: "Henry",
         status: "Cold List",
         source: "NAEA",
         batchLabel: "Seal Beach May 2026",
@@ -81,7 +81,7 @@ describe("buildCreateLeadProperties", () => {
       type: "rich_text",
       rich_text: [{ text: { content: "90740-4522" } }],
     });
-    expect(properties.Owner).toMatchObject({ type: "select", select: { name: "Claudia" } });
+    expect(properties.Owner).toMatchObject({ type: "select", select: { name: "Henry" } });
     expect(properties.Status).toMatchObject({ type: "select", select: { name: "Cold List" } });
     expect(properties.Source).toMatchObject({ type: "select", select: { name: "NAEA" } });
     expect(properties["Call Notes"]).toMatchObject({

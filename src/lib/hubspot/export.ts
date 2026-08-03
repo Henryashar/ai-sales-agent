@@ -12,6 +12,8 @@ export async function exportHubSpotContact(
   lead: NormalizedLead & { phone?: string },
   candidate?: EnrichmentCandidate,
   existingContact?: HubSpotContact,
+  leadSource?: string,
+  batchLabel?: string,
 ): Promise<HubSpotExportResult> {
   if (existingContact) {
     const properties = buildMissingEnrichmentProperties(candidate, existingContact);
@@ -36,6 +38,11 @@ export async function exportHubSpotContact(
   const phoneForTimezone = lead.phone ?? candidate?.phone ?? "";
   const timezone = getTimezoneFromPhone(phoneForTimezone);
   const [firstname = "", ...lastNameParts] = lead.contactName.trim().split(/\s+/);
+  const sourceValue = leadSource ?? lead.source;
+  const trimmedBatch = batchLabel?.trim();
+  const leadNotes = trimmedBatch
+    ? `Source: ${sourceValue} | Batch: ${trimmedBatch}`
+    : `Source: ${sourceValue}`;
   const created = await createContact({
     firstname,
     lastname: lastNameParts.join(" "),
@@ -43,12 +50,11 @@ export async function exportHubSpotContact(
     city: lead.city,
     state: lead.state,
     zip: lead.zip ?? "",
-    hs_lead_source: lead.source,
     credential_type: lead.credential ?? "",
-    time_zone: timezone,
     likely_calling_time_zone: timezone,
     time_zone_confidence: timezone === "Unknown" ? "Low" : "High",
-    time_zone_source: "Phone Area Code",
+    time_zone_source: "Phone area code",
+    lead_notes: leadNotes,
     phone: candidate?.phone ?? "",
     email: candidate?.email ?? "",
     website: candidate?.website ?? "",
