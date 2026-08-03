@@ -34,27 +34,60 @@ type HubSpotSearchResponse = {
   results?: HubSpotContact[];
 };
 
+type HubSpotSearchFilter = {
+  propertyName: string;
+  operator: "EQ";
+  value: string;
+};
+
 export async function searchContacts(query: {
   company?: string;
   city?: string;
   state?: string;
+  email?: string;
+  phone?: string;
 }): Promise<HubSpotContact[]> {
-  const filters = Object.entries(query)
-    .filter((entry): entry is [string, string] => Boolean(entry[1]?.trim()))
-    .map(([propertyName, value]) => ({
-      propertyName,
-      operator: "EQ",
-      value: value.trim(),
-    }));
+  const filterGroups: { filters: HubSpotSearchFilter[] }[] = [];
 
-  if (filters.length === 0) {
+  const locationFilters = (["company", "city", "state"] as const)
+    .map((propertyName) => {
+      const value = query[propertyName]?.trim();
+      return value
+        ? {
+            propertyName,
+            operator: "EQ" as const,
+            value,
+          }
+        : undefined;
+    })
+    .filter((filter): filter is HubSpotSearchFilter => Boolean(filter));
+
+  if (locationFilters.length > 0) {
+    filterGroups.push({ filters: locationFilters });
+  }
+
+  const email = query.email?.trim();
+  if (email) {
+    filterGroups.push({
+      filters: [{ propertyName: "email", operator: "EQ", value: email }],
+    });
+  }
+
+  const phone = query.phone?.trim();
+  if (phone) {
+    filterGroups.push({
+      filters: [{ propertyName: "phone", operator: "EQ", value: phone }],
+    });
+  }
+
+  if (filterGroups.length === 0) {
     return [];
   }
 
   const response = await hubSpotRequest<HubSpotSearchResponse>("/crm/v3/objects/contacts/search", {
     method: "POST",
     body: JSON.stringify({
-      filterGroups: [{ filters }],
+      filterGroups,
       properties: CONTACT_PROPERTIES,
       limit: 100,
     }),

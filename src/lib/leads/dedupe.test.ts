@@ -99,4 +99,73 @@ describe("dedupeLeads", () => {
     expect(decisions[0].matchedLead).toBeUndefined();
     expect(decisions[0].matchReason).toContain("Closest weak overlap");
   });
+
+  it("treats matching enrichment email as a definitive duplicate", () => {
+    const existingLead: NotionLead = {
+      pageId: "page-email",
+      contactName: "Other Person",
+      firmName: "Different Firm",
+      city: "Austin",
+      state: "TX",
+      email: "Mary@Example.com",
+      phone: "512-555-0100",
+      website: "https://example.com",
+    };
+
+    const decisions = dedupeLeads(
+      [incomingLead],
+      [existingLead],
+      new Map([[incomingLead.id, { email: "mary@example.com" }]]),
+    );
+
+    expect(decisions[0]).toMatchObject({
+      action: "skip",
+      matchedPageId: "page-email",
+      matchScore: 100,
+      matchReason: "same email",
+    });
+  });
+
+  it("updates an email match when enrichment fields are missing", () => {
+    const existingLead: NotionLead = {
+      pageId: "page-email-partial",
+      contactName: "Other Person",
+      firmName: "Different Firm",
+      city: "Austin",
+      state: "TX",
+      email: "mary@example.com",
+    };
+
+    const decisions = dedupeLeads(
+      [incomingLead],
+      [existingLead],
+      new Map([[incomingLead.id, { email: "mary@example.com", phone: "206-555-0100" }]]),
+    );
+
+    expect(decisions[0]).toMatchObject({
+      action: "update_existing",
+      matchedPageId: "page-email-partial",
+      matchScore: 100,
+    });
+  });
+
+  it("treats matching enrichment phone as a definitive duplicate", () => {
+    const score = scoreLeadMatch(
+      incomingLead,
+      {
+        pageId: "page-phone",
+        contactName: "Other Person",
+        firmName: "Different Firm",
+        city: "Austin",
+        state: "TX",
+        phone: "(206) 555-0100",
+      },
+      { phone: "206-555-0100" },
+    );
+
+    expect(score).toEqual({
+      score: 100,
+      reason: "same phone",
+    });
+  });
 });

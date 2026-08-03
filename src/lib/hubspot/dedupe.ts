@@ -1,11 +1,19 @@
 import type { NormalizedLead, NotionLead } from "../leads/schemas";
 import { searchContacts } from "./client";
 
-export async function listHubSpotLeadsForDedupe(leads: NormalizedLead[]): Promise<NotionLead[]> {
+export type HubSpotContactHints = {
+  email?: string;
+  phone?: string;
+};
+
+export async function listHubSpotLeadsForDedupe(
+  leads: NormalizedLead[],
+  contactHintsByLeadId?: Map<string, HubSpotContactHints>,
+): Promise<NotionLead[]> {
   const uniqueLeads = new Map<string, NotionLead>();
 
   for (const lead of leads) {
-    const matches = await findHubSpotLeadsForDedupe(lead);
+    const matches = await findHubSpotLeadsForDedupe(lead, contactHintsByLeadId?.get(lead.id));
 
     for (const match of matches) {
       uniqueLeads.set(match.pageId, match);
@@ -15,11 +23,16 @@ export async function listHubSpotLeadsForDedupe(leads: NormalizedLead[]): Promis
   return Array.from(uniqueLeads.values());
 }
 
-export async function findHubSpotLeadsForDedupe(lead: NormalizedLead): Promise<NotionLead[]> {
+export async function findHubSpotLeadsForDedupe(
+  lead: NormalizedLead,
+  contactHints?: HubSpotContactHints,
+): Promise<NotionLead[]> {
   const contacts = await searchContacts({
     company: lead.firmName,
     city: lead.city,
     state: lead.state,
+    email: contactHints?.email,
+    phone: contactHints?.phone,
   });
 
   return contacts.map((contact) => {

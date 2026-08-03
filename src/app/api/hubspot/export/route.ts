@@ -37,44 +37,67 @@ export async function POST(request: Request) {
       ]),
     );
     const results: LeadExportResult[] = [];
+    const claimedEmails = new Map<string, string>();
 
     for (const incomingDecision of input.decisions) {
       const lead = incomingDecision.incomingLead;
-      const existingLeads = await findHubSpotLeadsForDedupe(lead);
-      const [decision] = dedupeLeads([lead], existingLeads);
       const candidate = candidatesByLeadId.get(lead.id);
+      const contactHints = {
+        email: candidate?.email,
+        phone: candidate?.phone,
+      };
+      const existingLeads = await findHubSpotLeadsForDedupe(lead, contactHints);
+      const [decision] = dedupeLeads(
+        [lead],
+        existingLeads,
+        new Map([[lead.id, contactHints]]),
+      );
+
+      const normalizedEmail = candidate?.email?.trim().toLowerCase();
+      if (decision.action === "insert" && normalizedEmail && claimedEmails.has(normalizedEmail)) {
+        results.push(
+          withLeadDetails(lead, {
+            success: true,
+            hubspotId: claimedEmails.get(normalizedEmail) ?? "",
+            action: "skipped",
+          }),
+        );
+        continue;
+      }
 
       if (decision.action === "insert") {
-        results.push(
-          withLeadDetails(
-            lead,
-            await exportHubSpotContact(
-              lead,
-              candidate,
-              undefined,
-              input.defaults.source,
-              input.defaults.batchLabel,
-            ),
-          ),
+        const exportResult = await exportHubSpotContact(
+          lead,
+          candidate,
+          undefined,
+          input.defaults.source,
+          input.defaults.batchLabel,
         );
+        if (normalizedEmail && exportResult.hubspotId) {
+          claimedEmails.set(normalizedEmail, exportResult.hubspotId);
+        }
+        results.push(withLeadDetails(lead, exportResult));
         continue;
       }
 
       if (decision.action === "update_existing" && decision.matchedLead) {
         const existingContact = mapDedupeLeadToContact(decision.matchedLead);
-        results.push(
-          withLeadDetails(
-            lead,
-            await exportHubSpotContact(
-              lead,
-              candidate,
-              existingContact,
-              input.defaults.source,
-              input.defaults.batchLabel,
-            ),
-          ),
+        const exportResult = await exportHubSpotContact(
+          lead,
+          candidate,
+          existingContact,
+          input.defaults.source,
+          input.defaults.batchLabel,
         );
+        if (normalizedEmail && exportResult.hubspotId) {
+          claimedEmails.set(normalizedEmail, exportResult.hubspotId);
+        }
+        results.push(withLeadDetails(lead, exportResult));
         continue;
+      }
+
+      if (normalizedEmail && decision.matchedPageId) {
+        claimedEmails.set(normalizedEmail, decision.matchedPageId);
       }
 
       results.push(

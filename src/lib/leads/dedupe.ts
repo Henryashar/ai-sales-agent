@@ -1,9 +1,19 @@
 import { normalizeKey } from "./normalize";
 import type { DedupeDecision, NormalizedLead, NotionLead } from "./schemas";
 
-export function dedupeLeads(incomingLeads: NormalizedLead[], existingLeads: NotionLead[]): DedupeDecision[] {
+export type ContactHints = {
+  email?: string;
+  phone?: string;
+};
+
+export function dedupeLeads(
+  incomingLeads: NormalizedLead[],
+  existingLeads: NotionLead[],
+  contactHintsByLeadId?: Map<string, ContactHints>,
+): DedupeDecision[] {
   return incomingLeads.map((incomingLead) => {
-    const bestMatch = findBestMatch(incomingLead, existingLeads);
+    const contactHints = contactHintsByLeadId?.get(incomingLead.id);
+    const bestMatch = findBestMatch(incomingLead, existingLeads, contactHints);
 
     if (!bestMatch) {
       return {
@@ -58,11 +68,15 @@ export function dedupeLeads(incomingLeads: NormalizedLead[], existingLeads: Noti
   });
 }
 
-function findBestMatch(incomingLead: NormalizedLead, existingLeads: NotionLead[]) {
+function findBestMatch(
+  incomingLead: NormalizedLead,
+  existingLeads: NotionLead[],
+  contactHints?: ContactHints,
+) {
   let bestMatch: { lead: NotionLead; score: number; reason: string } | undefined;
 
   for (const existingLead of existingLeads) {
-    const match = scoreLeadMatch(incomingLead, existingLead);
+    const match = scoreLeadMatch(incomingLead, existingLead, contactHints);
 
     if (!bestMatch || match.score > bestMatch.score) {
       bestMatch = { lead: existingLead, ...match };
@@ -72,7 +86,31 @@ function findBestMatch(incomingLead: NormalizedLead, existingLeads: NotionLead[]
   return bestMatch && bestMatch.score > 0 ? bestMatch : undefined;
 }
 
-export function scoreLeadMatch(incomingLead: NormalizedLead, existingLead: NotionLead) {
+export function scoreLeadMatch(
+  incomingLead: NormalizedLead,
+  existingLead: NotionLead,
+  contactHints?: ContactHints,
+) {
+  const incomingEmail = normalizeEmail(contactHints?.email);
+  const existingEmail = normalizeEmail(existingLead.email);
+
+  if (incomingEmail && existingEmail && incomingEmail === existingEmail) {
+    return {
+      score: 100,
+      reason: "same email",
+    };
+  }
+
+  const incomingPhone = normalizePhone(contactHints?.phone);
+  const existingPhone = normalizePhone(existingLead.phone);
+
+  if (incomingPhone && existingPhone && incomingPhone === existingPhone) {
+    return {
+      score: 100,
+      reason: "same phone",
+    };
+  }
+
   const reasons: string[] = [];
   let score = 0;
 
@@ -132,6 +170,14 @@ export function scoreLeadMatch(incomingLead: NormalizedLead, existingLead: Notio
     score: Math.min(score, 100),
     reason: reasons.length > 0 ? reasons.join(", ") : "no meaningful overlap",
   };
+}
+
+function normalizeEmail(value?: string) {
+  return value?.trim().toLowerCase() ?? "";
+}
+
+function normalizePhone(value?: string) {
+  return value?.replace(/\D/g, "") ?? "";
 }
 
 function similarity(left: string, right: string) {
